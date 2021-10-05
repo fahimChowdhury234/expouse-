@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Activity Feed 6</title>
+  </head>
+
+  <body>
+    <div class="flex">
+      <!-- small sidebar start -->
+      <div class="flex">
+        <div
+          class="w-50 flex flex-col items-center"
+          style="background-color: #353446"
+        >
+          <div class="py-10 cursor-pointer">
+            <img
+              src="./src/assets/img/Group (1).svg"
+              class="w-24 h-27"
+              alt=""
+            />
+          </div>
+          <div class="py-10 cursor-pointer">
+            <img src="./src/assets/img/Group.svg" class="w-31 h-31" alt="" />
+          </div>
+        </div>
+        <!-- main sidebar -->
+        <div
+          id="mainsidebar"
+          class="sidebar mainsidebar-width bg-capcod text-14 min-h-screen text-stromgreay trasition"
+          style="background-color: #43435b"
+        >
+          <div class="flex justify-between items-center px-15 py-10">
+            <div class="text-24 text-greaywhite">
+              <div class="logotext displaynone">
+                <img class="w-110" src="./src/assets/img/logo.png" alt="logo" />
+              </div>
+              <div
+                class="logo"
+                style="display: none; width: 25px; height: 25px"
+              >
+                <img
+                  class="w-110"
+                  src="./src/assets/img/Group (1).svg"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mt-50 font-semibold px-10">
+            <div class="text-center">
+              <a href="./basic-info-online-3.html">
+                <div
+                  class="flex items-center justify-between py-9 px-7 cursor-pointer"
+                  id="sidedropdown"
+                >
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/home.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Detiles</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 displaynone"
+                  /></div
+              ></a>
+              <a href="./login-setup.html">
+                <div
+                  class="flex items-center py-5 rounded-6 px-7 cursor-pointer"
+                >
+                  <img
+                    src="./src/assets/img/setting.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >Event Setting</span
+                  >
+                </div>
+              </a>
+              <a href="./expouse-ui/src/index.html">
+                <div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/app-builder.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >App Builder</span
+                  >
+                </div>
+              </a>
+              <div
+                class="py-9 px-7 cursor-pointer sidedropdown"
+                id="sidedropdown"
+                open="false"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/event.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Engegment</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 trasition displaynone"
+                  />
+                </div>
+                <div
+                  class="dropdownitem trasition displaynone"
+                  style="max-height: 0px; overflow: hidden"
+                >
+                  <a href="./notification-3.html">
+                    <p class="font-bold">Notification</p>
+                  </a>
+                  <a href="./agenda-live.html"> <p>Agenda Live</p> </a>
+                  <a href="./live-polling-1.html">
+                    <p>Live Polling</p>
+                  </a>
+                  <a href="./activity-feed-1.html">
+                    <p>Activity Feed</p>
+                  </a>
+                  <a href="./contests-1.html">
+                    <p>Contests</p>
+                  </a>
+                  <a href="./survey-0.html">
+                    <p>Surveys</p>
+                  </a>
+                  <a href="./rooms-1.html">
+                    <p>Breakout Rooms</p>
+                  </a>
+                </div>
+              </div>
+              <a href="./app_webApp-user.html">
+                <div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/users.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >APP/WebApp users</span
+                  >
+                </div>
+              </a>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/legal.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Legal Setting</span
+                >
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/event features.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Event features</span
+                >
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/analytics.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Analytics</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- small sidebar end -->
+      <div class="w-full bg-greaywhite">
+        <!-- top navigation bar -->
+        <nav class="h-66 bg-white flex justify-between items-center px-20">
+          <div id="navimg" data-open="false" class="cursor-pointer">
+            <img src="./src/assets/img/nav-btn.svg" alt="" class="w-22 h14" />
+          </div>
+          <div class="flex items-center">
+            <div class="flex justify-between items-center pr-40">
+              <div class="p-5 py-8 mr-10 bg-brand rounded-2 cursor-pointer">
+                <img src="./src/assets/img/eyes.svg" alt="" class="w-21 h-13" />
+              </div>
+              <div
+                class="p-5 flex items-center mr-10 bg-brand rounded-2 cursor-pointer"
+              >
+                <img
+                  src="./src/assets/img/arrow-mark.svg"
+                  alt=""
+                  class="w-15 h-15"
+                />
+                <span class="text-13 text-white">Publish</span>
+              </div>
+              <div class="p-5 bg-brand rounded-2 cursor-pointer">
+                <img
+                  src="./src/assets/img/fullscreen.svg"
+                  alt=""
+                  class="w-19 h-19"
+                />
+              </div>
+            </div>
+            <img
+              class="h-35 w-35 rounded-full cursor-pointer"
+              src="https://www.w3schools.com/howto/img_avatar.png"
+              alt="admin"
+            />
+            <p class="text-13 font-medium text-stromgreay mx-10 cursor-pointer">
+              Tusher
+            </p>
+            <img
+              src="./src/assets/img/arrow.svg"
+              alt="arrow"
+              class="h-10 w-10 cursor-pointer"
+            />
+          </div>
+        </nav>
+        <!-- top navigation bar end-->
+        <div class="p-30">
+          <!-- Second sidebar start -->
+
+          <!-- Second sidebar end -->
+          <div class="flex justify-center items-center">
+            <div
+              class="w-5/12 bg-white py-10 px-10 rounded-6"
+              style="box-shadow: -3px 4px 10px -8px rgba(0, 0, 0, 0.85)"
+            >
+              <div class="flex justify-end">
+                <div
+                  class="w-24 h-24 rounded-full bg-white flex justify-center items-center cursor-pointer"
+                  style="box-shadow: -3px 4px 10px -8px rgba(0, 0, 0, 0.85)"
+                >
+                  <img
+                    src="./src/assets/img/cancel-icon.svg"
+                    alt=""
+                    class="w-10 h-10"
+                  />
+                </div>
+              </div>
+              <div class="inline-block">
+                <div
+                  class="flex items-center space-x-20 bg-white px-5 h-40 rounded-6"
+                  style="box-shadow: -3px 4px 10px -8px rgba(0, 0, 0, 0.85)"
+                >
+                  <a href="./activity-feed-4.html"
+                    ><div class="">
+                      <button
+                        class="h-28 px-8 bg-white flex justify-center items-center rounded-6 cursor-pointer text-12 text-stromgreay font-bold outline-none"
+                      >
+                        LIKES(10)
+                      </button>
+                    </div></a
+                  >
+
+                  <a href="./activity-feed-5.html"
+                    ><div class="">
+                      <button
+                        class="px-8 h-28 bg-white flex justify-center items-center space-x-5 rounded-6 outline-none text-12 font-bold text-stromgreay outline-none"
+                      >
+                        COMMENTS(45)
+                      </button>
+                    </div></a
+                  >
+
+                  <a href="./activity-feed-6.html">
+                    <div class="">
+                      <button
+                        class="px-8 h-28 bg-brand flex justify-center items-center space-x-5 rounded-6 outline-none text-12 font-bold text-white outline-none"
+                      >
+                        REPORTS(5)
+                      </button>
+                    </div></a
+                  >
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-30">
+                <div class="flex items-center space-x-5">
+                  <div class="w-40 h-40 rounded-full">
+                    <img
+                      src="https://www.w3schools.com/howto/img_avatar.png"
+                      alt=""
+                      class="rounded-full"
+                    />
+                  </div>
+                  <div>
+                    <h2 class="text-14 text-black font-semibold">Marcus</h2>
+                    <span class="text-10 font-semibold" style="color: #f46a6a"
+                      >Lorem ipsum dolor sit amet
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/assets/js/index.js"></script>
+</html>

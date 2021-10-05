@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Speakers Bulk Upload</title>
+  </head>
+
+  <body>
+    <div class="w-500">
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-20">
+          <h3 class="text-18 font-semibold text-capcod">Bulk Upload</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="px-20">
+          <div class="py-15 space-y-5">
+            <h3 class="text-14 text-capcod font-bold">Import Data</h3>
+            <p class="text-12 text-stromgreay">
+              Fill the form field entries in the respective columns. Make sure
+              the mandatory fields are filled.
+            </p>
+            <div class="inline-block cursor-pointer py-10">
+              <div class="flex items-center space-x-10">
+                <img src="./src/assets/img/card.svg" alt="" />
+                <span class="text-12 text-brand font-bold"
+                  >Download data structure(.csv)
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="py-20">
+            <label for="#" class="block mb-7 font-bold text-13 text-capcod">
+              Upload the edited excel back</label
+            >
+            <div
+              class="flex rounded-6 justify-center items-center flex-col h-200 border-dotted border-stromgreay border-1 border-opacity-40"
+              style="background: #f4f5f7"
+            >
+              <img
+                src="./src/assets/img/card.svg"
+                alt="placeholder"
+                class="cursor-pointer"
+              />
+              <p
+                class="text-14 mt-10 cursor-pointer text-stromgreay opacity-60 text-center font-bold"
+              >
+                Drag & drop files here
+              </p>
+              <p
+                class="text-13 font-bold text-stromgreay opacity-70 text-center"
+              >
+                or
+              </p>
+              <p
+                class="text-14 font-bold cursor-pointer text-brand opacity-70 text-center"
+              >
+                browse files
+              </p>
+            </div>
+            <span class="text-12 text-stromgreay inline-block py-5"
+              >Accepted File Types: .doc and .docx</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="p-20 border-t-1 border-stromgreay border-opacity-40">
+        <button
+          class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+        >
+          <span class="mb-0 block"> save </span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

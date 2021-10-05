@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Live Polling 2</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./src/assets/css/style.css" />
+        <link rel="stylesheet" href="./src/assets/css/custom.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+    </head>
+    <body style="background-color: rgba(0, 0, 0, 0.432)">
+        <!-- start -->
+        <div class="w-500 bg-white" style="height: 1080px">
+            <div class="flex justify-between items-center py-20 px-25" style="background-color: #f4f5f7">
+                <div>
+                    <span class="text-18 text-capcod font-bold">Start Live Polling</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="px-10">
+                        <img src="./src/assets/img/close-icon.svg" alt="" class="w-20 h-20 cursor-pointer" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-20 py-25">
+                <div class="py-10">
+                    <h2 class="text-14 font-bold text-capcod">Basic Details</h2>
+                </div>
+                <div class="py-10">
+                    <form action="">
+                        <div>
+                            <label for="#" class="text-12 text-stromgreay">Question</label>
+                        </div>
+                        <div class="py-10">
+                            <input
+                                type="text"
+                                name="text"
+                                id=""
+                                class="w-full h-42 rounded-6 border-1 border-stromgreay border-opacity-40 px-10 text-13"
+                                placeholder="Enter Question"
+                            />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="py-20">
+                    <div class="pb-3 flex justify-between items-center">
+                        <p class="text-12 text-stromgreay font-normal">Option</p>
+                        <p class="text-12 font-bold text-brand">Add fields</p>
+                    </div>
+                    <div class="flex justify-between items-center py-10">
+                        <div
+                            class="h-42 flex justify-between w-full items-center p-13 rounded-6 border-1 border-stromgreay border-opacity-40"
+                        >
+                            <div class="flex items-center">
+                                <div class="h-18 w-18 bg-brand rounded-full flex justify-center items-center cursor-pointer">
+                                    <img class="w-12 h-12" src="./src/assets/img/check.svg" alt="check" srcset="" />
+                                </div>
+                                <span class="ml-7 text-14">Option #1</span>
+                            </div>
+                            <div
+                                class="w-24 h-24 rounded-full flex justify-center items-center bg-white cursor-pointer"
+                                style="box-shadow: -1px 3px 9px -8px rgba(0, 0, 0, 0.83)"
+                            >
+                                <img src="./src/assets/img/cancel-icon.svg" alt="" class="w-10 h-10" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center py-10">
+                        <div
+                            class="h-42 flex justify-between w-full items-center p-13 rounded-6 border-1 border-stromgreay border-opacity-40"
+                        >
+                            <div class="flex items-center">
+                                <div
+                                    class="h-18 w-18 rounded-full flex justify-center items-center cursor-pointer"
+                                    style="background: #d7d8db"
+                                >
+                                    <img class="w-12 h-12" src="./src/assets/img/check.svg" alt="check" srcset="" />
+                                </div>
+                                <span class="ml-7 text-14 text-stromgreay">Option #2</span>
+                            </div>
+                            <div
+                                class="w-24 h-24 rounded-full flex justify-center items-center cursor-pointer"
+                                style="box-shadow: -1px 3px 9px -8px rgba(0, 0, 0, 0.83)"
+                            >
+                                <img src="./src/assets/img/cancel-icon.svg" alt="" class="w-10 h-10" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center py-10">
+                        <div
+                            class="h-42 w-full flex justify-between items-center p-13 rounded-6 border-1 border-stromgreay border-opacity-40"
+                        >
+                            <div class="flex items-center">
+                                <div
+                                    class="h-18 w-18 rounded-full flex justify-center items-center cursor-pointer"
+                                    style="background: #d7d8db"
+                                >
+                                    <img class="w-12 h-12" src="./src/assets/img/check.svg" alt="check" srcset="" />
+                                </div>
+                                <span class="ml-7 text-14 text-stromgreay">Option #3</span>
+                            </div>
+                            <div
+                                class="w-24 h-24 rounded-full flex justify-center items-center bg-white cursor-pointer"
+                                style="box-shadow: -1px 3px 9px -8px rgba(0, 0, 0, 0.83)"
+                            >
+                                <img src="./src/assets/img/cancel-icon.svg" alt="" class="w-10 h-10" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-8 flex space-x-20">
+                    <div class="w-6/12">
+                        <label for="#" class="block mb-7 text-12 text-stromgreay"> Survey Start </label>
+                        <input type="date" class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13" />
+                    </div>
+                    <div class="w-6/12">
+                        <label for="#" class="block mb-7 text-12 text-stromgreay"> Survey End </label>
+                        <input type="date" class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13" />
+                    </div>
+                </div>
+                <div class="pt-20 pb-40 border-b-1 border-stromgreay border-opacity-40">
+                    <div class="py-10">
+                        <span class="text-12 text-stromgreay">Agenda</span>
+                    </div>
+                    <div class="w-full h-42 px-10 flex justify-center items-center rounded-6 border-1 border-stromgreay border-opacity-40">
+                        <select class="w-full outline-none text-14 bg-white text-stromgreay">
+                            <option class="">Select Agenda</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pt-30 pb-110">
+                    <div class="py-10 flex justify-between items-center">
+                        <p class="text-14 text-capcod font-bold">Settings</p>
+                    </div>
+                    <div class="py-10 flex justify-between items-center">
+                        <div>
+                            <p class="text-12 text-stromgreay">Allow Multiple Responses</p>
+                        </div>
+                        <div>
+                            <label class="switch">
+                                <input type="checkbox" class="togggleinput" />
+                                <span class="togggleslider rounded-30"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="py-10 flex justify-between items-center">
+                        <div>
+                            <p class="text-12 text-stromgreay">Include 'Other' as option</p>
+                        </div>
+                        <div>
+                            <label class="switch">
+                                <input type="checkbox" class="togggleinput" />
+                                <span class="togggleslider rounded-30"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t-1 border-stromgreay border-opacity-40 py-20 px-20">
+                <button class="text-14 text-white rounded-6 uppercase bg-brand h-34 w-100">
+                    <span class="mb-0 block"> CREATE </span>
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

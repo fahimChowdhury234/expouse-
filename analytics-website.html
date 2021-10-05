@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+ 
+
+
+    <title>Analytics Website</title>
+  </head>
+
+  <body class="relative" style="overflow-x: hidden;padding-bottom: 0 !important;">
+    <!-- hidden slider backdrop  -->
+    <div
+      onclick="closeHiddenbar()"
+      class="top-0 bottom-0 fixed trasition left-0 right-0 h-screen hidden"
+      style="z-index: 99999"
+      id="backdropid"
+    ></div>
+    <!-- hidden slider end  -->
+    <!-- hidden slider code -->
+    <div
+      class="top-0 w-500 h-screen overflow-y-scroll trasition bg-white fixed"
+      style="z-index: 9999999; right: -50rem"
+      id="hiddensidebar"
+    >
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-bold text-stromgreay">Create Survey</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mb-10">Survey Details</h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Survey Name
+            </label>
+            <input
+              type="text"
+              name="text"
+              placeholder="Enter Survey Name
+"
+              id="#"
+              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+            />
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Survey Description
+            </label>
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Enter Survey Description"
+              id="#"
+              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-100 px-10 py-10 text-13"
+            ></textarea>
+          </div>
+
+          <div class="py-8 flex space-x-20">
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Survey Start
+              </label>
+              <input
+                type="date"
+                class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13"
+              />
+            </div>
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Survey End
+              </label>
+              <input
+                type="date"
+                class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="py-20 px-20">
+          <div class="flex justify-between items-center">
+            <h2 class="text-14 text-capcod font-bold">Survey Form</h2>
+            <a href="./survey-default-forms.html">
+              <span class="text-12 text-brand">Default Forms</span>
+            </a>
+          </div>
+          <div class="py-10">
+            <div
+              class="flex justify-between items-center px-10 py-15 rounded-6 border-1 border-brand border-opacity-40"
+              style="background-color: #f5f7f4"
+            >
+              <div class="space-y-5">
+                <h2 class="text-14 font-bold text-brand">
+                  Event Feedback Form
+                </h2>
+                <p class="text-10 text-stromgreay">9 Questions</p>
+              </div>
+              <div onclick="" class="cursor-pointer">
+                <img src="./src/assets/img/pen.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex" id="blur">
+      <!-- small sidebar start -->
+      <div class="flex">
+        <div
+          class="w-50 flex flex-col items-center"
+          style="background-color: #353446"
+        >
+          <div class="py-10 cursor-pointer">
+            <img
+              src="./src/assets/img/Group (1).svg"
+              class="w-24 h-27"
+              alt=""
+            />
+          </div>
+            <a href="./event-list-1.html">
+            <div class="py-10 cursor-pointer">
+              <img
+                src="./src/assets/img/Group.svg"
+                class="w-31 h-31"
+                alt=""
+              /></div
+          ></a>
+        </div>
+        <!-- main sidebar -->
+        <div
+          id="mainsidebar"
+          class="sidebar mainsidebar-width bg-capcod text-14 min-h-screen text-stromgreay trasition"
+          style="background-color: #43435b"
+        >
+          <div class="flex justify-between items-center px-15 py-10">
+            <div class="text-24 text-greaywhite">
+              <div class="logotext displaynone">
+                <img class="w-110" src="./src/assets/img/logo.png" alt="logo" />
+              </div>
+              <div
+                class="logo"
+                style="display: none; width: 25px; height: 25px"
+              >
+                <img
+                  class="w-110"
+                  src="./src/assets/img/Group (1).svg"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mt-50 font-semibold px-10">
+            <div class="text-center">
+              <a href="./basic-info-online-3.html">
+                <div
+                  class="flex items-center justify-between py-9 px-7 cursor-pointer"
+                  id="sidedropdown"
+                >
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/home.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Detiles</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 displaynone"
+                  /></div
+              ></a>
+              <a href="./login-setup.html">
+                <div
+                  class="flex items-center py-5 rounded-6 px-7 cursor-pointer"
+                >
+                  <img
+                    src="./src/assets/img/setting.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >Event Setting</span
+                  >
+                </div>
+              </a>
+              <a href="./expouse-ui/src/index.html">
+                <div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/app-builder.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >App Builder</span
+                  >
+                </div>
+              </a>
+              <div
+                class="py-9 px-7 cursor-pointer sidedropdown"
+                id="sidedropdown"
+                open="false"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/event.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Engegment</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 trasition displaynone"
+                  />
+                </div>
+                <div
+                  class="dropdownitem trasition displaynone"
+                  style="max-height: 0px; overflow: hidden"
+                >
+                  <a href="./notification-3.html">
+                    <p class="font-bold">Notification</p>
+                  </a>
+                  <a href="./agenda-live.html"> <p>Agenda Live</p> </a>
+                  <a href="./live-polling-1.html">
+                    <p>Live Polling</p>
+                  </a>
+                  <a href="./activity-feed-1.html">
+                    <p>Activity Feed</p>
+                  </a>
+                  <a href="./contests-1.html">
+                    <p>Contests</p>
+                  </a>
+                  <a href="./survey-0.html">
+                    <p>Surveys</p>
+                  </a>
+                  <a href="./rooms-1.html">
+                    <p>Breakout Rooms</p>
+                  </a>
+                </div>
+              </div>
+              <a href="./app_webApp-user.html">
+                <div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/users.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >APP/WebApp users</span
+                  >
+                </div>
+              </a>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/legal.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Legal Setting</span
+                >
+              </div>
+               <div
+                class="py-9 px-7 cursor-pointer sidedropdown"
+                id="sidedropdown"
+                open="false"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/marketing-w.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Marketing</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 trasition displaynone"
+                  />
+                </div>
+                <div
+                  class="dropdownitem trasition displaynone"
+                  style="max-height: 0px; overflow: hidden"
+                >
+                  <a href="./campain.html">
+                    <p class="font-bold">Email</p>
+                  </a>
+                  <a href=""> <p class="font-bold">SMS</p> </a>
+                </div>
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/event features.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Event features</span
+                >
+              </div>
+              <a href="./analytics-website.html">
+                <div class="flex items-center py-9 px-7 active cursor-pointer">
+                  <img
+                    src="./src/assets/img/analytics.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >Analytics</span
+                  >
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- small sidebar end -->
+      <div class="w-full bg-greaywhite">
+        <!-- top navigation bar -->
+        <nav class="h-66 bg-white flex justify-between items-center px-20">
+          <div id="navimg" data-open="false" class="cursor-pointer">
+            <img src="./src/assets/img/nav-btn.svg" alt="" class="w-22 h14" />
+          </div>
+          <div class="flex items-center">
+            <div class="flex justify-between items-center pr-40">
+              <div class="p-5 py-8 mr-10 bg-brand rounded-2 cursor-pointer">
+                <img src="./src/assets/img/eyes.svg" alt="" class="w-21 h-13" />
+              </div>
+              <div
+                class="p-5 flex items-center mr-10 bg-brand rounded-2 cursor-pointer"
+              >
+                <img
+                  src="./src/assets/img/arrow-mark.svg"
+                  alt=""
+                  class="w-15 h-15"
+                />
+                <span class="text-13 text-white">Publish</span>
+              </div>
+              <div class="p-5 bg-brand rounded-2 cursor-pointer">
+                <img
+                  src="./src/assets/img/fullscreen.svg"
+                  alt=""
+                  class="w-19 h-19"
+                />
+              </div>
+            </div>
+            <img
+              class="h-35 w-35 rounded-full cursor-pointer"
+              src="https://www.w3schools.com/howto/img_avatar.png"
+              alt="admin"
+            />
+            <p class="text-13 font-medium text-stromgreay mx-10 cursor-pointer">
+              Tusher
+            </p>
+            <img
+              src="./src/assets/img/arrow.svg"
+              alt="arrow"
+              class="h-10 w-10 cursor-pointer"
+            />
+          </div>
+        </nav>
+        <!-- top navigation bar end-->
+        <div class="p-20">
+          <div>
+            <h3 class="text-stromgreay font-bold" style="font-size: 27px">
+              Analytics
+            </h3>
+          </div>
+          <div
+            class="pb-20 flex items-center space-x-20"
+            style="padding-top: 45px"
+          >
+            <a href="./analytics-website.html"><div
+              class="w-200 flex items-center bg-brand py-15 px-10 rounded-6 cursor-pointer"
+            >
+              <div>
+                <img
+                  src="./src/assets/img/website.svg"
+                  alt=""
+                  class="w-25 h-28"
+                />
+              </div>
+              <div class="flex flex-col space-y-3" style="margin-left: 12px">
+                <p class="text-16 text-white font-semibold">Website</p>
+                <span class="text-14 text-black font-bold">30.4K visits</span>
+              </div>
+            </div></a>
+          <a href="./analytics-event-platform.html">
+            <div
+              class="flex items-center bg-white py-15 px-10 rounded-6 cursor-pointer"
+            >
+              <div>
+                <img
+                  src="./src/assets/img/app-event-platform.svg"
+                  alt=""
+                  class="w-25 h-28"
+                />
+              </div>
+              <div class="flex flex-col space-y-3" style="margin-left: 12px">
+                <p class="text-16 text-stromgreay font-semibold">
+                  APP/ Event platform
+                </p>
+                <span class="text-14 text-brand font-bold">9.2K Attendees</span>
+              </div>
+            </div></a>
+           <a href="./analytics-marketing.html"> <div
+              class="w-200 flex items-center bg-white py-15 px-10 rounded-6 cursor-pointer"
+            >
+              <div>
+                <img
+                  src="./src/assets/img/marketing.svg"
+                  alt=""
+                  class="w-25 h-28"
+                />
+              </div>
+              <div class="flex flex-col space-y-3" style="margin-left: 12px">
+                <p class="text-16 text-stromgreay font-semibold">Marketing</p>
+                <span class="text-14 text-brand font-bold">2.8 Emails</span>
+              </div>
+            </div></a>
+          <a href="./analytics-survey.html">
+            <div
+              class="w-200 flex items-center bg-white py-15 px-10 rounded-6 cursor-pointer"
+            >
+              <div>
+                <img
+                  src="./src/assets/img/survey.svg"
+                  alt=""
+                  class="w-22 h-29"
+                />
+              </div>
+              <div class="flex flex-col space-y-3" style="margin-left: 12px">
+                <p class="text-16 text-stromgreay font-semibold">Survey</p>
+                <span class="text-14 text-brand font-bold"
+                  >390 Submittions</span
+                >
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="py-10 px-20 bg-white rounded-6">
+            <div><span class="text-14 text-stromgreay">Key Stats</span></div>
+            <div class="py-10 flex justify-between items-center">
+              <div
+                class="px-10 py-10 text-center border-opacity-40 flex flex-col space-y-5 border-stromgreay"
+                style="border-right: 1px solid; width: 16%"
+              >
+                <h3 class="text-16 text-capcod font-bold">16,305</h3>
+                <span class="text-12 text-stromgreay font-light uppercase"
+                  >PAGE VIEWS</span
+                >
+              </div>
+              <div
+                class="px-10 py-10 text-center border-stromgreay flex flex-col space-y-5 border-opacity-40"
+                style="border-right: 1px solid; width: 16%"
+              >
+                <h3 class="text-16 text-capcod font-bold">16,305</h3>
+                <span class="text-12 text-stromgreay font-light uppercase"
+                  >users</span
+                >
+              </div>
+              <div
+                class="px-10 py-10 text-center border-opacity-40 flex flex-col space-y-5 border-stromgreay"
+                style="border-right: 1px solid; width: 16%"
+              >
+                <h3 class="text-16 text-capcod font-bold">16,305</h3>
+                <span class="text-12 text-stromgreay font-light uppercase"
+                  >UniQue users</span
+                >
+              </div>
+              <div
+                class="px-10 py-10 text-center border-opacity-40 flex flex-col space-y-5 border-stromgreay"
+                style="border-right: 1px solid; width: 16%"
+              >
+                <h3 class="text-16 text-capcod font-bold">01,30</h3>
+                <span class="text-12 text-stromgreay font-light uppercase"
+                  >Avg Session</span
+                >
+              </div>
+              <div
+                class="px-10 py-10 text-center border-opacity-40 flex flex-col space-y-5 border-stromgreay"
+                style="border-right: 1px solid; width: 16%"
+              >
+                <h3 class="text-16 text-capcod font-bold">16,305</h3>
+                <span class="text-12 text-stromgreay font-light uppercase"
+                  >Session</span
+                >
+              </div>
+              <div
+                class="px-10 py-10 text-center flex flex-col space-y-5"
+                style="width: 16%"
+              >
+                <h3 class="text-16 text-capcod font-bold">16,305</h3>
+                <span class="text-12 text-stromgreay font-light uppercase"
+                  >Page Session</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="bg-white px-20 py-20" style="margin: 20px 0">
+            <div class="flex justify-between items-center">
+              <div>
+                <div>
+                  <h3 class="text-16 text-stromgreay font-bold">Visitors</h3>
+                </div>
+              </div>
+              <div
+                class="relative w-140 px-15 flex justify-between items-center border-1 border-stromgreay border-opacity-40 py-6 rounded-3 colummBtn cursor-pointer"
+              >
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="./src/assets/img/statistics.svg"
+                    alt=""
+                    class="w-20 h-15 items-center"
+                  />
+                  <span class="text-12 items-end text-stromgreay font-semibold"
+                    >All Time</span
+                  >
+                </div>
+                <div>
+                  <img
+                    src="./src/assets/img/right-angle.svg"
+                    alt=""
+                    style="transform: rotate(90deg)"
+                  />
+                </div>
+                <div
+                  class="absolute w-140 px-10 py-10 border-1 border-stromgreay border-opacity-40 rounded-3 columm"
+                  style="
+                    top: 35px;
+                    left: 0;
+                    background-color: #f7f7f7;
+                    opacity: 0;
+                    visibility: hidden;
+                  "
+                >
+                  <div class="pb-5 pt-3">
+                    <span class="text-13 text-stromgreay font-bold"
+                      >Past 7 days</span
+                    >
+                  </div>
+                  <div class="py-5">
+                    <span class="text-13 text-stromgreay font-bold"
+                      >Past 30 days</span
+                    >
+                  </div>
+                  <div class="py-5">
+                    <span class="text-13 text-stromgreay font-bold"
+                      >Past 60 days</span
+                    >
+                  </div>
+                  <div class="py-5">
+                    <span class="text-13 font-bold text-stromgreay"
+                      >All Time</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+    
+            </div>
+            <div class="py-20 ">
+
+   <div class="h-300">
+<img src="./src/assets/img/graph.png" alt="" class="h-full w-full">
+   </div>
+            </div>
+
+            <div class="flex justify-center items-center">
+              <div class="flex mt-20">
+                <div class="flex items-center">
+                  <div class="h-20 w-20 relative m-auto">
+                    <input
+                      value="20"
+                      type="checkbox"
+                      class="absolute opacity-0 checboxinput"
+                    />
+                    <span
+                      class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                    ></span>
+                  </div>
+                  <div class="ml-10 text-12">Page View</div>
+                </div>
+
+                <div class="flex items-center">
+                  <div class="h-20 w-20 relative m-auto ml-20">
+                    <input
+                      value="20"
+                      type="checkbox"
+                      class="absolute opacity-0 checboxinput"
+                    />
+                    <span
+                      class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                    ></span>
+                  </div>
+                  <div class="ml-10 text-12">Session</div>
+                </div>
+                <div class="flex items-center">
+                  <div class="h-20 w-20 relative m-auto ml-20">
+                    <input
+                      value="20"
+                      type="checkbox"
+                      class="absolute opacity-0 checboxinput"
+                    />
+                    <span
+                      class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                    ></span>
+                  </div>
+                  <div class="ml-10 text-12">New Visitors</div>
+                </div>
+                <div class="flex items-center">
+                  <div class="h-20 w-20 relative m-auto ml-20">
+                    <input
+                      value="20"
+                      type="checkbox"
+                      class="absolute opacity-0 checboxinput"
+                    />
+                    <span
+                      class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                    ></span>
+                  </div>
+                  <div class="ml-10 text-12">Returnig Visitors</div>
+                </div>
+                <div class="flex items-center">
+                  <div class="h-20 w-20 relative m-auto ml-20">
+                    <input
+                      value="20"
+                      type="checkbox"
+                      class="absolute opacity-0 checboxinput"
+                    />
+                    <span
+                      class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                    ></span>
+                  </div>
+                  <div class="ml-10 text-12">Active User</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white px-20 py-20" style="margin: 20px 0">
+            <div>
+              <h3 class="text-15 text-stromgreay font-bold">
+                Audience Geo Location
+              </h3>
+            </div>
+            <div class="py-20 flex justify-between items-center space-x-20">
+              <div class="w-5/12">
+                <div>
+                  <div
+                    class="border-b-1 border-stromgreay border-opacity-40 py-10"
+                  >
+                    <h3 class="text-16 text-stromgreay font-semibold uppercase">
+                      Top Countries
+                    </h3>
+                  </div>
+                  <div
+                    class="flex justify-between items-center pt-10"
+                    style="padding-bottom: 7px"
+                  >
+                    <span class="text-14 text-stromgreay">Oman</span>
+                    <span class="text-14 text-stromgreay">15639</span>
+                  </div>
+                  <div class="flex justify-between items-center py-7">
+                    <span class="text-14 text-stromgreay">United State</span>
+                    <span class="text-14 text-stromgreay">250</span>
+                  </div>
+                  <div class="flex justify-between items-center py-7">
+                    <span class="text-14 text-stromgreay">India</span>
+                    <span class="text-14 text-stromgreay">126</span>
+                  </div>
+                  <div class="flex justify-between items-center py-7">
+                    <span class="text-14 text-stromgreay">United Kingdom</span>
+                    <span class="text-14 text-stromgreay">79</span>
+                  </div>
+                  <div class="flex justify-between items-center py-7">
+                    <span class="text-14 text-stromgreay">Singapore</span>
+                    <span class="text-14 text-stromgreay">65</span>
+                  </div>
+                </div>
+                <div class="py-10">
+                  <div
+                    class="border-b-1 border-stromgreay border-opacity-40 py-10"
+                  >
+                    <h3 class="text-16 text-stromgreay font-semibold uppercase">
+                      Top Cities
+                    </h3>
+                  </div>
+                  <div
+                    class="flex justify-between items-center pt-10"
+                    style="padding-bottom: 7px"
+                  >
+                    <span class="text-14 text-stromgreay">Singapore</span>
+                    <span class="text-14 text-stromgreay">69</span>
+                  </div>
+                  <div class="flex justify-between items-center py-7">
+                    <span class="text-14 text-stromgreay">Bangaluru</span>
+                    <span class="text-14 text-stromgreay">61</span>
+                  </div>
+                  <div class="flex justify-between items-center py-7">
+                    <span class="text-14 text-stromgreay">New York</span>
+                    <span class="text-14 text-stromgreay">42</span>
+                  </div>
+                  <div class="flex justify-between items-center py-7">
+                    <span class="text-14 text-stromgreay">Midland</span>
+                    <span class="text-14 text-stromgreay">39</span>
+                  </div>
+                  <div class="flex justify-between items-center py-7">
+                    <span class="text-14 text-stromgreay">Naaldwijk</span>
+                    <span class="text-14 text-stromgreay">25</span>
+                  </div>
+                </div>
+              </div>
+              <div class="w-6/12">
+       <div class="h-300">
+<img src="./src/assets/img/map.png" alt="">
+       </div>
+    <div class="slidecontainer flex items-center space-x-5 w-full">
+  
+  
+ <span class="text-12 font-bold text-capcod">
+   65
+ </span>
+  <input type="range" min="1" max="100" value="50" class="sliders" id="myRange">
+   <span class="text-12 font-bold text-capcod">
+   1500
+ </span>
+</div>
+              </div>
+              </div>
+            </div>
+
+            <div class="py-20  flex justify-between items-center">
+<div class="bg-white px-10 rounded-6" style="width: 33% ;height: 300px;">
+   <div class="py-5">
+     <h5 class="text-16 text-stromgreay font-semibold">Platforms</h5>
+   </div>
+<div class="row flex w-full space-x-20 px-5 items-center">
+   
+        <div class=" " style="height:250px !important;">
+        
+           
+          
+             <img src="./src/assets/img/pai-cart.png" alt="">
+          
+           
+             
+        </div>
+                
+         
+      
+      
+    </div>
+</div>
+<div class="bg-white px-10 rounded-6" style="width: 33% ;height: 300px;">
+   <div class="py-5">
+     <h5 class="text-16 text-stromgreay font-semibold">Top Sources</h5>
+   </div>
+<div class="row flex w-full space-x-20 px-5 items-center">
+   
+          <div class=" " style="height:250px !important;">
+        
+           
+          
+             <img src="./src/assets/img/pai-cart.png" alt="">
+          
+           
+             
+        </div>
+                
+         
+      
+      <div class="col-md-12 col-xl-5 hidden">
+        <div class="card m-b-30 h-360">
+          <div class="card-body">
+            <h5 class="header-title mt-0">Order Status</h5>
+            <div class="row">
+              <div class="col-6 align-self-center text-center">
+                <h6 class="text-muted">Todays Perfomance</h6>
+              </div>
+              <div class="col-6 align-self-center text-center">
+                <h6 class="font-40">
+                  <i class="mdi mdi-menu-up text-success"></i>52 %
+                </h6>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <span class="float-right">18%</span>
+              <span class="badge badge-boxed badge-danger text-center mb-2"
+                >Delivered</span
+              >
+              <span class="float-left">82%</span>
+
+              <div class="progress mt-1">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 82%"
+                  aria-valuenow="82"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 18%"
+                  aria-valuenow="18"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <span class="float-right">45%</span>
+              <span class="badge badge-boxed badge-success mb-2">Shipped</span>
+              <span class="float-left">55%</span>
+
+              <div class="progress mt-1">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 55%"
+                  aria-valuenow="55"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 45%"
+                  aria-valuenow="45"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <span class="float-right">70%</span>
+              <span class="badge badge-boxed badge-warning text-center mb-2"
+                >Pending</span
+              >
+              <span class="float-left">30%</span>
+
+              <div class="progress mt-1">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 30%"
+                  aria-valuenow="30"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="text-center mt-4">
+              <span class="float-right text-danger">Late</span>
+              <span class="float-left text-primary">On Time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-xl-3 hidden">
+        <div class="card m-b-30 border-0">
+          <div class="card-body text-center">
+            <img
+              src="assets/images/users/avatar-5.jpg"
+              alt=""
+              class="rounded-circle mx-auto d-block w-25"
+            />
+
+            <div class="text-center pt-1">
+              <h5>Robert N. Carlile</h5>
+              <p class="text-muted">Founder of Company</p>
+              <button class="btn btn-block btn-raised btn-info mb-3">
+                Follow
+              </button>
+            </div>
+            <div class="row text-center profile-block">
+              <div class="col-6 align-self-center py-2 border-right">
+                <h3 class="profile-count">
+                  <b class="font-22">15,521</b>
+                </h3>
+                <p class="mb-0">Followers</p>
+              </div>
+              <div class="col-6 align-self-center py-2">
+                <h3 class="profile-count">
+                  <b class="font-22">772</b>
+                </h3>
+                <p class="mb-0">Followings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+ <div class=" py-20 bg-white rounded-6" style="width: 33%;height: 300px;">
+              <div class="px-20 pb-20">
+                <h3 class="text-16 text-stromgreay font-bold">User Actions</h3>
+              </div>
+              <div
+                class="flex flex-col space-y-5 border-b-1 border-opacity-40 border-stromgreay"
+                style="margin: 0 20px; padding: 20px 0"
+              >
+                <h3 class="text-capcod font-semibold" style="font-size: 28px">
+                  0
+                </h3>
+                <span class="text-14 text-stromgreay uppercase"
+                  >Newsletter Subscription</span
+                >
+              </div>
+              <div
+                class="flex flex-col space-y-5"
+                style="margin: 0 20px; padding: 20px 0"
+              >
+                <h3 class="text-capcod font-semibold" style="font-size: 28px">
+                  0
+                </h3>
+                <span class="text-14 text-stromgreay uppercase"
+                  >Contuct us form quries</span
+                >
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   
+    <script src="./src/assets/js/index.js"></script>
+  </body>
+</html>

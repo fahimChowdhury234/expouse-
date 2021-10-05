@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Networking Lounge Exhibitor Table</title>
+  </head>
+
+  <body>
+    <div class="h-screen" style="width: 500px">
+      <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+        <h3 class="text-18 font-bold text-stromgreay">Exhibitor Tables</h3>
+        <div class="flex items-center space-x-20">
+          <button
+            class="text-16 text-brand font-bold border-b-1 border-brand"
+            style="line-height: 1.1"
+          >
+            Add Table
+          </button>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar2()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+      </div>
+      <div class="flex items-center px-20 space-x-10 py-20">
+        <div
+          class="
+            bg-white
+            px-15
+            h-40
+            w-full
+            flex
+            items-center
+            space-x-15
+            rounded-6
+            border-1 border-stromgreay border-opacity-40
+          "
+        >
+          <button class="outline-none">
+            <img
+              src="./src/assets/img/search-icon.svg"
+              alt=""
+              class="w-15 h-15"
+            />
+          </button>
+          <input
+            class="w-full rounded text-14 font-bold text-stromgreay"
+            type="text"
+            placeholder="Search"
+          />
+        </div>
+      </div>
+      <div class="w-full px-20">
+        <div class="space-y-20">
+          <div
+            class="
+              px-20
+              py-15
+              border-1 border-brand
+              flex
+              justify-between
+              items-center
+              rounded-5
+            "
+            style="
+              box-shadow: 1px 2px 7px 2px rgba(171, 183, 216, 0.486);
+              background-color: #f4f5f7;
+            "
+          >
+            <div class="flex items-center space-x-20">
+              <div>
+                <img
+                  src="./src/assets/img/dragactive.svg"
+                  alt=""
+                  class="w-18 h-18"
+                />
+              </div>
+              <div
+                class="
+                  h-48
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-5
+                  flex
+                  items-center
+                  w-55
+                "
+              >
+                <img
+                  src="./src/assets/img/Rectangle 3903.svg"
+                  alt=""
+                  class="h-35 w-full rounded-5"
+                />
+              </div>
+              <div class="flex flex-col justify-between h-48 py-2">
+                <h3 class="text-14 text-brand font-bold">Exhibitor Table</h3>
+                <span class="block text-12 text-stromgreay font-semibold"
+                  >10 meeting</span
+                >
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-20">
+              <img
+                src="./src/assets/img/pen.svg"
+                alt=""
+                class="w-18 h-18 cursor-pointer"
+              />
+              <img
+                src="./src/assets/img/verified-blue.svg"
+                alt=""
+                class="w-18 h-18 cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <div
+            class="px-20 py-15 flex justify-between items-center rounded-5"
+            style="
+              box-shadow: 1px 2px 7px 2px rgba(171, 183, 216, 0.486);
+              background-color: #f4f5f7;
+            "
+          >
+            <div class="flex items-center space-x-20">
+              <div>
+                <img src="./src/assets/img/drag.svg" alt="" class="w-18 h-18" />
+              </div>
+              <div
+                class="
+                  h-48
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-5
+                  flex
+                  items-center
+                  w-55
+                "
+              >
+                <img
+                  src="./src/assets/img/Rectangle 3903.svg"
+                  alt=""
+                  class="h-35 w-full rounded-5"
+                />
+              </div>
+              <div class="flex flex-col justify-between h-48 py-2">
+                <h3 class="text-14 text-stromgreay font-bold">
+                  Exhibitor Table
+                </h3>
+                <span class="block text-12 text-stromgreay font-semibold"
+                  >5 meeting</span
+                >
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-20">
+              <img
+                src="./src/assets/img/verified-greay.svg"
+                alt=""
+                class="w-18 h-18 cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/assets/js/index.js"></script>
+</html>

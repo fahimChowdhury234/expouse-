@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Event App Processing 1</title>
+  </head>
+
+  <body style="background: #e5e5e5">
+    <div
+      class="w-full flex justify-between items-center bg-capcod px-20"
+      style="height: 58px"
+    >
+      <div class="w-110 cursor-pointer">
+        <img src="./src/assets/img/logo.png" alt="" />
+      </div>
+      <div class="flex items-center">
+        <img src="./src/assets/img/close-icon-2.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="p-30">
+      <div>
+        <h2 class="text-capcod font-bold" style="font-size: 23px">
+          Publish your event features
+        </h2>
+      </div>
+      <div class="flex justify-between space-x-20 py-20">
+       <div class="" style="width: 30%">
+          <div class="bg-white py-20 px-20 rounded-6 space-y-20">
+           <a href="./publish-event-website-1.html">
+             <div
+              class="
+                flex
+                items-center
+                justify-between
+                space-x-10
+                px-10
+                rounded-6
+                cursor-pointer
+              "
+              style="margin-bottom: 10px"
+            >
+              <div class="flex items-center space-x-20 px-10 py-10">
+                <div class="flex" style="align-items: flex-start; height: 42px">
+                  <img
+                    src="./src/assets/img/event-website.svg"
+                    alt=""
+                 class="w-25 h-25"
+                  />
+                </div>
+                <div class="flex flex-col space-y-5">
+                  <h3 class="text-15 text-stromgreay font-bold">Event Website</h3>
+                  <span class="text-14 text-stromgreay">Single Page</span>
+                </div>
+              </div>
+              <div class="flex" style="height: 42px; align-items: flex-end">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="./src/assets/img/event-clock.svg"
+                    alt=""
+                    class="w-13 h-13"
+                  />
+                  <span class="text-12 font-semibold" style="color: #ffb623"
+                    >Payment Pending</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+            <a href="./publish-event-app-1.html">
+              <div
+                class="
+                  flex
+                  items-center
+                  justify-between
+                  space-x-10
+                  px-10
+                  py-10
+                  rounded-6
+                  border-brand
+                  cursor-pointer
+                "
+                style="border-left: 5px solid; background-color: #f4f5f7"
+              >
+                <div class="flex items-center space-x-20 px-10 py-10">
+                  <div
+                    class="flex"
+                    style="align-items: flex-start; height: 42px"
+                  >
+                    <img
+                      src="./src/assets/img/event-app.svg"
+                      alt=""
+                      class="w-25 h-25"
+                    />
+                  </div>
+                  <div class="flex flex-col space-y-5">
+                    <h3 class="text-15 text-stromgreay font-bold">
+                      Event App
+                    </h3>
+                    <span class="text-14 text-stromgreay">Single Page</span>
+                  </div>
+                </div>
+                <div class="flex" style="height: 42px; align-items: flex-end">
+                  <div class="flex items-center space-x-5">
+                    <img
+                      src="./src/assets/img/verified-blue.svg"
+                      alt=""
+                      class="w-13 h-13"
+                    />
+                    <span class="text-12 font-semibold text-brand"
+                      >Submited</span
+                    >
+                  </div>
+                </div>
+              </div></a
+            >
+            <div
+              class="
+                flex
+                items-center
+                justify-between
+                space-x-10
+                px-10
+                rounded-6
+                cursor-pointer
+              "
+            >
+              <div class="flex items-center space-x-20 px-10 py-10">
+                <div class="flex" style="align-items: flex-start; height: 42px">
+                  <img
+                    src="./src/assets/img/event-registation.svg"
+                    alt=""
+                      class="w-25 h-25"
+                  />
+                </div>
+                <div class="flex flex-col space-y-5">
+                  <h3 class="text-15 text-stromgreay font-bold">
+                    Event Registration
+                  </h3>
+                  <span class="text-14 text-stromgreay">Single Page</span>
+                </div>
+              </div>
+              <div class="flex" style="height: 42px; align-items: flex-end">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="./src/assets/img/event-clock.svg"
+                    alt=""
+                    class="w-13 h-13"
+                  />
+                  <span class="text-12 font-semibold" style="color: #ffb623"
+                    >Payment Pending</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                flex
+                items-center
+                justify-between
+                space-x-10
+                px-10
+                cursor-pointer
+                rounded-6
+              "
+            >
+              <div class="flex items-center space-x-20 px-10 py-10">
+                <div class="flex" style="align-items: flex-start; height: 42px">
+                  <img
+                    src="./src/assets/img/networking.svg"
+                    alt=""
+                        class="w-25 h-25"
+                  />
+                </div>
+                <div class="flex flex-col space-y-5">
+                  <h3 class="text-15 text-stromgreay font-bold">Networking</h3>
+                  <span class="text-14 text-stromgreay">Single Page</span>
+                </div>
+              </div>
+              <div class="flex" style="height: 42px; align-items: flex-end">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="./src/assets/img/event-clock.svg"
+                    alt=""
+                    class="w-13 h-13"
+                  />
+                  <span class="text-12 font-semibold" style="color: #ffb623"
+                    >Payment Pending</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                flex
+                items-center
+                justify-between
+                space-x-10
+                px-10
+                cursor-pointer
+                rounded-6
+              "
+            >
+              <div class="flex items-center space-x-20 px-10 py-10">
+                <div class="flex" style="align-items: flex-start; height: 42px">
+                  <img
+                    src="./src/assets/img/onsite check-in.svg"
+                    alt=""
+                  class="w-25 h-25"
+                  />
+                </div>
+                <div class="flex flex-col space-y-5">
+                  <h3 class="text-15 text-stromgreay font-bold">
+                    Onsite Check-in
+                  </h3>
+                  <span class="text-14 text-stromgreay">Single Page</span>
+                </div>
+              </div>
+              <div class="flex" style="height: 42px; align-items: flex-end">
+                <div class="flex items-center space-x-5">
+                  <img
+                    src="./src/assets/img/event-clock.svg"
+                    alt=""
+                    class="w-13 h-13"
+                  />
+                  <span class="text-12 font-semibold" style="color: #ffb623"
+                    >Payment Pending</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-20 bg-white rounded-6" style="width: 70%">
+          <div class="bg-white p-20 rounded-5">
+            <div
+              class="
+                flex
+                justify-between
+                items-center
+                text-stromgreay
+                pb-25
+                border-b-1 border-stromgreay border-opacity-40
+              "
+            >
+              <div>
+                <h2 class="text-18 font-bold mb-8">Event App</h2>
+                <p class="text-12">
+                  These are the fields associated with a User Profile.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-20">
+            <div
+              class="
+                bg-greaywhite
+                p-20
+                rounded-6
+                flex
+                justify-between
+                items-center
+                space-x-5
+                w-full
+              "
+            >
+              <div class="flex items-center space-x-10 w-full">
+                <a href="./publish-event-app-processing-1.html" class="w-4/12"
+                  ><div
+                    class="
+                      rounded-6
+                      text-white
+                      py-7
+                      bg-brand
+                      text-13
+                      font-semibold
+                    "
+                  >
+                    <button
+                      style="outline: none; text-transform: uppercase"
+                      class="flex justify-center items-center w-full px-29"
+                    >
+                      Submited
+                      <img
+                        src="./src/assets/img/verified-white.svg"
+                        alt=""
+                        class="w-13 h-13"
+                        style="margin-left: 5px"
+                      />
+                    </button>
+                  </div>
+                </a>
+                <a href="./publish-event-app-processing-1.html" class="w-4/12"
+                  ><div
+                    class="
+                      rounded-6
+                      text-white
+                      py-7
+                      bg-brand
+                      text-13
+                      font-semibold
+                    "
+                  >
+                    <button
+                      style="outline: none; text-transform: uppercase"
+                      class="flex justify-center items-center w-full px-29"
+                    >
+                      Processing
+                      <img
+                        src="./src/assets/img/verified-white.svg"
+                        alt=""
+                        class="w-13 h-13"
+                        style="margin-left: 5px"
+                      />
+                    </button>
+                  </div>
+                </a>
+                <a href="./publish-event-app-processing-2.html" class="w-4/12">
+                  <div
+                    class="
+                      rounded-6
+                      px-29
+                      py-7
+                      flex
+                      items-center
+                      space-x-10
+                      justify-center
+                      text-13
+                    "
+                    style="border: 1px solid #ffc85c; background-color: #fef5e4"
+                  >
+                    <button
+                      style="
+                        outline: none;
+                        text-transform: uppercase;
+                        color: #f1ab1f;
+                      "
+                      class="font-bold"
+                    >
+                      Story Review
+                    </button>
+                  </div>
+                </a>
+                <a href="./publish-event-app-processing-4.html" class="w-4/12"
+                  ><div class="rounded-6 py-7 text-stromgreay text-13">
+                    <button
+                      style="outline: none; text-transform: uppercase"
+                      class="
+                        flex
+                        justify-center
+                        items-center
+                        w-full
+                        px-29
+                        font-semibold
+                      "
+                    >
+                      Published
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="text-stromgreay py-20 px-20">
+            <div class="flex justify-between">
+              <div class="flex space-x-20">
+                <div class="" style="width: 140px; height: 140px">
+                  <img
+                    src="./src/assets/img/post1.jpg"
+                    alt=""
+                    class="w-full h-full rounded-10"
+                  />
+                </div>
+                <div class="flex flex-col justify-between pb-10">
+                  <div class="space-y-5">
+                    <h3 class="text-16 text-capcod font-bold">
+                      Event App Name 01
+                    </h3>
+                    <span class="text-14 text-stromgreay block"
+                      >The App has been published for play store and App store
+                      review</span
+                    >
+                  </div>
+                  <div class="flex items-center space-x-10">
+                    <div
+                      class="
+                        flex
+                        space-x-10
+                        px-10
+                        py-7
+                        rounded-6
+                        cursor-pointer
+                        items-center
+                      "
+                      style="background-color: #fef5e4"
+                    >
+                      <img
+                        src="./src/assets/img/android.svg"
+                        alt=""
+                        class="w-18 h-18"
+                      />
+                      <button
+                        class="text-14 font-semibold uppercase"
+                        style="color: #f7c973"
+                      >
+                        Awiting Approval
+                      </button>
+                    </div>
+                    <div
+                      class="
+                        flex
+                        space-x-10
+                        px-10
+                        py-7
+                        rounded-6
+                        cursor-pointer
+                      "
+                      style="background-color: #fef5e4"
+                    >
+                      <img
+                        src="./src/assets/img/apple.svg"
+                        alt=""
+                        class="w-18 h-18"
+                      />
+                      <button
+                        class="text-14 font-semibold uppercase"
+                        style="color: #f7c973"
+                      >
+                        Awiting Approval
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="
+                    text-14 text-brand
+                    font-semibold
+                    border-1 border-brand
+                    px-15
+                    py-6
+                    rounded-5
+                    uppercase
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  Resubmit
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="py-20 px-20 flex justify-center">
+            <div
+              class="
+                py-10
+                rounded-6
+                flex
+                items-center
+                space-x-10
+                justify-center
+                w-7/12
+              "
+              style="background-color: #f4f5f7"
+            >
+              <img
+                src="./src/assets/img/danger-2.svg"
+                alt=""
+                class="w-15 h-15"
+              />
+              <span class="text-13 text-stromgreay font-semibold"
+                >It's takes 1-2 days for play store approval and 10-15 days for
+                App store approval</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/assets/js/index.js"></script>
+</html>

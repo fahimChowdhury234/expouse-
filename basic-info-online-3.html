@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Basic Info Online 3</title>
+
+  </head>
+
+  <body>
+    <div class="flex">
+      <!-- small sidebar start -->
+      <div class="flex">
+        <div
+          class="w-50 flex flex-col items-center"
+          style="background-color: #353446"
+        >
+          <div class="py-10 cursor-pointer">
+            <img
+              src="./src/assets/img/Group (1).svg"
+              class="w-24 h-27"
+              alt=""
+            />
+          </div>
+         <a href="./event-list-1.html">
+            <div class="py-10 cursor-pointer">
+              <img
+                src="./src/assets/img/Group.svg"
+                class="w-31 h-31"
+                alt=""
+              /></div
+          ></a>
+        </div>
+        <!-- main sidebar -->
+        <div
+          id="mainsidebar"
+          class="sidebar mainsidebar-width bg-capcod text-14 min-h-screen text-stromgreay trasition"
+          style="background-color: #43435b"
+        >
+          <div class="flex justify-between items-center px-15 py-10">
+            <div class="text-24 text-greaywhite">
+              <div class="logotext displaynone">
+                <img class="w-110" src="./src/assets/img/logo.png" alt="logo" />
+              </div>
+              <div
+                class="logo"
+                style="display: none; width: 25px; height: 25px"
+              >
+                <img
+                  class="w-110"
+                  src="./src/assets/img/Group (1).svg"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mt-50 font-semibold px-10">
+            <div class="text-center">
+              <a href="./basic-info-online-3.html">
+                <div
+                  class="flex items-center justify-between py-9 px-7 active cursor-pointer"
+                  id="sidedropdown"
+                >
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/home.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Detiles</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 displaynone"
+                  /></div
+              ></a>
+              <a href="./login-setup.html">
+                <div
+                  class="flex items-center py-5 rounded-6 px-7 cursor-pointer"
+                >
+                  <img
+                    src="./src/assets/img/setting.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >Event Setting</span
+                  >
+                </div>
+              </a>
+              <a href="./expouse-ui/src/index.html">
+                <div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/app-builder.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >App Builder</span
+                  >
+                </div>
+              </a>
+              <div
+                class="py-9 px-7 cursor-pointer sidedropdown"
+                id="sidedropdown"
+                open="false"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/event.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Engegment</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 trasition displaynone"
+                  />
+                </div>
+                <div
+                  class="dropdownitem trasition displaynone"
+                  style="max-height: 0px; overflow: hidden"
+                >
+                  <a href="./notification-3.html">
+                    <p class="font-bold">Notification</p>
+                  </a>
+                  <a href="./agenda-live.html"> <p>Agenda Live</p> </a>
+                  <a href="./live-polling-1.html">
+                    <p>Live Polling</p>
+                  </a>
+                  <a href="./activity-feed-1.html">
+                    <p>Activity Feed</p>
+                  </a>
+                  <a href="./contests-1.html">
+                    <p>Contests</p>
+                  </a>
+                  <a href="./survey-0.html">
+                    <p>Surveys</p>
+                  </a>
+                  <a href="./rooms-1.html">
+                    <p>Breakout Rooms</p>
+                  </a>
+                </div>
+              </div>
+              <a href="./app_webApp-user.html">
+                <div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/users.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >APP/WebApp users</span
+                  >
+                </div>
+              </a>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/legal.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Legal Setting</span
+                >
+              </div>
+              <div
+                class="py-9 px-7 cursor-pointer sidedropdown"
+                id="sidedropdown"
+                open="false"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/marketing-w.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Marketing</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 trasition displaynone"
+                  />
+                </div>
+                <div
+                  class="dropdownitem trasition displaynone"
+                  style="max-height: 0px; overflow: hidden"
+                >
+                  <a href="./campain.html">
+                    <p class="font-bold">Email</p>
+                  </a>
+                  <a href=""> <p class="font-bold">SMS</p> </a>
+                </div>
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/event features.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Event features</span
+                >
+              </div>
+              <a href="./analytics-website.html"><div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/analytics.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Analytics</span
+                >
+              </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- small sidebar end -->
+      <div class="w-full bg-greaywhite">
+        <!-- top navigation bar -->
+        <nav class="h-66 bg-white flex justify-between items-center px-20">
+          <div id="navimg" data-open="false" class="cursor-pointer">
+            <img src="./src/assets/img/nav-btn.svg" alt="" class="w-22 h14" />
+          </div>
+          <div class="flex items-center">
+            <div class="flex justify-between items-center pr-40">
+              <div class="p-5 py-8 mr-10 bg-brand rounded-2 cursor-pointer">
+                <img src="./src/assets/img/eyes.svg" alt="" class="w-21 h-13" />
+              </div>
+              <div
+                class="p-5 flex items-center mr-10 bg-brand rounded-2 cursor-pointer"
+              >
+                <img
+                  src="./src/assets/img/arrow-mark.svg"
+                  alt=""
+                  class="w-15 h-15"
+                />
+                <span class="text-13 text-white">Publish</span>
+              </div>
+              <div class="p-5 bg-brand rounded-2 cursor-pointer">
+                <img
+                  src="./src/assets/img/fullscreen.svg"
+                  alt=""
+                  class="w-19 h-19"
+                />
+              </div>
+            </div>
+            <img
+              class="h-35 w-35 rounded-full cursor-pointer"
+              src="https://www.w3schools.com/howto/img_avatar.png"
+              alt="admin"
+            />
+            <p class="text-13 font-medium text-stromgreay mx-10 cursor-pointer">
+              Tusher
+            </p>
+            <img
+              src="./src/assets/img/arrow.svg"
+              alt="arrow"
+              class="h-10 w-10 cursor-pointer"
+            />
+          </div>
+        </nav>
+        <!-- top navigation bar end-->
+        <div class="p-30">
+          <div class="flex items-center space-x-5 py-20">
+            <p class="font-bold text-16">Events</p>
+            <img src="./src/assets/img/right-angle.svg" alt="" class="" />
+            <p class="font-semibold text-14">Event Expo 2021</p>
+          </div>
+
+          <div class="flex -mx-15">
+            <!-- Second sidebar start -->
+          <div class="w-330 px-15">
+              <div class="bg-white p-15 text-14 rounded-5 text-stromgreay">
+                <a href="./basic-info-online-3.html">
+                  <div class="rounded-6 px-10 py-10 activesubsidebar secondsidebar">
+                    Basic Info
+                  </div>
+                </a>
+                <a href="./logo-1.html">
+                  <div
+                    class="rounded-6 px-10 py-10 secondsidebar"
+                  >
+                    Logo
+                  </div>
+                </a>
+                <a href="./website-banner-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Website Banners
+                  </div>
+                </a>
+                <a href="./community-banner-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Community Banners
+                  </div>
+                </a>
+
+                <a href="./app-banner-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    App Banners
+                  </div>
+                </a>
+                <a href="./social-link.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Social Link
+                  </div>
+                </a>
+                <a href="./participate-profile-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Participate Profile
+                  </div>
+                </a>
+
+                <a href="./event-highlights.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Event Highlights
+                  </div>
+                </a>
+
+                <a href="./speakers-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Speakers
+                  </div>
+                </a>
+
+                <a href="./schedule-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Schedule
+                  </div>
+                </a>
+                <a href="./sponsors-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Sponsors
+                  </div>
+                </a>
+                <a href="./exhibitors-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Exhibitors
+                  </div>
+                </a>
+                <a href="./image-gallery-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Image Gallery
+                  </div>
+                </a>
+                <a href="./video-gallery-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Video Gallery
+                  </div>
+                </a>
+                <a href="./contact-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">Contact</div>
+                </a>
+                <a href="./faq-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">FAQ</div>
+                </a>
+                <a href="./testimonials-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Testimonials
+                  </div>
+                </a>
+                <a href="./blog-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">Blog</div>
+                </a>
+                <a href="./live-streaming.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Live Streaming
+                  </div>
+                </a>
+                <a href="">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Custom Tags
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Second sidebar end -->
+            <div class="w-full bg-white">
+              <div
+                class="py-20 mb-30 border-b-1 border-stromgreay border-opacity-40 mx-20"
+              >
+                <h3 class="text-18 text-capcod font-bold">Basic Info</h3>
+                <p class="text-12 text-stromgreay py-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
+              <div>
+                <div class="px-20 pb-20">
+                  <h3 class="text-16 text-black font-bold mb-10">Event Info</h3>
+                  <div
+                    class="border-b-1 border-stromgreay border-opacity-40 pb-20"
+                  >
+                    <div class="w-500">
+                      <div class="py-8">
+                        <label
+                          for="#"
+                          class="block mb-7 text-12 text-stromgreay"
+                          >Event Title
+                        </label>
+                        <input
+                          type="text"
+                          name="text"
+                          placeholder="Enter Event Title
+"
+                          id="#"
+                          class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                        />
+                      </div>
+
+                      <div class="py-8 flex space-x-20">
+                        <div class="w-6/12">
+                          <label
+                            for="#"
+                            class="block mb-7 text-12 text-stromgreay"
+                          >
+                            Event Start
+                          </label>
+                          <input
+                            type="date"
+                            class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13"
+                          />
+                        </div>
+                        <div class="w-6/12">
+                          <label
+                            for="#"
+                            class="block mb-7 text-12 text-stromgreay"
+                          >
+                            Event End
+                          </label>
+                          <input
+                            type="date"
+                            class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13"
+                          />
+                        </div>
+                      </div>
+                      <div class="py-8">
+                        <label
+                          for="#"
+                          class="block mb-7 text-12 text-stromgreay"
+                          >Event Description
+                        </label>
+                        <textarea
+                          type="text"
+                          name="text"
+                          placeholder="Enter Event Description"
+                          id="#"
+                          class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-100 px-10 py-10 text-13"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-500">
+                    <div class="pt-20">
+                      <h3 class="text-16 text-black font-bold mb-10">
+                        Location & Time Zone
+                      </h3>
+                    </div>
+
+                    <div class="space-y-5 py-10">
+                      <div>
+                        <label for="#" class="text-12 text-stromgreay">
+                          Time Zone
+                        </label>
+                      </div>
+                      <div
+                        class="w-full h-42 px-10 flex justify-center items-center rounded-6 border-1 border-stromgreay border-opacity-40"
+                      >
+                        <select
+                          class="w-full outline-none text-14 text-stromgreay select-basic"
+             onfocus='this.size=4;' onblur='this.size=1;' onchange='this.size=1; this.blur();'
+                          
+                        >
+                          <option class="">Select Time Zone</option>
+                          <option value="">
+                            (UTC - 07:00) America/Los Angle (PDT) (United State
+                            of America)
+                          </option>
+                            <option value="">
+                            (UTC - 07:00) America/Tijuan (PDT) (Maxico)
+                          </option>
+                            <option value="">
+                            (UTC - 06:00) America/Chihuahua (PDT) (Maxico)
+                          </option>
+                              </option>
+                            <option value="">
+                            (UTC - 06:00) America/Manzatina (PDT) (Maxico)
+                          </option>
+                              </option>
+                            <option value="">
+                            (UTC - 06:00) America/Denver (PDT) (United State
+                            of America)
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="space-y-5 py-10">
+                      <div>
+                        <label for="#" class="text-12 text-stromgreay">
+                          Location
+                        </label>
+                      </div>
+                      <div
+                        class="w-full h-42 px-10 flex justify-between items-center rounded-6 border-1 border-stromgreay border-opacity-40"
+                      >
+                      <input type="search" name="" id="" placeholder="Search Location" class="w-8/12 h-20 px-6 text-13 ">
+                       <button class="text-12 text-brand font-bold">Find Location</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-8">
+                    <div class="flex space-x-20 w-full">
+                      <div class="w-6/12">
+                        <div class="flex justify-between">
+                          <span class="block mb-7 text-12 text-stromgreay"
+                            >Location
+                          </span>
+                          <span class="block mb-7 text-12 text-brand"
+                            >Reset
+                          </span>
+                        </div>
+                        <div class="bg-greaywhite p-15 rounded-6">
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="Address 1"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="Address 2"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="Country"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="State"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="City"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="City"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="py-30 w-6/12">
+                        <img
+                          src="./src/assets/img/Location.png"
+                          alt=""
+                          class="rounded-6"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="p-20 flex justify-end border-t-1 border-stromgreay border-opacity-40"
+              >
+                <button
+                  class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+                >
+                  <span class="mb-0 block"> SAVE </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./src/assets/js/index.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+

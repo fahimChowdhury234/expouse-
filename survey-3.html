@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <title>survey 3</title>
+</head>
+
+<body>
+    <div class="flex">
+        <!-- small sidebar start -->
+        <div class="flex">
+            <div class="w-50 flex flex-col items-center" style="background-color: #353446">
+                <div class="py-10 cursor-pointer">
+                    <img src="./src/assets/img/Group (1).svg" class="w-24 h-27" alt="" />
+                </div>
+                <div class="py-10 cursor-pointer">
+                    <img src="./src/assets/img/Group.svg" class="w-31 h-31" alt="" />
+                </div>
+            </div>
+            <!-- main sidebar -->
+             <div
+          id="mainsidebar"
+          class="sidebar mainsidebar-width bg-capcod text-14 min-h-screen text-stromgreay trasition"
+          style="background-color: #43435b"
+        >
+          <div class="flex justify-between items-center px-15 py-10">
+            <div class="text-24 text-greaywhite">
+              <div class="logotext displaynone">
+                <img class="w-110" src="./src/assets/img/logo.png" alt="logo" />
+              </div>
+              <div
+                class="logo"
+                style="display: none; width: 25px; height: 25px"
+              >
+                <img
+                  class="w-110"
+                  src="./src/assets/img/Group (1).svg"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mt-50 font-semibold px-10">
+            <div class="text-center">
+              <a href="./basic-info-online-3.html">
+                <div
+                  class="flex items-center justify-between py-9 px-7 cursor-pointer"
+                  id="sidedropdown"
+                >
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/home.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Detiles</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 displaynone"
+                  /></div
+              ></a>
+              <a href="./login-setup.html">
+                <div
+                  class="flex items-center py-5 rounded-6 px-7 active cursor-pointer"
+                >
+                  <img
+                    src="./src/assets/img/setting.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >Event Setting</span
+                  >
+                </div>
+              </a>
+              <a href="./expouse-ui/src/index.html">
+                <div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/app-builder.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >App Builder</span
+                  >
+                </div>
+              </a>
+              <div
+                class="py-9 px-7 cursor-pointer sidedropdown"
+                id="sidedropdown"
+                open="false"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/event.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Engegment</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 trasition displaynone"
+                  />
+                </div>
+                <div
+                  class="dropdownitem trasition displaynone"
+                  style="max-height: 0px; overflow: hidden"
+                >
+                  <a href="./notification-3.html">
+                    <p class="font-bold">Notification</p>
+                  </a>
+                  <a href="./agenda-live.html"> <p>Agenda Live</p> </a>
+                  <a href="./live-polling-1.html">
+                    <p>Live Polling</p>
+                  </a>
+                  <a href="./activity-feed-1.html">
+                    <p>Activity Feed</p>
+                  </a>
+                  <a href="./contests-1.html">
+                    <p>Contests</p>
+                  </a>
+                  <a href="./survey-0.html">
+                    <p>Surveys</p>
+                  </a>
+                  <a href="./rooms-1.html">
+                    <p>Breakout Rooms</p>
+                  </a>
+                </div>
+              </div>
+              <a href="./app_webApp-user.html">
+                <div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/users.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >APP/WebApp users</span
+                  >
+                </div>
+              </a>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/legal.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Legal Setting</span
+                >
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/event features.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Event features</span
+                >
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/analytics.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Analytics</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- small sidebar end -->
+        <div class="w-full bg-greaywhite">
+            <!-- top navigation bar -->
+            <nav class="h-66 bg-white flex justify-between items-center px-20">
+                <div id="navimg" data-open="false" class="cursor-pointer">
+                    <img src="./src/assets/img/nav-btn.svg" alt="" class="w-22 h14" />
+                </div>
+                <div class="flex items-center">
+                    <div class="flex justify-between items-center pr-40">
+                        <div class="p-5 py-8 mr-10 bg-brand rounded-2 cursor-pointer">
+                            <img src="./src/assets/img/eyes.svg" alt="" class="w-21 h-13" />
+                        </div>
+                        <div class="p-5 flex items-center mr-10 bg-brand rounded-2 cursor-pointer">
+                            <img src="./src/assets/img/arrow-mark.svg" alt="" class="w-15 h-15" />
+                            <span class="text-13 text-white">Publish</span>
+                        </div>
+                        <div class="p-5 bg-brand rounded-2 cursor-pointer">
+                            <img src="./src/assets/img/fullscreen.svg" alt="" class="w-19 h-19" />
+                        </div>
+                    </div>
+                    <img class="h-35 w-35 rounded-full cursor-pointer"
+                        src="https://www.w3schools.com/howto/img_avatar.png" alt="admin" />
+                    <p class="text-13 font-medium text-stromgreay mx-10 cursor-pointer">
+                        Tusher
+                    </p>
+                    <img src="./src/assets/img/arrow.svg" alt="arrow" class="h-10 w-10 cursor-pointer" />
+                </div>
+            </nav>
+            <!-- top navigation bar end-->
+            <div class="p-30">
+                <!-- Second sidebar start -->
+
+                <!-- Second sidebar end -->
+                <div class="py-30 px-25">
+                    <div class="flex items-center">
+                        <div>
+                            <h2 class="text-20 font-bold" style="color: #43425d">
+                                Survey
+                            </h2>
+                        </div>
+
+                    </div>
+                    <div class="flex justify-between items-center py-20">
+                        <div class="inline-block">
+                            <div class="flex justify-between items-center space-x-15 bg-white px-5 h-40 rounded-6">
+                                <div>
+                                    <div class="">
+                                        <button
+                                            class="h-28 px-8 bg-brand  rounded-6 cursor-pointer text-12 text-white font-bold outline-none">
+                                            ONGOING
+
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="">
+                                        <button class="px-8 h-28 bg-white
+                        space-x-5 rounded-6 outline-none text-12 font-bold text-capcod outline-none">
+                                            UPCOMING
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <button
+                                        class="px-8 h-28 bg-white  space-x-5 rounded-6 outline-none text-12 font-bold text-capcod outline-none">
+                                        ENED
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-15">
+                            <div class="flex items-center space-x-10">
+
+                                <div class="bg-white px-15 h-40 w-300 flex items-center space-x-15 rounded-6">
+                                    <button class="outline-none">
+                                        <img src="./src/assets/img/search-icon.svg" alt="" class="w-15 h-15" />
+                                    </button>
+                                    <input class="w-full rounded text-14 font-bold text-stromgreay" type="text"
+                                        placeholder="Search" />
+                                </div>
+                            </div>
+                            <div class="">
+                                <button
+                                    class="w-100 h-40 bg-brand flex justify-center items-center space-x-5 rounded-6 outline-none">
+                                    <div>
+                                        <img src="./src/assets/img/plus.svg" alt="" class="w-12 h-12" />
+                                    </div>
+                                    <div class="text-12 font-bold text-white">CONTEST</div>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="py-20">
+                        <div class="flex -mx-20">
+                            <!-- Second sidebar sstart -->
+                            <div class="w-300 px-20">
+                               <div class="bg-white px-20 py-20 rounded-6">
+                <div class="py-10 cursor-pointer survey-btn-active">
+                  <button class="text-14 text-stromgreay font-bold">
+                    Questions
+                  </button>
+                </div>
+                <div class="py-10 cursor-pointer">
+                  <button class="text-14 text-stromgreay font-bold">
+                    Link To
+                  </button>
+                </div>
+                <div class="py-10 cursor-pointer">
+                  <button class="text-14 text-stromgreay font-bold">
+                    Responses
+                  </button>
+                  
+                </div>
+                <div class="py-10 cursor-pointer">
+                  <button class="text-14 text-stromgreay font-bold">
+                    Design
+                  </button>
+                </div>
+                <div class="py-10 cursor-pointer">
+                  <button class="text-14 text-stromgreay font-bold">
+                    Settings
+                  </button>
+                </div>
+              </div>
+                            </div>
+                            <!-- Second sidebar end -->
+                            <div class="w-full px-20">
+                                <div class="bg-white p-20 rounded-5">
+                                    <div class="text-stromgreay pb-25 border-b-1 border-stromgreay border-opacity-40">
+                                        <h2 class="text-18 font-bold mb-8">Web App Theme</h2>
+                                        <p class="text-12">Select your desired theme.</p>
+                                    </div>
+
+
+
+                                    <div class="text-stromgreay py-25 border-t-1 border-stromgreay border-opacity-40">
+                                        <div class="">
+                                            <div>
+                                                <h2 class="text-18 font-bold mb-8">Theme Color</h2>
+                                                <p class="text-12">
+                                                    Select your desired theme color option for your web app.
+                                                </p>
+                                            </div>
+
+                                            <div class="flex justify-start space-x-20 items-center py-20">
+                                                <div class="w-30 h-30 rounded-full cursor-pointer"
+                                                    style="background-color: #f2aa3c;">
+
+                                                </div>
+
+                                                <div class="w-40 h-40 rounded-full cursor-pointer flex justify-center items-center"
+                                                    style="background-color: #7d58fe;">
+                                                    <img src="./src/assets/img/right-color-white.svg" alt=""
+                                                        class="w-15 h-15">
+                                                </div>
+                                                <div class="w-30 h-30 rounded-full cursor-pointer"
+                                                    style="background-color: #bed5ff;">
+
+                                                </div>
+                                                <div class="w-30 h-30 rounded-full cursor-pointer"
+                                                    style="background-color: #ffa183;">
+
+                                                </div>
+                                                 <div class="w-30 h-30 rounded-full cursor-pointer"
+                                                    style="background-color: #9ff9cf;">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-stromgreay py-25 border-t-1 border-stromgreay border-opacity-40">
+                                        <div class="flex justify-between items-center">
+                                            <div>
+                                                <h2 class="text-18 font-bold mb-8">Web App Tabs</h2>
+                                                <p class="text-12 mb-15">
+                                                    Personalized & customized various sections that will be displayed in
+                                                    your
+                                                    web app.
+                                                </p>
+
+
+                                            </div>
+
+                                            <div>
+                                                <button
+                                                    class="text-14 text-brand h-35 px-20 border-1 border-brand rounded-6 uppercase bg-greaywhite">
+                                                    <span class="mb-0 block"> Manage </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-stromgreay py-25 border-t-1 border-stromgreay border-opacity-40">
+                                        <h2 class="text-18 font-bold mb-8">Modules</h2>
+                                        <div class="flex justify-start items-center py-10">
+
+                                            <div class="flex items-center mr-30">
+                                                <div class="h-20 w-20 relative">
+                                                    <input value="20" type="checkbox"
+                                                        class="absolute opacity-0 checboxinput text-capcod" />
+                                                    <span
+                                                        class="checkmark absolute top-0 bottom-0 left-0 right-0"></span>
+                                                </div>
+                                                <div class="ml-10">
+                                                    <span class="text-13 font-normal text-stromgreay">Chat</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="flex items-center mr-30">
+                                                <div class="h-20 w-20 relative">
+                                                    <input value="20" type="checkbox"
+                                                        class="absolute opacity-0 checboxinput text-capcod" />
+                                                    <span
+                                                        class="checkmark absolute top-0 bottom-0 left-0 right-0"></span>
+                                                </div>
+                                                <div class="ml-10">
+                                                    <span
+                                                        class="text-13 font-normal text-stromgreay">Notifications</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex items-center">
+                                                <div class="h-20 w-20 relative">
+                                                    <input value="20" type="checkbox"
+                                                        class="absolute opacity-0 checboxinput text-capcod" />
+                                                    <span
+                                                        class="checkmark absolute top-0 bottom-0 left-0 right-0"></span>
+                                                </div>
+                                                <div class="ml-10">
+                                                    <span class="text-13 font-normal text-stromgreay">Leaderboard
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="text-stromgreay py-25 border-t-1 border-stromgreay border-opacity-40 border-b-1 border-stromgreay border-opacity-40">
+                                        <div class="">
+                                            <div>
+                                                <h2 class="text-18 font-bold mb-8">Login Page Design</h2>
+                                                <p class="text-12">
+                                                    Brand-wise customization of sign-in page design for your virtual
+                                                    event.
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center justify-between py-10">
+                                                <div class="radiobutton flex mt-20">
+                                                    <div class="flex items-center mr-30">
+                                                        <label class="mr-7">
+                                                            <input class="radioinput" type="radio" checked="checked"
+                                                                name="radio" />
+                                                            <span class="radiocheck"></span>
+                                                        </label>
+                                                        <p class="text-14 -mb-4"> Quote</p>
+                                                    </div>
+
+                                                    <div class="flex items-center">
+                                                        <label class="mr-7">
+                                                            <input class="radioinput" type="radio" checked="checked"
+                                                                name="radio" />
+                                                            <span class="radiocheck"></span>
+                                                        </label>
+                                                        <p class="text-14 -mb-4">Banner</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button onclick="openHiddenbar()"
+                                                        class="text-14 text-brand h-35 px-20 border-1 border-brand rounded-6 uppercase bg-greaywhite">
+                                                        <span class="mb-0 block"> Manage </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-stromgreay py-25 border-t-1 border-stromgreay border-opacity-40">
+                                        <div class="flex justify-between items-center">
+                                            <div>
+                                                <h2 class="text-18 font-bold mb-8">Web App Tabs</h2>
+                                                <p class="text-12 mb-15">
+                                                    Personalized & customized various sections that will be displayed in
+                                                    your
+                                                    web app.
+                                                </p>
+                                            </div>
+
+                                            <div>
+                                                <button
+                                                    class="text-14 text-brand h-35 px-20 border-1 border-brand rounded-6 uppercase bg-greaywhite">
+                                                    <span class="mb-0 block"> Manage </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="py-25  border-t-1 border-stromgreay border-opacity-40 px-20 flex justify-end">
+                                        <button class="text-14 text-white rounded-6 uppercase bg-brand h-34 px-35">
+                                            <span class="mb-0 block"> Save </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="./src/assets/js/index.js"></script>
+
+</html>

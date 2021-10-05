@@ -1,0 +1,2577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survey Default Forms</title>
+  </head>
+  <body class="relative" style="overflow-x: hidden">
+    <div
+      onclick="closeHiddenbar()"
+      class="top-0 bottom-0 fixed trasition left-0 right-0 h-screen hidden"
+      style="z-index: 99999"
+      id="backdropid"
+    ></div>
+    <div
+      onclick="closeHiddenbar2()"
+      class="top-0 bottom-0 fixed trasition left-0 right-0 h-screen hidden"
+      style="z-index: 99999"
+      id="backdropid2"
+    ></div>
+    <div
+      onclick="closeHiddenbar3()"
+      class="top-0 bottom-0 fixed trasition left-0 right-0 h-screen hidden"
+      style="z-index: 99999"
+      id="backdropid3"
+    ></div>
+    <div
+      onclick="closeHiddenbar4()"
+      class="top-0 bottom-0 fixed trasition left-0 right-0 h-screen hidden"
+      style="z-index: 99999"
+      id="backdropid4"
+    ></div>
+    <!-- hidden file start -->
+    <div
+      class="top-0 w-screen overflow-y-scroll h-screen trasition bg-white fixed"
+      style="z-index: 9999999; right: 100%"
+      id="hiddensidebar"
+    >
+      <!-- nav bar start -->
+      <div class="h-60" style="background-color: #383c40">
+        <div class="flex h-60 justify-end items-center px-20">
+          <div class="px-10">
+            <button
+              onclick="closeHiddenbarBig()"
+              class="text-14 text-white rounded-6 uppercase bg-brand h-34 px-35"
+            >
+              <span class="mb-0 block"> Save </span>
+            </button>
+          </div>
+          <div class="cursor-pointer" onclick="closeHiddenbarBig()">
+            <img
+              src="./src/assets/img/close-icon-2.svg"
+              alt=""
+              class="w-18 h-18"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- nav bar end -->
+      <!-- main body start -->
+      <div class="flex space-x-20 px-10" style="background: #f4f5f7">
+        <div class="w-4/12 px-10 py-10">
+          <div class="py-5">
+            <h2 class="text-18 font-bold mb-8 text-capcod">Basic Fields</h2>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <div
+              class="w-120 h-80 bg-white flex items-center justify-center flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img src="./src/assets/img/text.svg" alt="" class="w-24 h-24" />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Text</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white flex items-center justify-center flex-col mb-15 rounded-6"
+            >
+              <div>
+                <img
+                  src="./src/assets/img/text-box.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Text Area</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img src="./src/assets/img/data.svg" alt="" class="w-24 h-24" />
+              </div>
+              <div>Data</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/mobile.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div>Dropdown</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/check-box.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">checkbox</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/clock.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Radio</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img
+                    src="./src/assets/img/iconmonstr-checkbox-17.svg"
+                    alt=""
+                    class="rounded-3"
+                  />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Link</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img src="./src/assets/img/radio-on-button.svg" alt="" />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Group</div>
+            </div>
+            <div
+              class="w-120 h-84 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img src="./src/assets/img/radio-on-button.svg" alt="" />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">File</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-4/12 bg-white py-10">
+          <div class="px-20">
+            <div class="text-stromgreay p-5">
+              <h2 class="text-18 font-bold text-capcod mb-8">Questions</h2>
+            </div>
+            <div class="-mx-20 px-20">
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        So, how would you rate the event overall?
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        So, how would you rate the event overall?
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        What did you like the most about the event?
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        Is there anything you think we could've done..
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        How well was the event organized?
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        How would you rate the venue of the event?
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        And how helpful were the event staff?
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        Great! Now, do you remember seeing any...
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        Thanks again. Would you mind telling us how..
+                      </p>
+                      <span class="text-12">Dropdown</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        Finally, would you recommend our event to..
+                      </p>
+                      <span class="text-12">check-box</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-4/12 px-20 py-10 bg-white">
+          <div>
+            <div class="">
+              <div
+                class="text-stromgreay pb-20 py-5 border-b-1 border-stromgreay border-opacity-40"
+              >
+                <h2 class="text-18 font-bold text-capcod mb-8">Questions</h2>
+                <p class="text-12">Edit the basic event settings</p>
+              </div>
+
+              <div class="py-20">
+                <div class="pb-10">
+                  <h2 class="text-14 text-capcod font-bold">Basic Details</h2>
+                </div>
+                <form action="#">
+                  <div class="py-8">
+                    <label for="#" class="block mb-7 text-12 text-stromgreay"
+                      >Field Label</label
+                    >
+                    <input
+                      type="text"
+                      name="text"
+                      id="#"
+                      class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                      placeholder="Name"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div>
+              <div class="flex">
+                <div class="flex items-center">
+                  <div class="h-20 w-20 relative m-auto">
+                    <input
+                      value="20"
+                      type="checkbox"
+                      class="absolute opacity-0 checboxinput"
+                    />
+                    <span
+                      class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                    ></span>
+                  </div>
+                  <div class="ml-10 text-14">Mandatory</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-20 pb-0">
+              <div class="pb-8">
+                <p class="text-12 text-stromgreay font-normal">File Types</p>
+              </div>
+              <div class="flex justify-between items-center flex-wrap">
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">DOC</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">EXCEL</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">PDF</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">PPT</div>
+                  </div>
+                </div>
+                <div class="flex w-2/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">Image</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-20">
+              <div class="pb-3">
+                <p class="text-12 text-stromgreay font-normal">Length Limit</p>
+              </div>
+              <div class="flex justify-between items-center py-10">
+                <div
+                  class="flex justify-between overflow-hidden border-1 border-stromgreay border-opacity-40 rounded-6"
+                >
+                  <div>
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-8 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="text-12 text-stromgreay flex items-center px-8 py-5 rounded-6 cursor-pointer"
+                    style="background-color: #f4f5f7"
+                  >
+                    MINIMUM
+                  </div>
+                </div>
+                <div
+                  class="flex justify-between border-1 overflow-hidden border-stromgreay border-opacity-40 rounded-6"
+                >
+                  <div class="">
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-8 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="text-12 text-stromgreay flex items-center px-8 py-5 rounded-6 cursor-pointer"
+                    style="background-color: #f4f5f7"
+                  >
+                    MAXIMUM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-20 border-b-1 border-stromgreay border-opacity-40">
+              <form action="#">
+                <div class="py-10">
+                  <label for="#" class="block mb-7 text-12 text-stromgreay"
+                    >Field Type</label
+                  >
+                  <input
+                    type="text"
+                    name="text"
+                    id="#"
+                    class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                    placeholder="Enter Field Type"
+                  />
+                </div>
+                <div class="py-10">
+                  <label for="#" class="block mb-7 text-12 text-stromgreay"
+                    >Button Label</label
+                  >
+                  <input
+                    type="text"
+                    name="text"
+                    id="#"
+                    class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                    placeholder="Enter Button Label"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="py-30">
+              <div class="pb-3 flex justify-between items-center">
+                <p class="text-14 text-capcod font-bold">Settings</p>
+              </div>
+              <div class="py-10 flex justify-between items-center">
+                <div>
+                  <p class="text-12 text-stromgreay">
+                    Show this in user Profile to others
+                  </p>
+                </div>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="togggleinput" />
+                    <span class="togggleslider rounded-30"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="py-10 flex justify-between items-center">
+                <div>
+                  <p class="text-12 text-stromgreay">
+                    Add field to User Onboarding
+                  </p>
+                </div>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="togggleinput" />
+                    <span class="togggleslider rounded-30"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="top-0 w-screen overflow-y-scroll h-screen trasition bg-white fixed"
+      style="z-index: 9999999; right: 100%"
+      id="hiddensidebar2"
+    >
+      <!-- nav bar start -->
+      <div class="h-60" style="background-color: #383c40">
+        <div class="flex h-60 justify-end items-center px-20">
+          <div class="px-10">
+            <button
+              onclick="closeHiddenbarBig2()"
+              class="text-14 text-white rounded-6 uppercase bg-brand h-34 px-35"
+            >
+              <span class="mb-0 block"> Save </span>
+            </button>
+          </div>
+          <div class="cursor-pointer" onclick="closeHiddenbarBig2()">
+            <img
+              src="./src/assets/img/close-icon-2.svg"
+              alt=""
+              class="w-18 h-18"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex space-x-20 px-10" style="background: #f4f5f7">
+        <div class="w-4/12 px-10 py-10">
+          <div class="py-5">
+            <h2 class="text-18 font-bold mb-8 text-capcod">Basic Fields</h2>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <div
+              class="w-120 h-80 bg-white flex items-center justify-center flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img src="./src/assets/img/text.svg" alt="" class="w-24 h-24" />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Text</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white flex items-center justify-center flex-col mb-15 rounded-6"
+            >
+              <div>
+                <img
+                  src="./src/assets/img/text-box.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Text Area</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img src="./src/assets/img/data.svg" alt="" class="w-24 h-24" />
+              </div>
+              <div>Data</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/mobile.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div>Dropdown</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/check-box.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">checkbox</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/clock.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Radio</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img
+                    src="./src/assets/img/iconmonstr-checkbox-17.svg"
+                    alt=""
+                    class="rounded-3"
+                  />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Link</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img src="./src/assets/img/radio-on-button.svg" alt="" />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Group</div>
+            </div>
+            <div
+              class="w-120 h-84 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img src="./src/assets/img/radio-on-button.svg" alt="" />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">File</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-4/12 bg-white py-10">
+          <div class="px-20">
+            <div class="text-stromgreay p-5">
+              <h2 class="text-18 font-bold text-capcod mb-8">Questions</h2>
+            </div>
+            <div class="-mx-20 px-20">
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        So, how would you rate the Exhibitors overall?
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        The best thing about the exhibitors were
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        The worst thing about the exhibitors were
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        Who were your favorite exhibitors?
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        Who were the exhibitors who didn't live up to..
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-4/12 px-20 py-10 bg-white">
+          <div>
+            <div class="">
+              <div
+                class="text-stromgreay pb-20 py-5 border-b-1 border-stromgreay border-opacity-40"
+              >
+                <h2 class="text-18 font-bold text-capcod mb-8">Questions</h2>
+                <p class="text-12">Edit the basic event settings</p>
+              </div>
+
+              <div class="py-20">
+                <div class="pb-10">
+                  <h2 class="text-14 text-capcod font-bold">Basic Details</h2>
+                </div>
+                <form action="#">
+                  <div class="py-8">
+                    <label for="#" class="block mb-7 text-12 text-stromgreay"
+                      >Field Label</label
+                    >
+                    <input
+                      type="text"
+                      name="text"
+                      id="#"
+                      class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                      placeholder="Name"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div>
+              <div class="flex">
+                <div class="flex items-center">
+                  <div class="h-20 w-20 relative m-auto">
+                    <input
+                      value="20"
+                      type="checkbox"
+                      class="absolute opacity-0 checboxinput"
+                    />
+                    <span
+                      class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                    ></span>
+                  </div>
+                  <div class="ml-10 text-14">Mandatory</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-20 pb-0">
+              <div class="pb-8">
+                <p class="text-12 text-stromgreay font-normal">File Types</p>
+              </div>
+              <div class="flex justify-between items-center flex-wrap">
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">DOC</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">EXCEL</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">PDF</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">PPT</div>
+                  </div>
+                </div>
+                <div class="flex w-2/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">Image</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-20">
+              <div class="pb-3">
+                <p class="text-12 text-stromgreay font-normal">Length Limit</p>
+              </div>
+              <div class="flex justify-between items-center py-10">
+                <div
+                  class="flex justify-between overflow-hidden border-1 border-stromgreay border-opacity-40 rounded-6"
+                >
+                  <div>
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-8 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="text-12 text-stromgreay flex items-center px-8 py-5 rounded-6 cursor-pointer"
+                    style="background-color: #f4f5f7"
+                  >
+                    MINIMUM
+                  </div>
+                </div>
+                <div
+                  class="flex justify-between border-1 overflow-hidden border-stromgreay border-opacity-40 rounded-6"
+                >
+                  <div class="">
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-8 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="text-12 text-stromgreay flex items-center px-8 py-5 rounded-6 cursor-pointer"
+                    style="background-color: #f4f5f7"
+                  >
+                    MAXIMUM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-20 border-b-1 border-stromgreay border-opacity-40">
+              <form action="#">
+                <div class="py-10">
+                  <label for="#" class="block mb-7 text-12 text-stromgreay"
+                    >Field Type</label
+                  >
+                  <input
+                    type="text"
+                    name="text"
+                    id="#"
+                    class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                    placeholder="Enter Field Type"
+                  />
+                </div>
+                <div class="py-10">
+                  <label for="#" class="block mb-7 text-12 text-stromgreay"
+                    >Button Label</label
+                  >
+                  <input
+                    type="text"
+                    name="text"
+                    id="#"
+                    class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                    placeholder="Enter Button Label"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="py-30">
+              <div class="pb-3 flex justify-between items-center">
+                <p class="text-14 text-capcod font-bold">Settings</p>
+              </div>
+              <div class="py-10 flex justify-between items-center">
+                <div>
+                  <p class="text-12 text-stromgreay">
+                    Show this in user Profile to others
+                  </p>
+                </div>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="togggleinput" />
+                    <span class="togggleslider rounded-30"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="py-10 flex justify-between items-center">
+                <div>
+                  <p class="text-12 text-stromgreay">
+                    Add field to User Onboarding
+                  </p>
+                </div>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="togggleinput" />
+                    <span class="togggleslider rounded-30"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="top-0 w-screen overflow-y-scroll h-screen trasition bg-white fixed"
+      style="z-index: 9999999; right: 100%"
+      id="hiddensidebar3"
+    >
+      <!-- nav bar start -->
+      <div class="h-60" style="background-color: #383c40">
+        <div class="flex h-60 justify-end items-center px-20">
+          <div class="px-10">
+            <button
+              onclick="closeHiddenbarBig3()"
+              class="text-14 text-white rounded-6 uppercase bg-brand h-34 px-35"
+            >
+              <span class="mb-0 block"> Save </span>
+            </button>
+          </div>
+          <div class="cursor-pointer" onclick="closeHiddenbarBig3()">
+            <img
+              src="./src/assets/img/close-icon-2.svg"
+              alt=""
+              class="w-18 h-18"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex space-x-20 px-10" style="background: #f4f5f7">
+        <div class="w-4/12 px-10 py-10">
+          <div class="py-5">
+            <h2 class="text-18 font-bold mb-8 text-capcod">Basic Fields</h2>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <div
+              class="w-120 h-80 bg-white flex items-center justify-center flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img src="./src/assets/img/text.svg" alt="" class="w-24 h-24" />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Text</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white flex items-center justify-center flex-col mb-15 rounded-6"
+            >
+              <div>
+                <img
+                  src="./src/assets/img/text-box.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Text Area</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img src="./src/assets/img/data.svg" alt="" class="w-24 h-24" />
+              </div>
+              <div>Data</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/mobile.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div>Dropdown</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/check-box.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">checkbox</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/clock.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Radio</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img
+                    src="./src/assets/img/iconmonstr-checkbox-17.svg"
+                    alt=""
+                    class="rounded-3"
+                  />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Link</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img src="./src/assets/img/radio-on-button.svg" alt="" />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Group</div>
+            </div>
+            <div
+              class="w-120 h-84 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img src="./src/assets/img/radio-on-button.svg" alt="" />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">File</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-4/12 bg-white py-10">
+          <div class="px-20">
+            <div class="text-stromgreay p-5">
+              <h2 class="text-18 font-bold text-capcod mb-8">Questions</h2>
+            </div>
+            <div class="-mx-20 px-20">
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        So, how would you rate the speakers overall?
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        How good were the speakers at the sessions?
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        The speakers were clear and easy to understand..
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        The best thing about the speakers were
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        The worst thing about the speakers were
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        Who were your favorite speakers?
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        Who were the speakers who didn't live up to..
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-4/12 px-20 py-10 bg-white">
+          <div>
+            <div class="">
+              <div
+                class="text-stromgreay pb-20 py-5 border-b-1 border-stromgreay border-opacity-40"
+              >
+                <h2 class="text-18 font-bold text-capcod mb-8">Questions</h2>
+                <p class="text-12">Edit the basic event settings</p>
+              </div>
+
+              <div class="py-20">
+                <div class="pb-10">
+                  <h2 class="text-14 text-capcod font-bold">Basic Details</h2>
+                </div>
+                <form action="#">
+                  <div class="py-8">
+                    <label for="#" class="block mb-7 text-12 text-stromgreay"
+                      >Field Label</label
+                    >
+                    <input
+                      type="text"
+                      name="text"
+                      id="#"
+                      class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                      placeholder="Name"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div>
+              <div class="flex">
+                <div class="flex items-center">
+                  <div class="h-20 w-20 relative m-auto">
+                    <input
+                      value="20"
+                      type="checkbox"
+                      class="absolute opacity-0 checboxinput"
+                    />
+                    <span
+                      class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                    ></span>
+                  </div>
+                  <div class="ml-10 text-14">Mandatory</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-20 pb-0">
+              <div class="pb-8">
+                <p class="text-12 text-stromgreay font-normal">File Types</p>
+              </div>
+              <div class="flex justify-between items-center flex-wrap">
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">DOC</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">EXCEL</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">PDF</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">PPT</div>
+                  </div>
+                </div>
+                <div class="flex w-2/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">Image</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-20">
+              <div class="pb-3">
+                <p class="text-12 text-stromgreay font-normal">Length Limit</p>
+              </div>
+              <div class="flex justify-between items-center py-10">
+                <div
+                  class="flex justify-between overflow-hidden border-1 border-stromgreay border-opacity-40 rounded-6"
+                >
+                  <div>
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-8 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="text-12 text-stromgreay flex items-center px-8 py-5 rounded-6 cursor-pointer"
+                    style="background-color: #f4f5f7"
+                  >
+                    MINIMUM
+                  </div>
+                </div>
+                <div
+                  class="flex justify-between border-1 overflow-hidden border-stromgreay border-opacity-40 rounded-6"
+                >
+                  <div class="">
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-8 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="text-12 text-stromgreay flex items-center px-8 py-5 rounded-6 cursor-pointer"
+                    style="background-color: #f4f5f7"
+                  >
+                    MAXIMUM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-20 border-b-1 border-stromgreay border-opacity-40">
+              <form action="#">
+                <div class="py-10">
+                  <label for="#" class="block mb-7 text-12 text-stromgreay"
+                    >Field Type</label
+                  >
+                  <input
+                    type="text"
+                    name="text"
+                    id="#"
+                    class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                    placeholder="Enter Field Type"
+                  />
+                </div>
+                <div class="py-10">
+                  <label for="#" class="block mb-7 text-12 text-stromgreay"
+                    >Button Label</label
+                  >
+                  <input
+                    type="text"
+                    name="text"
+                    id="#"
+                    class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                    placeholder="Enter Button Label"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="py-30">
+              <div class="pb-3 flex justify-between items-center">
+                <p class="text-14 text-capcod font-bold">Settings</p>
+              </div>
+              <div class="py-10 flex justify-between items-center">
+                <div>
+                  <p class="text-12 text-stromgreay">
+                    Show this in user Profile to others
+                  </p>
+                </div>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="togggleinput" />
+                    <span class="togggleslider rounded-30"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="py-10 flex justify-between items-center">
+                <div>
+                  <p class="text-12 text-stromgreay">
+                    Add field to User Onboarding
+                  </p>
+                </div>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="togggleinput" />
+                    <span class="togggleslider rounded-30"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="top-0 w-screen overflow-y-scroll h-screen trasition bg-white fixed"
+      style="z-index: 9999999; right: 100%"
+      id="hiddensidebar4"
+    >
+      <!-- nav bar start -->
+      <div class="h-60" style="background-color: #383c40">
+        <div class="flex h-60 justify-end items-center px-20">
+          <div class="px-10">
+            <button
+              onclick="closeHiddenbarBig4()"
+              class="text-14 text-white rounded-6 uppercase bg-brand h-34 px-35"
+            >
+              <span class="mb-0 block"> Save </span>
+            </button>
+          </div>
+          <div class="cursor-pointer" onclick="closeHiddenbarBig4()">
+            <img
+              src="./src/assets/img/close-icon-2.svg"
+              alt=""
+              class="w-18 h-18"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex space-x-20 px-10" style="background: #f4f5f7">
+        <div class="w-4/12 px-10 py-10">
+          <div class="py-5">
+            <h2 class="text-18 font-bold mb-8 text-capcod">Basic Fields</h2>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <div
+              class="w-120 h-80 bg-white flex items-center justify-center flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img src="./src/assets/img/text.svg" alt="" class="w-24 h-24" />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Text</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white flex items-center justify-center flex-col mb-15 rounded-6"
+            >
+              <div>
+                <img
+                  src="./src/assets/img/text-box.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Text Area</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img src="./src/assets/img/data.svg" alt="" class="w-24 h-24" />
+              </div>
+              <div>Data</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/mobile.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div>Dropdown</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/check-box.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">checkbox</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <img
+                  src="./src/assets/img/clock.svg"
+                  alt=""
+                  class="w-24 h-24"
+                />
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Radio</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img
+                    src="./src/assets/img/iconmonstr-checkbox-17.svg"
+                    alt=""
+                    class="rounded-3"
+                  />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Link</div>
+            </div>
+            <div
+              class="w-120 h-80 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img src="./src/assets/img/radio-on-button.svg" alt="" />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">Group</div>
+            </div>
+            <div
+              class="w-120 h-84 bg-white items-center justify-center flex flex-col mb-15 rounded-6"
+            >
+              <div class="mb-5">
+                <div class="h-20 w-20 relative m-auto">
+                  <img src="./src/assets/img/radio-on-button.svg" alt="" />
+                </div>
+              </div>
+              <div class="text-12 font-bold text-stromgreay">File</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-4/12 bg-white py-10">
+          <div class="px-20">
+            <div class="text-stromgreay p-5">
+              <h2 class="text-18 font-bold text-capcod mb-8">Questions</h2>
+            </div>
+            <div class="-mx-20 px-20">
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        So, how would you rate the sessions overall?
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        The sessions exposed you to new knowledge..
+                      </p>
+                      <span class="text-12">Checkbox</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        How good were the speakers at the sessions?
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        The speakers were clear and easy to understand.
+                      </p>
+                      <span class="text-12">Rating</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        The best thing about the speakers were
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        The worst thing about the speakers were
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        Who were your favorite speakers?
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background-color: #f7f7f7"
+                class="rounded-6 w-full flex justify-between items-centera px-20 mb-10 py-14 border-1 border-dashed border-stromgreay border-opacity-30"
+              >
+                <div class="w-full flex justify-between items-center">
+                  <div class="space-x-10 flex items-center">
+                    <img
+                      src="./src/assets/img/indicator.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                    <div class="">
+                      <p class="text-capcod font-bold text-14">
+                        Who were the speakers who didn't live up to..
+                      </p>
+                      <span class="text-12">Text</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      src="./src/assets/img/trash-red.svg"
+                      alt=""
+                      class="w-20 h-20 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-4/12 px-20 py-10 bg-white">
+          <div>
+            <div class="">
+              <div
+                class="text-stromgreay pb-20 py-5 border-b-1 border-stromgreay border-opacity-40"
+              >
+                <h2 class="text-18 font-bold text-capcod mb-8">Questions</h2>
+                <p class="text-12">Edit the basic event settings</p>
+              </div>
+
+              <div class="py-20">
+                <div class="pb-10">
+                  <h2 class="text-14 text-capcod font-bold">Basic Details</h2>
+                </div>
+                <form action="#">
+                  <div class="py-8">
+                    <label for="#" class="block mb-7 text-12 text-stromgreay"
+                      >Field Label</label
+                    >
+                    <input
+                      type="text"
+                      name="text"
+                      id="#"
+                      class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                      placeholder="Name"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div>
+              <div class="flex">
+                <div class="flex items-center">
+                  <div class="h-20 w-20 relative m-auto">
+                    <input
+                      value="20"
+                      type="checkbox"
+                      class="absolute opacity-0 checboxinput"
+                    />
+                    <span
+                      class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                    ></span>
+                  </div>
+                  <div class="ml-10 text-14">Mandatory</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-20 pb-0">
+              <div class="pb-8">
+                <p class="text-12 text-stromgreay font-normal">File Types</p>
+              </div>
+              <div class="flex justify-between items-center flex-wrap">
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">DOC</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">EXCEL</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">PDF</div>
+                  </div>
+                </div>
+                <div class="flex w-1/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">PPT</div>
+                  </div>
+                </div>
+                <div class="flex w-2/3 pb-25">
+                  <div class="flex items-center">
+                    <div class="h-20 w-20 relative m-auto">
+                      <input
+                        value="20"
+                        type="checkbox"
+                        class="absolute opacity-0 checboxinput"
+                      />
+                      <span
+                        class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                      ></span>
+                    </div>
+                    <div class="ml-10 text-12 text-stromgreay">Image</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-20">
+              <div class="pb-3">
+                <p class="text-12 text-stromgreay font-normal">Length Limit</p>
+              </div>
+              <div class="flex justify-between items-center py-10">
+                <div
+                  class="flex justify-between overflow-hidden border-1 border-stromgreay border-opacity-40 rounded-6"
+                >
+                  <div>
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-8 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="text-12 text-stromgreay flex items-center px-8 py-5 rounded-6 cursor-pointer"
+                    style="background-color: #f4f5f7"
+                  >
+                    MINIMUM
+                  </div>
+                </div>
+                <div
+                  class="flex justify-between border-1 overflow-hidden border-stromgreay border-opacity-40 rounded-6"
+                >
+                  <div class="">
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-8 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="text-12 text-stromgreay flex items-center px-8 py-5 rounded-6 cursor-pointer"
+                    style="background-color: #f4f5f7"
+                  >
+                    MAXIMUM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-20 border-b-1 border-stromgreay border-opacity-40">
+              <form action="#">
+                <div class="py-10">
+                  <label for="#" class="block mb-7 text-12 text-stromgreay"
+                    >Field Type</label
+                  >
+                  <input
+                    type="text"
+                    name="text"
+                    id="#"
+                    class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                    placeholder="Enter Field Type"
+                  />
+                </div>
+                <div class="py-10">
+                  <label for="#" class="block mb-7 text-12 text-stromgreay"
+                    >Button Label</label
+                  >
+                  <input
+                    type="text"
+                    name="text"
+                    id="#"
+                    class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                    placeholder="Enter Button Label"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="py-30">
+              <div class="pb-3 flex justify-between items-center">
+                <p class="text-14 text-capcod font-bold">Settings</p>
+              </div>
+              <div class="py-10 flex justify-between items-center">
+                <div>
+                  <p class="text-12 text-stromgreay">
+                    Show this in user Profile to others
+                  </p>
+                </div>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="togggleinput" />
+                    <span class="togggleslider rounded-30"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="py-10 flex justify-between items-center">
+                <div>
+                  <p class="text-12 text-stromgreay">
+                    Add field to User Onboarding
+                  </p>
+                </div>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" class="togggleinput" />
+                    <span class="togggleslider rounded-30"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hidden file end -->
+    <div class="w-500" id="blur">
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <div class="flex items-center space-x-10">
+            <div>
+              <img
+                src="./src/assets/img/left-arrow.svg"
+                alt=""
+                class="w-20 h-20"
+              />
+            </div>
+            <div>
+              <h3 class="text-18 font-bold text-stromgreay">Default Forms</h3>
+            </div>
+          </div>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+
+        <div class="px-20 pt-20 py-20">
+          <div
+            class="border-1 border-brand border-opacity-40 rounded-6 overflow-hidden"
+          >
+            <div
+              class="flex justify-between items-center px-10 py-20 overflow-hidden"
+              style="background-color: #f5f7f4"
+            >
+              <div class="space-y-5">
+                <h2 class="text-14 text-brand font-bold">
+                  Event Feedback Form
+                </h2>
+                <p class="text-12 text-stromgreay">9 Questions</p>
+              </div>
+              <div class="space-x-20 flex items-center">
+                <div onclick="openHiddenbarBig()" class="cursor-pointer">
+                  <img src="./src/assets/img/pen.svg" alt="" />
+                </div>
+                <div
+                  class="w-20 h-20 rounded-full bg-brand flex items-center justify-center"
+                >
+                  <img src="./src/assets/img/right-color-white.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-20 px-20">
+          <div
+            class="border-1 border-brand border-opacity-40 rounded-6 overflow-hidden"
+          >
+            <div
+              class="flex justify-between items-center px-10 py-20 rounded-6"
+              style="background-color: #f5f7f4"
+            >
+              <div class="space-y-5">
+                <h2 class="text-14 text-stromgreay font-bold">
+                  Exhibitor Feedback Form
+                </h2>
+                <p class="text-12 text-stromgreay">5 Questions</p>
+              </div>
+              <div class="flex items-center space-x-20">
+                <div
+                  class="w-20 h-20 rounded-full flex items-center justify-center cursor-pointer"
+                  onclick="openHiddenbarBig2()"
+                >
+                  <img src="./src/assets/img/pen-grey.svg" alt="" />
+                </div>
+                <div
+                  class="w-20 h-20 rounded-full flex items-center justify-center"
+                  style="background-color: #d7d8db"
+                >
+                  <img src="./src/assets/img/right-color-white.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-20 px-20">
+          <div
+            class="border-1 border-brand border-opacity-40 rounded-6 overflow-hidden"
+          >
+            <div
+              class="flex justify-between items-center px-10 py-20 rounded-6"
+              style="background-color: #f5f7f4"
+            >
+              <div class="space-y-5">
+                <h2 class="text-14 text-stromgreay font-bold">
+                  Speaker Feedback Form
+                </h2>
+                <p class="text-12 text-stromgreay">7 Questions</p>
+              </div>
+              <div class="flex items-center space-x-20">
+                <div
+                  class="w-20 h-20 rounded-full flex items-center justify-center cursor-pointer"
+                  onclick="openHiddenbarBig3()"
+                >
+                  <img src="./src/assets/img/pen-grey.svg" alt="" />
+                </div>
+                <div
+                  class="w-20 h-20 rounded-full flex items-center justify-center"
+                  style="background-color: #d7d8db"
+                >
+                  <img src="./src/assets/img/right-color-white.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-20 px-20">
+          <div
+            class="border-1 border-brand border-opacity-40 rounded-6 overflow-hidden"
+          >
+            <div
+              class="flex justify-between items-center px-10 py-20 rounded-6"
+              style="background-color: #f5f7f4"
+            >
+              <div class="space-y-5">
+                <h2 class="text-14 text-stromgreay font-bold">
+                  Session Feedback Form
+                </h2>
+                <p class="text-12 text-stromgreay">8 Questions</p>
+              </div>
+              <div class="flex items-center space-x-20">
+                <div
+                  class="w-20 h-20 rounded-full flex items-center justify-center cursor-pointer"
+                  onclick="openHiddenbarBig4()"
+                >
+                  <img src="./src/assets/img/pen-grey.svg" alt="" />
+                </div>
+                <div
+                  class="w-20 h-20 rounded-full flex items-center justify-center"
+                  style="background-color: #d7d8db"
+                >
+                  <img src="./src/assets/img/right-color-white.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/assets/js/index.js"></script>
+    <script></script>
+  </body>
+</html>
+
+<!--    <li class="text-16 text-capcod font-semibold">
+                    So, how would you rate the event overall?
+                  </li>
+                  <p class="text-16 text-capcod font-semibold">
+                    What did you like the most about the event?
+                  </p>
+                  <p class="text-16 text-capcod font-semibold">
+                    Is there anything you think we could've done better?
+                  </p>
+                  <p class="text-16 text-capcod font-semibold">
+                    How well was the event organized?
+                  </p>
+                  <p class="text-16 text-capcod font-semibold">
+                    How would you rate the venue of the event?
+                  </p>
+                  <p class="text-16 text-capcod font-semibold">
+                    And how helpful were the event staff?
+                  </p>
+                  <p class="text-16 text-capcod font-semibold">
+                    Great! Now, do you remember seeing any of our sponsors? Tell
+                    us which ones, if you do:
+                  </p>
+                  <p class="text-16 text-capcod font-semibold">
+                    Thanks again. Would you mind telling us how you heard about
+                    the event?
+                  </p>
+                  <p class="text-16 text-capcod font-semibold">
+                    Finally, would you recommend our event to a friend?
+                  </p> -->

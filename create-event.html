@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Create Event</title>
+  </head>
+
+  <body style="background: #e5e5e5">
+    <div
+      class="w-full flex justify-between items-center bg-capcod px-20"
+      style="height: 58px"
+    >
+      <div class="w-110 cursor-pointer">
+        <img src="./src/assets/img/logo.png" alt="" />
+      </div>
+      <div class="flex items-center">
+        <div class="flex items-center space-x-5">
+          <div class="w-40 h-40 rounded-full cursor-pointer">
+            <img
+              src="./src/assets/img/agent-1.png"
+              alt=""
+              class="rounded-full w-full h-full"
+            />
+          </div>
+          <div class="w-13 h-12 cursor-pointer">
+            <img src="./src/assets/img/filter_arrow 2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-20 px-20">
+      <span class="text-stromgreay" style="font-size: 27px">
+        Hello
+        <span class="font-bold" style="vertical-align: baseline">Badar</span>,
+        Let's Get It Started
+      </span>
+    </div>
+    <div class="px-20 py-20 flex justify-center rounded-6 space-x-10">
+<div class="w-8/12 bg-white rounded-6">
+              <div
+                class="py-20 mb-30 border-b-1 border-stromgreay border-opacity-40 mx-20"
+              >
+                <h3 class="text-18 text-capcod font-bold">Basic Info</h3>
+                <p class="text-12 text-stromgreay py-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
+              <div>
+                <div class="px-20 pb-20">
+                  <h3 class="text-16 text-black font-bold mb-10">Event Info</h3>
+                  <div
+                    class="border-b-1 border-stromgreay border-opacity-40 pb-20"
+                  >
+                    <div class="w-500">
+                      <div class="py-8">
+                        <label
+                          for="#"
+                          class="block mb-7 text-12 text-stromgreay"
+                          >Event Title
+                        </label>
+                        <input
+                          type="text"
+                          name="text"
+                          placeholder="Enter Event Title
+"
+                          id="#"
+                          class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                        />
+                      </div>
+
+                      <div class="py-8 flex space-x-20">
+                        <div class="w-6/12">
+                          <label
+                            for="#"
+                            class="block mb-7 text-12 text-stromgreay"
+                          >
+                            Event Start
+                          </label>
+                          <input
+                            type="date"
+                            class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13"
+                          />
+                        </div>
+                        <div class="w-6/12">
+                          <label
+                            for="#"
+                            class="block mb-7 text-12 text-stromgreay"
+                          >
+                            Event End
+                          </label>
+                          <input
+                            type="date"
+                            class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13"
+                          />
+                        </div>
+                      </div>
+                      <div class="py-8">
+                        <label
+                          for="#"
+                          class="block mb-7 text-12 text-stromgreay"
+                          >Event Description
+                        </label>
+                        <textarea
+                          type="text"
+                          name="text"
+                          placeholder="Enter Event Description"
+                          id="#"
+                          class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-100 px-10 py-10 text-13"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-500">
+                    <div class="pt-20">
+                      <h3 class="text-16 text-black font-bold mb-10">
+                        Location & Time Zone
+                      </h3>
+                    </div>
+
+                    <div class="space-y-5 py-10">
+                      <div>
+                        <label for="#" class="text-12 text-stromgreay">
+                          Time Zone
+                        </label>
+                      </div>
+                      <div
+                        class="w-full h-42 px-10 flex justify-center items-center rounded-6 border-1 border-stromgreay border-opacity-40"
+                      >
+                        <select
+                          class="w-full outline-none text-14 text-stromgreay select-basic"
+             onfocus='this.size=4;' onblur='this.size=1;' onchange='this.size=1; this.blur();'
+                          
+                        >
+                          <option class="">Select Time Zone</option>
+                          <option value="">
+                            (UTC - 07:00) America/Los Angle (PDT) (United State
+                            of America)
+                          </option>
+                            <option value="">
+                            (UTC - 07:00) America/Tijuan (PDT) (Maxico)
+                          </option>
+                            <option value="">
+                            (UTC - 06:00) America/Chihuahua (PDT) (Maxico)
+                          </option>
+                              </option>
+                            <option value="">
+                            (UTC - 06:00) America/Manzatina (PDT) (Maxico)
+                          </option>
+                              </option>
+                            <option value="">
+                            (UTC - 06:00) America/Denver (PDT) (United State
+                            of America)
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="space-y-5 py-10">
+                      <div>
+                        <label for="#" class="text-12 text-stromgreay">
+                          Location
+                        </label>
+                      </div>
+                      <div
+                        class="w-full h-42 px-10 flex justify-between items-center rounded-6 border-1 border-stromgreay border-opacity-40"
+                      >
+                      <input type="search" name="" id="" placeholder="Search Location" class="w-8/12 h-20 px-6 text-13 ">
+                       <button class="text-12 text-brand font-bold">Find Location</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-8">
+                    <div class="flex space-x-20 w-full">
+                      <div class="w-6/12">
+                        <div class="flex justify-between">
+                          <span class="block mb-7 text-12 text-stromgreay"
+                            >Location
+                          </span>
+                          <span class="block mb-7 text-12 text-brand"
+                            >Reset
+                          </span>
+                        </div>
+                        <div class="bg-greaywhite p-15 rounded-6">
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="Address 1"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="Address 2"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="Country"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="State"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="City"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                          <div class="py-10">
+                            <input
+                              type="text"
+                              name="text"
+                              placeholder="City"
+                              id="#"
+                              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="py-30 w-6/12">
+                        <img
+                          src="./src/assets/img/Location.png"
+                          alt=""
+                          class="rounded-6"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="p-20 flex justify-end border-t-1 border-stromgreay border-opacity-40"
+              >
+               <a href="./event-list-2.html"> <button
+                  class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+                >
+                  <span class="mb-0 block"> SAVE </span>
+                </button></a>
+              </div>
+            </div>
+<div >
+                <img src="./src/assets/img/close-icon.svg" class="cursor-pointer" alt="">
+            </div>
+            
+    </div>
+  </body>
+  <script src="./src/assets/js/index.js"></script>
+</html>

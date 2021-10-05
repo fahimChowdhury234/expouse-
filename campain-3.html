@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Campain 3</title>
+  </head>
+
+  <body style="background: #e5e5e5">
+    <div
+      class="w-full flex justify-between items-center bg-capcod px-20"
+      style="height: 58px"
+    >
+      <div class="w-110 cursor-pointer">
+        <img src="./src/assets/img/logo.png" alt="" />
+      </div>
+      <div class="flex items-center space-x-40">
+        <div>
+          <button
+            class="
+              bg-brand
+              px-20
+              py-10
+              rounded-3
+              cursor-pointer
+              text-12 text-white
+            "
+          >
+            Save as draft
+          </button>
+        </div>
+        <div class="flex items-center space-x-5">
+          <div class="w-40 h-40 rounded-full cursor-pointer">
+            <img
+              src="./src/assets/img/agent-1.png"
+              alt=""
+              class="rounded-full w-full h-full"
+            />
+          </div>
+          <div class="w-13 h-12 cursor-pointer">
+            <img src="./src/assets/img/filter_arrow 2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-20 py-20">
+      <div>
+        <h2 class="text-stromgreay font-bold" style="font-size: 28px">
+          Eamils campains
+        </h2>
+      </div>
+      <div class="py-20 flex items-center space-x-5">
+        <button
+          class="px-15 py-5 text-12 font-bold text-white bg-brand rounded-4"
+        >
+          Drafts
+        </button>
+        <button
+          class="px-15 py-5 text-12 font-bold text-brand bg-white rounded-4"
+        >
+          Scheduled
+        </button>
+        <button
+          class="px-15 py-5 text-12 font-bold text-brand bg-white rounded-4"
+        >
+          Ongoing
+        </button>
+        <button
+          class="px-15 py-5 text-12 font-bold text-brand bg-white rounded-4"
+        >
+          Sent
+        </button>
+      </div>
+    </div>
+    <div class="px-20 py-20 flex justify-center items-center">
+      <div class="px-20 py-20 rounded-6" style="width: 630px">
+        <div class="flex justify-between items-center bg-brand py-20 px-15">
+          <div class="flex space-x-15 items-center">
+            <div>
+              <img
+                src="./src/assets/img/white-massege-box.svg"
+                alt=""
+                class="w-30 h-30"
+              />
+            </div>
+            <div>
+              <span class="text-16 text-white">Create email campain</span>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./src/assets/img/close-icon-w.svg"
+              alt=""
+              class="w-18 h-18"
+            />
+          </div>
+        </div>
+        <div class="bg-white py-20 px-15">
+          <label for="#" class="text-14 text-stromgreay font-bold block"
+            >Campain name</label
+          >
+          <input
+            type="text"
+            name="text"
+            placeholder="Enter campain name"
+            id="#"
+            class="
+              px-10
+              py-8
+              border-1 border-stromgreay border-opacity-40
+              text-12 text-stromgreay
+              w-full
+              rounded-5
+            "
+          />
+        </div>
+        <div class="py-30 px-15 bg-white">
+          <div class="flex w-full h-full justify-center space-x-20">
+            <div class="space-y-5">
+              <div
+                class="
+                  bg-brand
+                  h-82
+                  w-82
+                  rounded-4
+                  flex
+                  justify-center
+                  items-center
+                  cursor-pointer
+                "
+              >
+                <img
+                  src="./src/assets/img/surface1.svg"
+                  alt=""
+                  style="width: 37px; height: 49px"
+                />
+              </div>
+              <div class="text-center">
+                <span class="text-13 text-stromgreay">Tamplate</span>
+              </div>
+            </div>
+            <div class="space-y-5">
+              <div
+                class="
+                  bg-white
+                  h-82
+                  w-82
+                  rounded-4
+                  flex
+                  justify-center
+                  items-center
+                  border-1 border-stromgreay border-opacity-40
+                  cursor-pointer
+                "
+              >
+                <img
+                  src="./src/assets/img/custom.svg"
+                  alt=""
+                  style="width: 37px; height: 49px"
+                />
+              </div>
+              <div class="text-center">
+                <span class="text-13 text-stromgreay">Coustom</span>
+              </div>
+            </div>
+            <div>
+              <div class="space-y-5">
+                <div
+                  class="
+                    bg-white
+                    h-82
+                    w-82
+                    rounded-4
+                    flex
+                    justify-center
+                    items-center
+                    border-1 border-stromgreay border-opacity-40
+                    cursor-pointer
+                  "
+                >
+                  <img
+                    src="./src/assets/img/import-html.svg"
+                    alt=""
+                    style="width: 37px; height: 49px"
+                  />
+                </div>
+                <div class="text-center">
+                  <span class="text-13 text-stromgreay">Import HTML</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            px-15
+            py-15
+            border-t-1 border-stromgreay border-opacity-40
+            bg-white
+          "
+        >
+          <div class="flex justify-center items-center w-full">
+            <div class="flex justify-between w-7/12 items-center">
+              <button
+                class="text-12 text-stromgreay rounded-6"
+                style="background-color: #e5e5e5; width: 133px; height: 40px"
+              >
+                Cancel
+              </button>
+              <button
+                class="text-12 text-white bg-brand rounded-6"
+                style="width: 133px; height: 40px"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </body>
+  <script src="./src/assets/js/index.js"></script>
+</html>

@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./src/assets/css/style.css" />
+  <link rel="stylesheet" href="./src/assets/css/custom.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <title>Tamplate</title>
+</head>
+
+<body>
+  <div class=" w-425 h-screen trasition bg-white fixed" style="z-index: 10000; right: 50rem;top: 10px;"
+    id="hiddensidebar3">
+    <div class="w-full bg-white">
+      <div class="
+          flex
+          justify-between
+          items-center
+          pl-20
+          border-1 border-stromgreay border-opacity-40
+        ">
+        <div>
+          <span class="text-12 font-bold text-stromgreay uppercase">Content</span>
+        </div>
+        <div class="flex gap-1">
+          <div>
+            <button class="
+                bg-white
+                border-r-1 border-l-1 border-stromgreay border-opacity-40
+                w-35
+                h-45
+                flex
+                justify-center
+                items-center
+                icon-trush
+              ">
+              <svg aria-hidden="true" fill="#505659" focusable="false" data-prefix="fas" data-icon="trash-alt"
+                class="w-15" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <button class="
+                bg-white
+                border-r-1 border-l-1 border-stromgreay border-opacity-40
+                w-35
+                h-45
+                flex
+                justify-center
+                items-center
+                icon-duplicate
+              ">
+              <svg aria-hidden="true" focusable="false" fill="#505659" data-prefix="fas" data-icon="clone" class="w-15"
+                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M464 0c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48H176c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h288M176 416c-44.112 0-80-35.888-80-80V128H48c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-48H176z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <button class="
+                bg-white
+                border-r-1 border-l-1 border-stromgreay border-opacity-40
+                w-35
+                h-45
+                flex
+                justify-center
+                items-center
+                icon-close
+              " onclick="closeHiddenbar3()">
+              <svg aria-hidden="true" focusable="false" fill="#505659" data-prefix="fas" data-icon="times"
+                class="w-11 h-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                <path
+                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="overflow-y-scroll border-l-1 border-stromgreay border-opacity-40 "
+        style="height: 75.5vh;background-color: #f9f9f9;">
+        <div>
+          <div class="flex gap-1 bg-white" style="padding: 0.5rem 0.5rem 0px !important; overflow: hidden">
+            <button class="
+              flex
+              items-center
+              -mb-1
+              text-15
+              bg-greaywhite
+              px-10
+              py-7
+              nav-active
+            ">
+              <svg aria-hidden="true" focusable="false" data-prefix="far" fill="#495057" data-icon="desktop"
+                class="w-15 h-16 mr-7" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528 0H48C21.5 0 0 21.5 0 48v288c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-6 336H54c-3.3 0-6-2.7-6-6V54c0-3.3 2.7-6 6-6h468c3.3 0 6 2.7 6 6v276c0 3.3-2.7 6-6 6zm-42 152c0 13.3-10.7 24-24 24H120c-13.3 0-24-10.7-24-24s10.7-24 24-24h98.7l18.6-55.8c1.6-4.9 6.2-8.2 11.4-8.2h78.7c5.2 0 9.8 3.3 11.4 8.2l18.6 55.8H456c13.3 0 24 10.7 24 24z">
+                </path>
+              </svg>
+              Desktop
+            </button>
+            <button class="flex items-center -mb-1 text-15 px-10 py-7">
+              <svg aria-hidden="true" focusable="false" fill="#495057" data-prefix="far" data-icon="mobile"
+                class="w-10 mr-7" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  d="M192 416c0 17.7-14.3 32-32 32s-32-14.3-32-32 14.3-32 32-32 32 14.3 32 32zM320 48v416c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h224c26.5 0 48 21.5 48 48zm-48 410V54c0-3.3-2.7-6-6-6H54c-3.3 0-6 2.7-6 6v404c0 3.3 2.7 6 6 6h212c3.3 0 6-2.7 6-6z">
+                </path>
+              </svg>
+              Mobile
+            </button>
+          </div>
+        </div>
+
+
+        <div>
+          <div class="py-7 bg-greaywhite flex justify-between items-center px-10 mt-10" id="sidedropdown11">
+            <span class="text-14 cursor-pointer text-capcod font-bold uppercase">Icon</span>
+            <div class="cursor-pointer">
+              <img src="./src/assets/img/arrow.svg" alt="" class="w-10 img11 transition"
+                style="transform: rotate(180deg)" />
+            </div>
+          </div>
+          <div class="px-15 dropdownitem11" style="overflow: hidden;">
+            <div class="pt-10">
+              <div>
+                <span class="text-14 cursor-pointer text-stromgreay font-bold">Icon Type
+                </span>
+                <div>
+                  <select name="" id="" class="
+            border-1 border-stromgreay border-opacity-40
+            rounded-4
+            px-10
+            py-2
+            text-14
+            w-full
+            outline-none
+          ">
+                    <option value="" class="text-12 text-stromgreay">
+                      Circle
+                    </option>
+                    <option value="">Circle White</option>
+                    <option value="">Circle Black</option>
+                    <option value="">Raunded</option>
+                    <option value="">Raunded Black</option>
+                    <option value="">Square</option>
+                    <option value="">Square Black</option>
+
+                  </select>
+                </div>
+              </div>
+              <div class="pt-10">
+                <span class="text-14 cursor-pointer text-stromgreay font-bold">Icon Type
+                </span>
+                <div class="py-10 px-10 bg-white border-1 border-stromgreay border-opacity-40 rounded-4 mb-10">
+                  <div class="flex items-center gap-1 py-10">
+                    <div>
+                      <svg aria-hidden="true" style="cursor: -webkit-grab;" focusable="false" data-prefix="fal"
+                        data-icon="bars" fill="#999999" class="w-20 h-20 " role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path
+                          d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 
+                     1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 
+                      6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                      <div>
+                        <img src="./src/assets/img/facebook.png" alt="" class="w-30 h-30">
+                      </div>
+                      <div>
+                        <span class="text-14  text-stromgreay font-semibold">Facebook</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center border-1 border-stromgreay border-opacity-40 h-34 w-full rounded-4 overflow-hidden mt-10">
+                    <div class="bg-greaywhite h-full flex items-center px-8 text-14 text-stromgreay">
+                      <span>URL</span>
+
+                    </div>
+                    <div class="h-full w-full">
+                      <input type="text" name="text" id="" value="https://facebook.com/"
+                        class="border-0 h-full px-10 w-full text-14 text-stromgreay">
+                    </div>
+                  </div>
+                  <div class="flex justify-end mt-5">
+                    <span class="text-10 cursor-pointer  font-bold" style="color: rgb(194, 40, 44);">Delete</span>
+                  </div>
+                </div>
+                <div class="py-10 px-10 bg-white border-1 border-stromgreay border-opacity-40 rounded-4 mb-10">
+                  <div class="flex items-center gap-1 py-10">
+                    <div>
+                      <svg aria-hidden="true" style="cursor: -webkit-grab;" focusable="false" data-prefix="fal"
+                        data-icon="bars" fill="#999999" class="w-20 h-20 " role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path
+                          d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 
+                     1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 
+                      6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                      <div>
+                        <img src="./src/assets/img/linkedin.png" alt="" class="w-30 h-30">
+                      </div>
+                      <div>
+                        <span class="text-14  text-stromgreay font-semibold">Linkedin</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center border-1 border-stromgreay border-opacity-40 h-34 w-full rounded-4 overflow-hidden mt-10">
+                    <div class="bg-greaywhite h-full flex items-center px-8 text-14 text-stromgreay">
+                      <span>URL</span>
+
+                    </div>
+                    <div class="h-full w-full">
+                      <input type="text" name="text" id="" value="https://linkedin.com/"
+                        class="border-0 h-full px-10 w-full text-14 text-stromgreay">
+                    </div>
+                  </div>
+                  <div class="flex justify-end mt-5">
+                    <span class="text-10 cursor-pointer  font-bold" style="color: rgb(194, 40, 44);">Delete</span>
+                  </div>
+                </div>
+                <div class="py-10 px-10 bg-white border-1 border-stromgreay border-opacity-40 rounded-4 mb-10">
+                  <div class="flex items-center gap-1 py-10">
+                    <div>
+                      <svg aria-hidden="true" style="cursor: -webkit-grab;" focusable="false" data-prefix="fal"
+                        data-icon="bars" fill="#999999" class="w-20 h-20 " role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path
+                          d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 
+                     1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 
+                      6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                      <div>
+                        <img src="./src/assets/img/instagram.png" alt="" class="w-30 h-30">
+                      </div>
+                      <div>
+                        <span class="text-14  text-stromgreay font-semibold">Lnstagram</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center border-1 border-stromgreay border-opacity-40 h-34 w-full rounded-4 overflow-hidden mt-10">
+                    <div class="bg-greaywhite h-full flex items-center px-8 text-14 text-stromgreay">
+                      <span>URL</span>
+
+                    </div>
+                    <div class="h-full w-full">
+                      <input type="text" name="text" id="" value="https://instagram.com/"
+                        class="border-0 h-full px-10 w-full text-14 text-stromgreay">
+                    </div>
+                  </div>
+                  <div class="flex justify-end mt-5">
+                    <span class="text-10 cursor-pointer  font-bold" style="color: rgb(194, 40, 44);">Delete</span>
+                  </div>
+                </div>
+                <div class="py-10 px-10 bg-white border-1 border-stromgreay border-opacity-40 rounded-4 mb-10">
+                  <div class="flex items-center gap-1 py-10">
+                    <div>
+                      <svg aria-hidden="true" style="cursor: -webkit-grab;" focusable="false" data-prefix="fal"
+                        data-icon="bars" fill="#999999" class="w-20 h-20 " role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path
+                          d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 
+                     1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 
+                      6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                      <div>
+                        <img src="./src/assets/img/youtube.png" alt="" class="w-30 h-30">
+                      </div>
+                      <div>
+                        <span class="text-14  text-stromgreay font-semibold">Youtube</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center border-1 border-stromgreay border-opacity-40 h-34 w-full rounded-4 overflow-hidden mt-10">
+                    <div class="bg-greaywhite h-full flex items-center px-8 text-14 text-stromgreay">
+                      <span>URL</span>
+
+                    </div>
+                    <div class="h-full w-full">
+                      <input type="text" name="text" id="" value="https://youtube.com/"
+                        class="border-0 h-full px-10 w-full text-14 text-stromgreay">
+                    </div>
+                  </div>
+                  <div class="flex justify-end mt-5">
+                    <span class="text-10 cursor-pointer  font-bold" style="color: rgb(194, 40, 44);">Delete</span>
+                  </div>
+                </div>
+                <div class="py-10 px-10 bg-white border-1 border-stromgreay border-opacity-40 rounded-4 mb-10">
+                  <div class="flex items-center gap-1 py-10">
+                    <div>
+                      <svg aria-hidden="true" style="cursor: -webkit-grab;" focusable="false" data-prefix="fal"
+                        data-icon="bars" fill="#999999" class="w-20 h-20 " role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path
+                          d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 
+                     1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 
+                      6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                      <div>
+                        <img src="./src/assets/img/email.png" alt="" class="w-30 h-30">
+                      </div>
+                      <div>
+                        <span class="text-14  text-stromgreay font-semibold">Email</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center border-1 border-stromgreay border-opacity-40 h-34 w-full rounded-4 overflow-hidden mt-10">
+                    <div class="bg-greaywhite h-full flex items-center px-8 text-14 text-stromgreay">
+                      <span>URL</span>
+
+                    </div>
+                    <div class="h-full w-full">
+                      <input type="text" name="text" id="" value="https://email.com/"
+                        class="border-0 h-full px-10 w-full text-14 text-stromgreay">
+                    </div>
+                  </div>
+                  <div class="flex justify-end mt-5">
+                    <span class="text-10 cursor-pointer  font-bold" style="color: rgb(194, 40, 44);">Delete</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pb-10">
+              <span class="text-14 cursor-pointer text-stromgreay font-bold">Show More Options
+              </span>
+              <div class="flex  flex-wrap py-10" style="gap: 8px;">
+                <div>
+                  <img src="./src/assets/img/twitter.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/pinterest.png" alt="" class="w-30 h-30 cursor-pointer ">
+                </div>
+                <div>
+                  <img src="./src/assets/img/pinterest.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/vimeo.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/snapchat.png" alt="" class="w-30 h-30 cursor-pointer ">
+                </div>
+                <div>
+                  <img src="./src/assets/img/whatsapp.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/messenger.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/tripadvisor.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/meetup.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/producthunt.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/rss.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/tripadvisor.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/meetup.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/producthunt.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+                <div>
+                  <img src="./src/assets/img/rss.png" alt="" class="w-30 h-30 cursor-pointer">
+                </div>
+              </div>
+            </div>
+            <div class="
+            flex
+            justify-between
+            items-center
+            py-20 px-15
+            border-b-1 border-t-1 border-stromgreay border-opacity-40
+          ">
+                    <span class="text-14 cursor-pointer text-stromgreay font-semibold">
+                      Alignment
+                    </span>
+                    <div class="flex gap-1">
+                      <div class="
+                px-7
+                py-7
+                cursor-pointer
+                rounded-3
+                border-1 border-stromgreay border-opacity-40
+                blockbuilder-widget-label
+              ">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="align-left" class="w-14 h-14"
+                          fill="#AAAAAA" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path
+                            d="M12.83 352h262.34A12.82 12.82 0 0 0 288 339.17v-38.34A12.82 12.82 0 0 0 275.17 288H12.83A12.82 12.82 0 0 0 0 300.83v38.34A12.82 12.82 0 0 0 12.83 352zm0-256h262.34A12.82 12.82 0 0 0 288 83.17V44.83A12.82 12.82 0 0 0 275.17 32H12.83A12.82 12.82 0 0 0 0 44.83v38.34A12.82 12.82 0 0 0 12.83 96zM432 160H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0 256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="
+                px-7
+                py-7
+                cursor-pointer
+                rounded-3
+                border-1 border-stromgreay border-opacity-40
+                blockbuilder-widget-label
+              ">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="align-center"
+                          class="w-14 h-14" fill="#AAAAAA" role="img" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512">
+                          <path
+                            d="M432 160H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0 256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM108.1 96h231.81A12.09 12.09 0 0 0 352 83.9V44.09A12.09 12.09 0 0 0 339.91 32H108.1A12.09 12.09 0 0 0 96 44.09V83.9A12.1 12.1 0 0 0 108.1 96zm231.81 256A12.09 12.09 0 0 0 
+            352 339.9v-39.81A12.09 12.09 0 0 0 339.91 288H108.1A12.09 12.09 0 0 0 96 300.09v39.81a12.1 12.1 0 0 0 12.1 12.1z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="
+                px-7
+                py-7
+                cursor-pointer
+                rounded-3
+                border-1 border-stromgreay border-opacity-40
+                blockbuilder-widget-label
+              ">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="align-right"
+                          class="w-14 h-14" fill="#AAAAAA" role="img" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512">
+                          <path
+                            d="M16 224h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16zm416 192H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm3.17-384H172.83A12.82 12.82 0 0 0 160 44.83v38.34A12.82 12.82 0 0 0 172.83 96h262.34A12.82 12.82 0 0 0 448 83.17V44.83A12.82 12.82 0 0 0 435.17 32zm0 256H172.83A12.82 12.82 0 0 0 160 300.83v38.34A12.82 12.82 0 0 0 172.83 352h262.34A12.82 12.82 0 0 0 448 339.17v-38.34A12.82 12.82 0 0 0 435.17 288z">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="
+                px-7
+                py-7
+                cursor-pointer
+                rounded-3
+                border-1 border-stromgreay border-opacity-40
+                blockbuilder-widget-label
+              ">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="align-justify"
+                          class="w-14 h-14" fill="#AAAAAA" role="img" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512">
+                          <path
+                            d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0
+    0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="
+                  flex
+                  justify-between
+                  items-center
+                  py-20
+                  border-b-1 border-stromgreay border-opacity-40
+                ">
+                      <span class="text-14 cursor-pointer text-stromgreay font-semibold">
+                        Icon Spacing
+                      </span>
+                      <div class="
+                    rounded-5
+                    border-1 border-stromgreay border-opacity-40
+                    h-30
+                    cursor-pointer
+                  " style="
+                    box-shadow: rgb(239 239 239) 0px 0px 0px 2px inset !important; ;
+                  ">
+                        <div class="h-full">
+                          <button class="h-full px-5 w-20">-</button>
+                          <input type="text" name="text" value="10" id="" class="
+                        bg-greaywhite
+                        h-full
+                        w-40
+                        text-12 text-center text-capcod
+                      " />
+                          <button class="h-full px-5 w-20">+</button>
+                        </div>
+                      </div>
+                    </div>
+          </div>
+        </div>
+     
+        <div>
+          <div class="bg-greaywhite flex justify-between items-center px-10 py-7 mt-10" id="sidedropdown12">
+            <span class="text-14 cursor-pointer text-capcod font-bold">GENERAL</span>
+            <div class="cursor-pointer">
+              <img src="./src/assets/img/arrow.svg" alt="" class="w-10 img12 transition"
+                style="transform: rotate(180deg)" />
+            </div>
+          </div>
+          <div class="px-10 dropdownitem12 " style="max-height: 117px; overflow: hidden;">
+            <div class="py-15  relative">
+              <div class="flex justify-between items-center pb-10">
+                <span class="text-14 cursor-pointer text-stromgreay font-bold">Container Padding
+                </span>
+                <div class="flex gap-1 items-center">
+                  <span class="text-14 cursor-pointer text-stromgreay font-bold">More Options
+                  </span>
+                  <div>
+                    <label class="switch m-0">
+                      <input type="checkbox" class="togggleinput" />
+                      <span class="togggleslider rounded-30"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="
+    flex-wrap
+    justify-between
+    gap-1
+    more-width-lable-option
+    hide
+    flex
+    ">
+                <div class="w-4/12">
+                  <span class="text-12 cursor-pointer text-stromgreay font-bold">Top</span>
+                  <div class="
+        rounded-5
+        border-1 border-stromgreay border-opacity-40
+        h-32
+        cursor-pointer
+        w-80
+        mt-3
+      ">
+                    <div class="h-full flex">
+                      <button class="h-full px-5 w-20">-</button>
+                      <input type="text" name="text" value="0" id="" class="
+            bg-greaywhite
+            h-full
+            w-40
+            text-12 text-center text-capcod
+          " />
+                      <button class="h-full px-5 w-20">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-4/12">
+                  <span class="text-12 cursor-pointer text-stromgreay font-bold">Right</span>
+                  <div class="
+        rounded-5
+        border-1 border-stromgreay border-opacity-40
+        h-32
+        cursor-pointer
+        w-80
+        mt-3
+      ">
+                    <div class="h-full flex">
+                      <button class="h-full px-5 w-20">-</button>
+                      <input type="text" name="text" value="0" id="" class="
+            bg-greaywhite
+            h-full
+            w-40
+            text-12 text-center text-capcod
+          " />
+                      <button class="h-full px-5 w-20">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-4/12">
+                  <span class="text-12 cursor-pointer text-stromgreay font-bold">Left</span>
+                  <div class="
+        rounded-5
+        border-1 border-stromgreay border-opacity-40
+        h-32
+        cursor-pointer
+        w-80
+        mt-3
+      ">
+                    <div class="h-full flex">
+                      <button class="h-full px-5 w-20">-</button>
+                      <input type="text" name="text" value="0" id="" class="
+            bg-greaywhite
+            h-full
+            w-40
+            text-12 text-center text-capcod
+          " />
+                      <button class="h-full px-5 w-20">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-4/12">
+                  <span class="text-12 cursor-pointer text-stromgreay font-bold">Bottom</span>
+                  <div class="
+        rounded-5
+        border-1 border-stromgreay border-opacity-40
+        h-32
+        cursor-pointer
+        w-80
+        mt-3
+      ">
+                    <div class="h-full flex">
+                      <button class="h-full px-5 w-20">-</button>
+                      <input type="text" name="text" value="0" id="" class="
+            bg-greaywhite
+            h-full
+            w-40
+            text-12 text-center text-capcod
+          " />
+                      <button class="h-full px-5 w-20">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="width-lable-option">
+                <span class="text-12 cursor-pointer text-stromgreay font-bold">All Sides</span>
+                <div class="
+      rounded-5
+      border-1 border-stromgreay border-opacity-40
+      h-32
+      cursor-pointer
+      w-80
+      mt-3
+    ">
+                  <div class="h-full flex">
+                    <button class="h-full px-5 w-20">-</button>
+                    <input type="text" name="text" value="600" id="" class="
+          bg-greaywhite
+          h-full
+          w-40
+          text-12 text-center text-capcod
+        " />
+                    <button class="h-full px-5 w-20">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style="margin-top: 10px;">
+            <div id="sidedropdown13" class=" bg-greaywhite flex justify-between items-center px-10 py-7">
+              <span class="text-14 cursor-pointer text-capcod font-bold">RESPONSIVE DESIGN</span>
+              <div class="cursor-pointer">
+                <img src="./src/assets/img/arrow.svg" alt="" class="w-10 img13 transition"
+                  style="transform: rotate(180deg)" />
+              </div>
+            </div>
+          </div>
+          <div class="dropdownitem13" style="max-height: 64px; overflow: hidden;">
+            <div class=" flex justify-between items-center px-15 py-20">
+              <span class="text-14 cursor-pointer text-stromgreay font-bold">Hide on Desktop
+              </span>
+              <div class="flex gap-1 items-center">
+                <span class="text-14 cursor-pointer text-stromgreay font-bold">More Options
+                </span>
+                <div>
+                  <label class="switch m-0">
+                    <input type="checkbox" class="togggleinput" />
+                    <span class="togggleslider rounded-30"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<style>
+  .icon-trush,
+  .icon-duplicate,
+  .icon-close {
+    transition: all 0.4s ease;
+  }
+
+  .icon-trush:hover {
+    background-color: rgb(194, 40, 44) !important;
+  }
+
+  .icon-trush:hover svg {
+    fill: rgb(255, 255, 255);
+  }
+
+  .icon-duplicate:hover {
+    background-color: rgb(80, 86, 89) !important;
+    color: rgb(255, 255, 255);
+  }
+
+  .icon-duplicate:hover svg {
+    fill: rgb(255, 255, 255);
+  }
+
+  .icon-close:hover {
+    background-color: rgb(80, 86, 89) !important;
+    color: rgb(255, 255, 255);
+  }
+
+  .icon-close:hover svg {
+    fill: rgb(255, 255, 255);
+  }
+
+  .nav-active {
+    border: 1px solid;
+    border-color: rgb(238, 238, 238) rgb(238, 238, 238) transparent !important;
+    background-color: rgb(249, 249, 249) !important;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .blockbilder-row-tool {
+    background-color: rgb(238, 238, 238);
+    cursor: -webkit-grab;
+    position: relative;
+    height: 100%;
+  }
+
+  .blockbilder-perent {
+    background-color: rgb(238, 238, 238);
+
+    height: 50px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+  }
+
+  .blockbilder-row-tool::after {
+    content: " ";
+    z-index: 100;
+    position: absolute;
+    inset: 1px;
+    outline: rgb(204, 204, 204) solid 1px;
+  }
+
+  .blockbilder-perent:hover {
+    opacity: 1;
+    box-shadow: rgb(0 0 0 / 35%) 0px 1px 5px;
+  }
+
+  .width-lable-option,
+  .padding-lable-option {
+    width: 100%;
+    /* position: absolute; */
+    /* top: 37px; */
+    transition: all 0.4s ease;
+  }
+
+  .more-width-lable-option {
+    height: 0px;
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+  }
+
+  .width-border-option {
+    width: 100%;
+
+    transition: all 0.6s ease;
+  }
+
+  .more-border-lable-option,
+  .more-padding-lable-option {
+    height: 0px;
+    overflow: hidden;
+
+    transition: all 0.6s ease;
+  }
+
+  .open-lableOption {
+    height: 150px;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .open-BorderOption {
+    height: 210px;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .open-padding-option {
+    height: 150px;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+</style>
+<script>
+  const togggleslider = document.querySelector(".togggleslider");
+  const widthLableOption = document.querySelector(".width-lable-option");
+  const morewidthLableOption = document.querySelector(
+    ".more-width-lable-option"
+  );
+
+  togggleslider.addEventListener("click", () => {
+    widthLableOption.classList.toggle("hide");
+    morewidthLableOption.classList.toggle("open-lableOption");
+  });
+  const toggle = document.querySelector(".toggle");
+  const widthLableOption2 = document.querySelector(".width-border-option");
+  const morewidthLableOption2 = document.querySelector(
+    ".more-border-lable-option"
+  );
+
+  toggle.addEventListener("click", () => {
+    widthLableOption2.classList.toggle("hide");
+    morewidthLableOption2.classList.toggle("open-BorderOption");
+  });
+  const toggle2 = document.querySelector(".toggle2");
+  const paddingLableOption = document.querySelector(".padding-lable-option");
+  const morePaddingLableOption = document.querySelector(
+    ".more-padding-lable-option"
+  );
+
+  toggle2.addEventListener("click", () => {
+    paddingLableOption.classList.toggle("hide");
+    morePaddingLableOption.classList.toggle("open-padding-option");
+  });
+</script>
+<!-- <script src="./src/assets/js/email-bilder.js"></script> -->
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Event List 2</title>
+  </head>
+
+  <body style="background: #e5e5e5">
+    <div
+      class="w-full flex justify-between items-center bg-capcod px-20"
+      style="height: 58px"
+    >
+      <div class="w-110 cursor-pointer">
+        <img src="./src/assets/img/logo.png" alt="" />
+      </div>
+      <div class="flex items-center space-x-40">
+        <div class="w-38 h-38 bg-brand px-5 py-5 rounded-3 cursor-pointer">
+          <img src="./src/assets/img/fullscreen.svg" alt="" class="w-20 h-20" />
+        </div>
+        <div class="flex items-center space-x-5 relative" onclick="openUser()">
+          <div class="w-40 h-40 rounded-full cursor-pointer">
+            <img
+              src="./src/assets/img/agent-1.png"
+              alt=""
+              class="rounded-full w-full h-full"
+            />
+          </div>
+          <div class="w-13 h-12 cursor-pointer">
+            <img src="./src/assets/img/filter_arrow 2.svg" alt="" />
+          </div>
+        </div>
+        <div class="user-option">
+          <button><a href="#">Setting</a></button>
+          <button class="active"><a href="#">Account</a></button>
+          <button><a href="#">Logout</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="px-20 py-20">
+      <div class="flex justify-between items-center">
+        <div>
+          <h2 class="text-stromgreay font-bold" style="font-size: 28px">
+            My events
+          </h2>
+        </div>
+        <div>
+          <button
+            class="
+              w-110
+              h-40
+              bg-brand
+              flex
+              justify-center
+              items-center
+              space-x-5
+              rounded-6
+              outline-none
+            "
+          >
+            <div>
+              <img src="./src/assets/img/plus.svg" alt="" class="w-12 h-12" />
+            </div>
+            <div class="text-12 font-bold text-white uppercase">
+              Create event
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="py-20 flex items-center justify-between">
+        <div class="space-x-5">
+          <button
+            class="px-15 py-5 text-12 font-bold text-white bg-brand rounded-4"
+          >
+            Upcoming
+          </button>
+          <button
+            class="px-15 py-5 text-12 font-bold text-brand bg-white rounded-4"
+          >
+            Ongoing
+          </button>
+          <button
+            class="px-15 py-5 text-12 font-bold text-brand bg-white rounded-4"
+          >
+            Ended
+          </button>
+        </div>
+        <div
+          class="
+            bg-white
+            px-15
+            h-40
+            w-300
+            flex
+            items-center
+            space-x-15
+            rounded-6
+          "
+        >
+          <button class="outline-none">
+            <img
+              src="./src/assets/img/search-icon.svg"
+              alt=""
+              class="w-15 h-15"
+            />
+          </button>
+          <input
+            class="w-full rounded text-14 font-bold text-stromgreay"
+            type="text"
+            placeholder="Search"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="px-20 flex space-x-20 items-center">
+      <div class="rounded-6 bg-white" style="width: 390px">
+        <div class="w-full px-5 py-5 flex items-center rounded-6">
+          <img
+            src="./src/assets/img/Rectangle 165.png"
+            alt=""
+            class="w-full rounded-6"
+          />
+        </div>
+        <div
+          class="py-10 border-b-1 border-stromgreay border-opacity-40"
+          style="margin: 0 5px"
+        >
+          <div class="px-10 space-y-10 pb-10">
+            <div>
+              <h3 class="text-18 text-stromgreay font-bold">My events</h3>
+            </div>
+            <div class="flex items-center space-x-10">
+              <img
+                src="./src/assets/img/Calendar 1.svg"
+                alt=""
+                class="w-16 h-14"
+              />
+              <span class="text-14 text-stromgreay">May 04 - May 10, 2021</span>
+            </div>
+            <div class="flex items-center space-x-10">
+              <img
+                src="./src/assets/img/location-pin.svg"
+                alt=""
+                class="w-14 h-16"
+              />
+              <span class="text-14 text-stromgreay">Online event</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end items-center space-x-10 py-20 px-20">
+          <div>
+            <img src="./src/assets/img/manage.svg" alt="" />
+          </div>
+          <div>
+            <span class="text-16 text-stromgreay font-semibold">Manage</span>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-6 bg-white" style="width: 390px">
+        <div class="w-full px-5 py-5 flex items-center rounded-6">
+          <img
+            src="./src/assets/img/Rectangle 165.png"
+            alt=""
+            class="w-full rounded-6"
+          />
+        </div>
+        <div
+          class="py-10 border-b-1 border-stromgreay border-opacity-40"
+          style="margin: 0 5px"
+        >
+          <div class="px-10 space-y-10 pb-10">
+            <div>
+              <h3 class="text-18 text-stromgreay font-bold">My events</h3>
+            </div>
+            <div class="flex items-center space-x-10">
+              <img
+                src="./src/assets/img/Calendar 1.svg"
+                alt=""
+                class="w-16 h-14"
+              />
+              <span class="text-14 text-stromgreay">May 04 - May 10, 2021</span>
+            </div>
+            <div class="flex items-center space-x-10">
+              <img
+                src="./src/assets/img/location-pin.svg"
+                alt=""
+                class="w-14 h-16"
+              />
+              <span class="text-14 text-stromgreay">Online event</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end items-center space-x-10 py-20 px-20">
+          <div>
+            <img src="./src/assets/img/manage.svg" alt="" />
+          </div>
+          <div>
+            <span class="text-16 text-stromgreay font-semibold">Manage</span>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-6 bg-white" style="width: 390px">
+        <div class="w-full px-5 py-5 flex items-center rounded-6">
+          <img
+            src="./src/assets/img/Rectangle 165.png"
+            alt=""
+            class="w-full rounded-6"
+          />
+        </div>
+        <div
+          class="py-10 border-b-1 border-stromgreay border-opacity-40"
+          style="margin: 0 5px"
+        >
+          <div class="px-10 space-y-10 pb-10">
+            <div>
+              <h3 class="text-18 text-stromgreay font-bold">My events</h3>
+            </div>
+            <div class="flex items-center space-x-10">
+              <img
+                src="./src/assets/img/Calendar 1.svg"
+                alt=""
+                class="w-16 h-14"
+              />
+              <span class="text-14 text-stromgreay">May 04 - May 10, 2021</span>
+            </div>
+            <div class="flex items-center space-x-10">
+              <img
+                src="./src/assets/img/location-pin.svg"
+                alt=""
+                class="w-14 h-16"
+              />
+              <span class="text-14 text-stromgreay">Online event</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end items-center space-x-10 py-20 px-20">
+          <div>
+            <img src="./src/assets/img/manage.svg" alt="" />
+          </div>
+          <div>
+            <span class="text-16 text-stromgreay font-semibold">Manage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // event list
+
+    const user = document.querySelector(".user-option");
+    function openUser() {
+      user.classList.toggle("open");
+    }
+  </script>
+  <script src="./src/assets/js/index.js"></script>
+</html>

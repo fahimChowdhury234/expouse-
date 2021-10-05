@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Publish Event Website App 1</title>
+  </head>
+
+  <body style="background: #e5e5e5">
+    <div
+      onclick="closeHiddenbar()"
+      class="top-0 bottom-0 fixed trasition left-0 right-0 h-screen hidden"
+      style="z-index: 99999"
+      id="backdropid"
+    ></div>
+    <!-- hidden slider end  -->
+    <!-- hidden slider code -->
+    <div
+      class="top-0 w-500 h-screen overflow-y-scroll trasition bg-white fixed"
+      style="z-index: 9999999; right: -50rem"
+      id="hiddensidebar"
+    >
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-semibold text-capcod">
+            Features pay and publish
+          </h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+      </div>
+      <div class="pt-0 pb-20 px-20">
+        <div class="border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <div class="py-10">
+            <h3 class="text-18 font-bold text-capcod">Publish Later</h3>
+          </div>
+          <div class="flex justify-between items-center py-15">
+            <div class="space-y-5">
+              <h2 class="text-14 text-capcod font-bold">Event App</h2>
+              <span class="text-12 text-brand block">Publish Now</span>
+            </div>
+            <div>
+              <h3 class="text-14 text-stromgreay font-bold">$200</h3>
+            </div>
+          </div>
+          <div class="flex justify-between items-center py-15">
+            <div class="space-y-5">
+              <h2 class="text-14 text-capcod font-bold">
+                Web Networking Platfrom
+              </h2>
+              <span class="text-12 text-brand block">Publish Now</span>
+            </div>
+            <div>
+              <h3 class="text-14 text-stromgreay font-bold">$500</h3>
+            </div>
+          </div>
+          <div class="flex justify-between items-center py-15">
+            <div class="space-y-5">
+              <h2 class="text-14 text-capcod font-bold">
+                Ticketing and Registration
+              </h2>
+              <span class="text-12 text-brand block">Publish Now</span>
+            </div>
+            <div>
+              <h3 class="text-14 text-stromgreay font-bold">$500</h3>
+            </div>
+          </div>
+        </div>
+        <div class="border-b-1 border-stromgreay border-opacity-40 pb-10 pt-20">
+          <div>
+            <h3 class="text-18 font-bold text-capcod">Publish Now</h3>
+          </div>
+          <div class="flex justify-between items-center py-15">
+            <div class="space-y-5">
+              <h2 class="text-14 text-capcod font-bold">Event App</h2>
+              <span class="text-12 text-brand block">Publish Now</span>
+            </div>
+            <div>
+              <h3 class="text-14 text-stromgreay font-bold">$200</h3>
+            </div>
+          </div>
+        </div>
+        <div class="border-b-1 border-stromgreay border-opacity-40 pb-10 pt-10">
+          <div class="flex justify-between items-center py-15">
+            <div class="space-y-5">
+              <h2 class="text-14 text-capcod font-bold">Subtotal</h2>
+            </div>
+            <div>
+              <h3 class="text-14 text-stromgreay font-bold">$300</h3>
+            </div>
+          </div>
+          <div class="flex justify-between items-center py-10">
+            <div class="space-y-5">
+              <h2 class="text-14 text-capcod font-bold">Taxes 18%</h2>
+            </div>
+            <div>
+              <h3 class="text-14 text-stromgreay font-bold">$54</h3>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-5 py-20 flex justify-between">
+          <h2 class="text-14 text-capcod font-bold">Total</h2>
+          <h3 class="text-14 text-stromgreay font-bold">$354</h3>
+        </div>
+        <div class="py-20 space-y-5">
+          <label for="" class="text-12 text-stromgreay"
+            >Have a cupon code? Apply here</label
+          >
+          <form
+            action=""
+            class="
+              border-1 border-opacity-40 border-stromgreay
+              px-20
+              py-7
+              flex
+              justify-between
+              items-center
+              rounded-6
+            "
+          >
+            <input
+              type="text"
+              name="text"
+              id=""
+              class="w-full rounded-6 py-10 px-6 text-12 text-stromgreay"
+            />
+            <button class="text-brand text-12 font-bold">Apply</button>
+          </form>
+        </div>
+        <div>
+          <button
+            class="
+              px-10
+              py-7
+              rounded-6
+              w-full
+              bg-brand
+              text-white
+              font-14 font-semibold
+              uppercase
+              text-center
+            "
+          >
+            play now
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- hidden file end -->
+    <div id="blur">
+      <div
+        class="w-full flex justify-between items-center bg-capcod px-20"
+        style="height: 58px"
+      >
+        <div class="w-110 cursor-pointer">
+          <img src="./src/assets/img/logo.png" alt="" />
+        </div>
+        <div class="flex items-center">
+          <img src="./src/assets/img/close-icon-2.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="p-30">
+        <div class="flex justify-between items-center">
+          <div>
+            <h2 class="text-capcod font-bold" style="font-size: 23px">
+              Publish your event features
+            </h2>
+          </div>
+          <div>
+            <button
+              class="
+                text-14 text-brand
+                font-semibold
+                border-1 border-brand
+                px-15
+                py-6
+                rounded-5
+                uppercase
+              "
+              style="background-color: #f4f5f7"
+            >
+              Cart: 4 features
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-between space-x-20 py-20">
+          <div class="" style="width: 30%">
+            <div class="bg-white py-20 px-20 rounded-6 space-y-20">
+              <a href="./publish-event-website-1.html">
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    space-x-10
+                    px-10
+                    py-10
+                    rounded-6
+                    cursor-pointer
+                    border-brand
+                  "
+                  style="border-left: 5px solid; background-color: #f4f5f7"
+                >
+                  <div class="flex items-center space-x-20 px-10 py-10">
+                    <div
+                      class="flex"
+                      style="align-items: flex-start; height: 42px"
+                    >
+                      <img
+                        src="./src/assets/img/event-website.svg"
+                        alt=""
+                        class="w-25 h-25"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-5">
+                      <h3 class="text-15 text-stromgreay font-bold">
+                        Event Website
+                      </h3>
+                      <span class="text-14 text-stromgreay">Single Page</span>
+                    </div>
+                  </div>
+                  <div class="flex" style="height: 42px; align-items: flex-end">
+                    <div class="flex items-center space-x-5">
+                      <img
+                        src="./src/assets/img/event-clock.svg"
+                        alt=""
+                        class="w-13 h-13"
+                      />
+                      <span class="text-12 font-semibold" style="color: #ffb623"
+                        >Payment Pending</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="./publish-event-app-1.html">
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    space-x-10
+                    px-10
+                    py-10
+                    rounded-6
+                    cursor-pointer
+                  "
+                >
+                  <div class="flex items-center space-x-20 px-10 py-10">
+                    <div
+                      class="flex"
+                      style="align-items: flex-start; height: 42px"
+                    >
+                      <img
+                        src="./src/assets/img/event-icon.svg"
+                        alt=""
+                        class="w-28 h-28"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-5">
+                      <h3 class="text-15 text-stromgreay font-bold">
+                        Event App
+                      </h3>
+                      <span class="text-14 text-stromgreay">Single Page</span>
+                    </div>
+                  </div>
+                  <div class="flex" style="height: 42px; align-items: flex-end">
+                    <div class="flex items-center space-x-5">
+                      <img
+                        src="./src/assets/img/danger.svg"
+                        alt=""
+                        class="w-13 h-13"
+                      />
+                      <span class="text-12 font-semibold" style="color: #ff6565"
+                        >Not Submited</span
+                      >
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="./publish-registration.html">
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    space-x-10
+                    px-10
+                    py-10
+                    rounded-6
+                    cursor-pointer
+                  "
+                >
+                  <div class="flex items-center space-x-20 px-10 py-10">
+                    <div
+                      class="flex"
+                      style="align-items: flex-start; height: 42px"
+                    >
+                      <img
+                        src="./src/assets/img/event-registation.svg"
+                        alt=""
+                        class="w-25 h-25"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-5">
+                      <h3 class="text-15 text-stromgreay font-bold">
+                        Event Registration
+                      </h3>
+                      <span class="text-14 text-stromgreay">Single Page</span>
+                    </div>
+                  </div>
+                  <div class="flex" style="height: 42px; align-items: flex-end">
+                    <div class="flex items-center space-x-5">
+                      <img
+                        src="./src/assets/img/event-clock.svg"
+                        alt=""
+                        class="w-13 h-13"
+                      />
+                      <span class="text-12 font-semibold" style="color: #ffb623"
+                        >Payment Pending</span
+                      >
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="./publish-networking.html"
+                ><div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    space-x-10
+                    px-10
+                    py-10
+                    cursor-pointer
+                    rounded-6
+                  "
+                >
+                  <div class="flex items-center space-x-20 px-10 py-10">
+                    <div
+                      class="flex"
+                      style="align-items: flex-start; height: 42px"
+                    >
+                      <img
+                        src="./src/assets/img/networking.svg"
+                        alt=""
+                        class="w-25 h-25"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-5">
+                      <h3 class="text-15 text-stromgreay font-bold">
+                        Networking
+                      </h3>
+                      <span class="text-14 text-stromgreay">Single Page</span>
+                    </div>
+                  </div>
+                  <div class="flex" style="height: 42px; align-items: flex-end">
+                    <div class="flex items-center space-x-5">
+                      <img
+                        src="./src/assets/img/event-clock.svg"
+                        alt=""
+                        class="w-13 h-13"
+                      />
+                      <span class="text-12 font-semibold" style="color: #ffb623"
+                        >Payment Pending</span
+                      >
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="./publish-check-in-out.html">
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    space-x-10
+                    px-10
+                    py-10
+                    cursor-pointer
+                    rounded-6
+                  "
+                >
+                  <div class="flex items-center space-x-20 px-10 py-10">
+                    <div
+                      class="flex"
+                      style="align-items: flex-start; height: 42px"
+                    >
+                      <img
+                        src="./src/assets/img/onsite check-in.svg"
+                        alt=""
+                        class="w-25 h-25"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-5">
+                      <h3 class="text-15 text-stromgreay font-bold">
+                        Onsite Check-in
+                      </h3>
+                      <span class="text-14 text-stromgreay">Single Page</span>
+                    </div>
+                  </div>
+                  <div class="flex" style="height: 42px; align-items: flex-end">
+                    <div class="flex items-center space-x-5">
+                      <img
+                        src="./src/assets/img/event-clock.svg"
+                        alt=""
+                        class="w-13 h-13"
+                      />
+                      <span class="text-12 font-semibold" style="color: #ffb623"
+                        >Payment Pending</span
+                      >
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="py-20 bg-white rounded-6" style="width: 70%">
+            <div class="bg-white p-20 rounded-5">
+              <div
+                class="
+                  flex
+                  justify-between
+                  items-center
+                  text-stromgreay
+                  pb-25
+                  border-b-1 border-stromgreay border-opacity-40
+                "
+              >
+                <div>
+                  <h2 class="text-18 font-bold mb-8">Event Website</h2>
+                  <p class="text-12">
+                    These are the fields associated with a User Profile.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="py-20 px-20">
+              <div>
+                <h2 class="text-18 font-bold mb-8">Pay and Publish</h2>
+              </div>
+              <div class="flex justify-center items-cente py-20">
+                <div
+                  class="
+                    w-11/12
+                    px-20
+                    py-20
+                    rounded-6
+                    flex
+                    justify-between
+                    items-center
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  <div class="space-y-5">
+                    <h2 class="text-16 text-stromgreay font-bold">
+                      www.yourweb.com
+                    </h2>
+                    <p class="text-12 text-stromgreay">
+                      Please pay before you can customize for SEO.domain etc and
+                      publish the website.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 class="text-16 text-stromgreay font-bold">$ 4500.00</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                text-stromgreay
+                flex
+                justify-end
+                py-25
+                bg-white
+                border-t-1 border-stromgreay border-opacity-40
+                pr-30
+              "
+            >
+              <button
+                style="outline: none; text-transform: uppercase"
+                class="
+                  rounded-6
+                  text-white
+                  px-29
+                  py-7
+                  bg-brand
+                  text-14
+                  font-semibold
+                "
+                onclick="openHiddenbar()"
+              >
+                Publish Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/assets/js/index.js"></script>
+</html>

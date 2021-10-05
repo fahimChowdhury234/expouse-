@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <title>Notification 2</title>
+</head>
+
+<body>
+    <div class="w-500">
+        <div>
+            <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+                <h3 class="text-18 font-bold text-stromgreay">Create Notification
+                </h3>
+                <img src="./src/assets/img/x-mark.svg" onclick="closeHiddenbar()" alt="cross"
+                    class="w-20 h-20 cursor-pointer" />
+            </div>
+            <div class="px-20  pb-20">
+
+                <div class="py-8">
+                    <label for="#" class="block mb-7 text-12 text-stromgreay">Title</label>
+                    <input type="text" name="text" placeholder="Enter Name
+" id="#" class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13" />
+                </div>
+                <div class="py-8">
+                    <label for="#" class="block mb-7 text-12 text-stromgreay"> Description</label>
+                    <textarea type="text" name="text" placeholder="Enter Description" id="#"
+                        class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-100 px-10 py-10 text-13"></textarea>
+                </div>
+                <div class="py-8">
+                    <label for="#" class="block mb-7 text-12 text-stromgreay">Recipients</label>
+                    <input type="text" name="text" placeholder="Select Recipients
+
+" id="#" class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13" />
+                </div>
+                <div class="flex py-8">
+                    <div class="flex items-center">
+                        <div class="h-20 w-20 relative m-auto ">
+                            <input value="20" type="checkbox" class="absolute opacity-0 checboxinput" />
+                            <span class="checkmark absolute top-0 bottom-0 left-0 right-0"></span>
+                        </div>
+                        <div class="ml-10 text-12">Schedule Now
+                        </div>
+                    </div>
+                </div>
+                <div class="py-8">
+                    <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+               Date
+              </label>
+              <input
+                type="date"
+                class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13"
+              />
+            </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

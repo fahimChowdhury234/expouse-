@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blog 2</title>
+  </head>
+
+  <body class="relative" style="overflow-x: hidden">
+    <!-- hidden slider backdrop  -->
+    <div
+      onclick="closeHiddenbar()"
+      class="top-0 bottom-0 fixed trasition left-0 right-0 h-screen hidden"
+      style="z-index: 99999"
+      id="backdropid"
+    ></div>
+    <!-- hidden slider end  -->
+    <!-- hidden slider code -->
+    <div
+      class="top-0 w-500 h-screen overflow-y-scroll trasition bg-white fixed"
+      style="z-index: 9999999; right: -50rem"
+      id="hiddensidebar"
+    >
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-semibold text-capcod">Edit Blog</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="px-20 pb-20">
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Blog Name
+            </label>
+            <input
+              type="text"
+              name="text"
+              placeholder="Enter Blog Name"
+              id="#"
+              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+            />
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Author Name
+            </label>
+            <input
+              type="text"
+              name="text"
+              placeholder="Enter Author Name
+"
+              id="#"
+              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+            />
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Description</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Enter Description"
+              id="#"
+              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-100 px-10 py-10 text-13"
+            ></textarea>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >URL
+            </label>
+            <input
+              type="text"
+              name="text"
+              placeholder="Enter URL"
+              id="#"
+              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+            />
+          </div>
+        </div>
+
+        <div
+          class="pt-8 py-20 px-20 border-b-1 border-stromgreay border-opacity-40"
+        >
+          <label for="#" class="block mb-7 text-12 text-stromgreay">
+            Banner</label
+          >
+          <div class="">
+            <img
+              src="./src/assets/img/post1.jpg"
+              alt="placeholder"
+              class="rounded-6 h-full w-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="p-20">
+        <button
+          class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+        >
+          <span class="mb-0 block"> Save </span>
+        </button>
+      </div>
+    </div>
+    <!-- hidden slider code end -->
+
+    <div class="flex" id="blur">
+      <!-- small sidebar start -->
+      <div class="flex">
+        <div
+          class="w-50 flex flex-col items-center"
+          style="background-color: #353446"
+        >
+          <div class="py-10 cursor-pointer">
+            <img
+              src="./src/assets/img/Group (1).svg"
+              class="w-24 h-27"
+              alt=""
+            />
+          </div>
+          <div class="py-10 cursor-pointer">
+            <img src="./src/assets/img/Group.svg" class="w-31 h-31" alt="" />
+          </div>
+        </div>
+        <!-- main sidebar -->
+        <div
+          id="mainsidebar"
+          class="sidebar w-230 bg-capcod text-14 min-h-screen text-stromgreay trasition"
+          style="background-color: #43435b"
+        >
+          <div class="flex justify-between items-center px-15 py-10">
+            <div class="text-24 text-greaywhite displaynone">
+              <img class="w-110" src="./src/assets/img/logo.png" alt="logo" />
+            </div>
+          </div>
+          <div class="mt-50 font-semibold px-10">
+            <div class="text-center">
+              <div
+                class="flex items-center justify-between py-9 px-7 cursor-pointer"
+                id="sidedropdown"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="./src/assets/img/home.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >Event Detiles</span
+                  >
+                </div>
+
+                <img
+                  src="./src/assets/img/angle.svg"
+                  alt=""
+                  class="w-5 h-10 mr-10 displaynone"
+                />
+              </div>
+              <div
+                class="flex items-center py-5 border-1 rounded-6 px-7 cursor-pointer"
+              >
+                <img
+                  src="./src/assets/img/setting.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Event Setting</span
+                >
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/app-builder.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >App Builder</span
+                >
+              </div>
+              <div
+                class="py-9 px-7 cursor-pointer"
+                id="sidedropdown"
+                open="false"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/event.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Engegment</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 trasition displaynone"
+                  />
+                </div>
+                <div
+                  class="dropdownitem trasition displaynone"
+                  style="max-height: 0px; overflow: hidden"
+                >
+                  <p>Notification</p>
+                  <p>Agenda Live</p>
+                  <p>Live Polling</p>
+                  <p>Activity Feed</p>
+                  <p>Contests</p>
+                  <p>Surveys</p>
+                  <p>Breakout Rooms</p>
+                </div>
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/users.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >APP/WebApp users</span
+                >
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/legal.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Legal Setting</span
+                >
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/event features.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Event features</span
+                >
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/analytics.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Analytics</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- small sidebar end -->
+      <div class="w-full bg-greaywhite">
+        <!-- top navigation bar -->
+        <nav class="h-66 bg-white flex justify-between items-center px-20">
+          <div id="navimg" data-open="false" class="cursor-pointer">
+            <img src="./src/assets/img/nav-btn.svg" alt="" class="w-22 h14" />
+          </div>
+          <div class="flex items-center">
+            <div class="flex justify-between items-center pr-40">
+              <div class="p-5 py-8 mr-10 bg-brand rounded-2 cursor-pointer">
+                <img src="./src/assets/img/eyes.svg" alt="" class="w-21 h-13" />
+              </div>
+              <div
+                class="p-5 flex items-center mr-10 bg-brand rounded-2 cursor-pointer"
+              >
+                <img
+                  src="./src/assets/img/arrow-mark.svg"
+                  alt=""
+                  class="w-15 h-15"
+                />
+                <span class="text-13 text-white">Publish</span>
+              </div>
+              <div class="p-5 bg-brand rounded-2 cursor-pointer">
+                <img
+                  src="./src/assets/img/fullscreen.svg"
+                  alt=""
+                  class="w-19 h-19"
+                />
+              </div>
+            </div>
+            <img
+              class="h-35 w-35 rounded-full cursor-pointer"
+              src="https://www.w3schools.com/howto/img_avatar.png"
+              alt="admin"
+            />
+            <p class="text-13 font-medium text-stromgreay mx-10 cursor-pointer">
+              Tusher
+            </p>
+            <img
+              src="./src/assets/img/arrow.svg"
+              alt="arrow"
+              class="h-10 w-10 cursor-pointer"
+            />
+          </div>
+        </nav>
+        <!-- top navigation bar end-->
+        <div class="p-30">
+          <div class="flex items-center space-x-5 py-20">
+            <p class="font-bold text-16">Events</p>
+            <img src="./src/assets/img/right-angle.svg" alt="" class="" />
+            <p class="font-semibold text-14">Event Expo 2021</p>
+          </div>
+          <div class="flex -mx-15">
+            <!-- Second sidebar start -->
+            <div class="w-330 px-15">
+              <div class="bg-white p-15 text-14 rounded-5 text-stromgreay">
+                <a href="/basic-info-online-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Basic Info
+                  </div>
+                </a>
+                <a href="./logo-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">Logo</div>
+                </a>
+                <a href="/website-banner-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Website Banners
+                  </div>
+                </a>
+                <a href="./community-banner-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Community Banners
+                  </div>
+                </a>
+
+                <a href="/app-banner-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    App Banners
+                  </div>
+                </a>
+                <a href="/social-link.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Social Link
+                  </div>
+                </a>
+                <a href="./participate-profile-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Participate Profile
+                  </div>
+                </a>
+
+                <a href="./event-highlights.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Event Highlights
+                  </div>
+                </a>
+
+                <a href="./speakers-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Speakers
+                  </div>
+                </a>
+
+                <a href="./schedule-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Schedule
+                  </div>
+                </a>
+                <a href="/sponsors-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Sponsors
+                  </div>
+                </a>
+                <a href="/exhibitors-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Exhibitors
+                  </div>
+                </a>
+                <a href="/ image-gallery-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Image Gallery
+                  </div>
+                </a>
+                <a href="">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Video Gallery
+                  </div>
+                </a>
+                <a href="/contact-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">Contact</div>
+                </a>
+                <a href="">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">FAQ</div>
+                </a>
+                <a href="./testimonials-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Testimonials
+                  </div>
+                </a>
+                <a href="./blog-1.html">
+                  <div
+                    class="rounded-6 px-10 py-10 activesubsidebar secondsidebar"
+                  >
+                    Blog
+                  </div>
+                </a>
+                <a href="./live-streaming-1.html">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Live Streaming
+                  </div>
+                </a>
+                <a href="">
+                  <div class="rounded-6 px-10 py-10 secondsidebar">
+                    Custom Tags
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Second sidebar end -->
+            <div class="w-full">
+              <div class="px-20 py-10 bg-white rounded-6">
+                <div
+                  class="flex justify-between items-center py-30 border-b-1 border-stromgreay border-opacity-40"
+                >
+                  <div>
+                    <h1 class="text-18 text-capcod font-bold">Blog</h1>
+                    <p class="text-12 text-stromgreay py-5">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                  </div>
+                  <div class="pt-10">
+                    <button
+                      onclick="openHiddenbar()"
+                      class="w-110 h-40 bg-brand flex justify-center items-center space-x-5 rounded-6 outline-none"
+                    >
+                      <div>
+                        <img
+                          src="./src/assets/img/plus.svg"
+                          alt=""
+                          class="w-12 h-12"
+                        />
+                      </div>
+                      <div class="text-12 font-bold text-white uppercase">
+                        Blog
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="py-20">
+                  <div
+                    class="bg-white border-1 border-stromgreay border-opacity-40 px-15 h-40 w-300 flex items-center space-x-15 rounded-6"
+                  >
+                    <button class="outline-none">
+                      <img
+                        src="./src/assets/img/search-icon.svg"
+                        alt=""
+                        class="w-15 h-15"
+                      />
+                    </button>
+                    <input
+                      class="w-full rounded text-14 font-bold text-stromgreay"
+                      type="text"
+                      placeholder="Search"
+                    />
+                  </div>
+                </div>
+                <div class="flex justify-between items-center space-x-20 py-20">
+                  <div
+                    class="border-1 border-brand w-4/12 p-10 rounded-6"
+                    style="background-color: #f7f7f7"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center space-x-5">
+                        <span class="text-12 text-stromgreay">By</span>
+                        <h3 class="text-capcod text-14">Natalia Sanz</h3>
+                      </div>
+                      <div
+                        class="bg-white cursor-pointer w-25 h-25 flex justify-center items-center rounded-6"
+                      >
+                        <img src="./src/assets/img/dote-blue.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="py-10">
+                      <img
+                        src="src/assets/img/post1.jpg"
+                        alt=""
+                        class="rounded-6"
+                      />
+                    </div>
+                    <div>
+                      <p class="text-14 text-capcod font-semibold">
+                        Bold moves lead the way in digital events development
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="border-1 border-stromgreay border-opacity-40 w-4/12 p-10 rounded-6"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center space-x-5">
+                        <span class="text-12 text-stromgreay">By</span>
+                        <h3 class="text-capcod text-14">Brantlee Adair</h3>
+                      </div>
+                      <div
+                        class="bg-white cursor-pointer w-25 h-25 flex justify-center items-center rounded-6"
+                      >
+                        <img src="./src/assets/img/dote.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="py-10">
+                      <img
+                        src="src/assets/img/post1.jpg"
+                        alt=""
+                        class="rounded-6"
+                      />
+                    </div>
+                    <div>
+                      <p class="text-14 text-capcod font-semibold">
+                        Recording: The Download with Meetup’s Tech Team
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="border-1 border-stromgreay border-opacity-40 w-4/12 p-10 rounded-6"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center space-x-5">
+                        <span class="text-12 text-stromgreay">By</span>
+                        <h3 class="text-capcod text-14">Hector Lovett</h3>
+                      </div>
+                      <div
+                        class="bg-white cursor-pointer w-25 h-25 flex justify-center items-center rounded-6"
+                      >
+                        <img src="./src/assets/img/dote.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="py-10">
+                      <img
+                        src="src/assets/img/post1.jpg"
+                        alt=""
+                        class="rounded-6"
+                      />
+                    </div>
+                    <div>
+                      <p class="text-14 text-capcod font-semibold">
+                        The Future of Visual Design storytelling with
+                        Visualization
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/assets/js/index.js"></script>
+</html>

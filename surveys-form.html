@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Surveys Form</title>
+  </head>
+  <body>
+    <div class="w-7/12 h-screen bg-white" style="">
+      <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+        <div class="flex items-center space-x-10">
+          <div>
+            <img
+              src="./src/assets/img/left-arrow.svg"
+              alt=""
+              class="w-20 h-20"
+            />
+          </div>
+          <div>
+            <h3 class="text-18 font-bold text-stromgreay">Survey Forms</h3>
+          </div>
+        </div>
+        <img
+          src="./src/assets/img/x-mark.svg"
+          onclick="closeHiddenbar()"
+          alt="cross"
+          class="w-20 h-20 cursor-pointer"
+        />
+      </div>
+      <div class="px-30">
+        <div class="space-y-10">
+          <h3 class="text-18 text-black font-bold">Event Feedback Form</h3>
+          <div class="space-y-10">
+            <p class="text-16 text-capcod font-semibold">
+              So, how would you rate the event overall?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              What did you like the most about the event?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              Is there anything you think we could've done better?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              How well was the event organized?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              How would you rate the venue of the event?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              And how helpful were the event staff?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              Great! Now, do you remember seeing any of our sponsors? Tell us
+              which ones, if you do:
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              Thanks again. Would you mind telling us how you heard about the
+              event?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              Finally, would you recommend our event to a friend?
+            </p>
+          </div>
+        </div>
+        <div class="py-20 space-y-10">
+          <div>
+            <h3 class="text-18 text-black font-bold">
+              Exhibitor Feedback Form
+            </h3>
+          </div>
+          <div class="space-y-10">
+            <p class="text-16 text-capcod font-semibold">
+              So, how would you rate the Exhibitors overall?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              The best thing about the exhibitors were
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              The worst thing about the exhibitors were
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              Who were your favorite exhibitors?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              Who were the exhibitors who didn't live up to your expectations?
+            </p>
+          </div>
+        </div>
+        <div class="py-20 space-y-10">
+          <div>
+            <h3 class="text-18 text-black font-bold">Speaker Feedback Form</h3>
+          </div>
+          <div class="space-y-10">
+            <p class="text-16 text-capcod font-semibold">
+              So, how would you rate the speakers overall?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              How good were the speakers at the sessions?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              The speakers were clear and easy to understand. Do you agree?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              The best thing about the speakers were
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              The worst thing about the speakers were
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              Who were your favorite speakers?
+            </p>
+            <p class="text-16 text-capcod font-semibold">
+              Who were the speakers who didn't live up to your expectations?
+            </p>
+          </div>
+          <div class="py-20 space-y-10">
+            <div>
+              <h3 class="text-18 text-black font-bold">
+                Session Feedback Form
+              </h3>
+            </div>
+            <div class="space-y-10">
+              <p class="text-16 text-capcod font-semibold">
+                So, how would you rate the sessions overall?
+              </p>
+              <p class="text-16 text-capcod font-semibold">
+                The sessions exposed you to new knowledge and practices. Do you
+                agree?
+              </p>
+              <p class="text-16 text-capcod font-semibold">Definitely, Yes</p>
+              <p class="text-16 text-capcod font-semibold">Yes, sort of</p>
+              <p class="text-16 text-capcod font-semibold">
+                Not Really,Definitely Not
+              </p>
+              <p class="text-16 text-capcod font-semibold">
+                How good were the speakers at the sessions?
+              </p>
+              <p class="text-16 text-capcod font-semibold">
+                The speakers were clear and easy to understand. Do you agree?
+              </p>
+              <p class="text-16 text-capcod font-semibold">
+                The best thing about the speakers were
+              </p>
+              <p class="text-16 text-capcod font-semibold">
+                The worst thing about the speakers were
+              </p>
+              <p class="text-16 text-capcod font-semibold">
+                Who were your favorite speakers?
+              </p>
+              <p class="text-16 text-capcod font-semibold">
+                Who were the speakers who didn't live up to your expectations?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-30">
+        <div class="py-10">
+          <h3 class="text-20 text-black font-bold">Choose type of Contest</h3>
+          <p class="text-14 text-capcod font-semibold">
+            Conduct contests like Best Selfie, Caption a photo and much more
+          </p>
+        </div>
+
+        <div class="flex justify-between py-10 space-x-10">
+          <div
+            class="w-4/12 space-y-20 flex justify-center items-center flex-col"
+          >
+            <div
+              class="w-80 h-80 border-1 border-stromgreay border-opacity-40 flex justify-center items-center relative barBtn cursor-pointer"
+              style="border-radius: 50%"
+            >
+              <img
+                src="./src/assets/img/clipboard.svg"
+                alt=""
+                class="w-30 h-30"
+              />
+              <div
+                class="absolute bar"
+                style="top: 0%; right: 0%; opacity: 0; visibility: hidden"
+              >
+                <img
+                  src="./src/assets/img/verified.svg"
+                  alt=""
+                  class="w-20 h-20"
+                />
+              </div>
+            </div>
+            <div class="space-y-5 flex justify-center items-cente flex-col">
+              <h3 class="text-16 text-center text-stromgreay font-bold">
+                Entry Contest
+              </h3>
+              <p class="text-14 text-center text-stromgreay">
+                User participates by posting an entry.Suited for selfie
+                contest,photo/video contest,Article Writing contest
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-4/12 space-y-20 flex justify-center items-center flex-col"
+          >
+            <div
+              class="w-80 h-80 border-1 border-stromgreay border-opacity-40 flex justify-center items-center relative barBtn cursor-pointer"
+              style="border-radius: 50%"
+            >
+              <img
+                src="./src/assets/img/conversation.svg"
+                alt=""
+                class="w-30 h-30"
+              />
+              <div
+                class="absolute bar"
+                style="top: 0%; right: 0%; opacity: 0; visibility: hidden"
+              >
+                <img
+                  src="./src/assets/img/verified.svg"
+                  alt=""
+                  class="w-20 h-20"
+                />
+              </div>
+            </div>
+            <div class="space-y-5 flex justify-center items-cente flex-col">
+              <h3 class="text-16 text-center text-stromgreay font-bold">
+                Best Response Contest
+              </h3>
+              <p class="text-14 text-center text-stromgreay">
+                User participates by commenting on admins Post.Suited for
+                discussions,Suggestions,Caption Contest etc.
+              </p>
+            </div>
+          </div>
+          <div class="w-4/12 space-y-20 flex items-center flex-col">
+            <div
+              class="w-80 h-80 border-1 border-stromgreay border-opacity-40 flex justify-center items-center relative barBtn cursor-pointer"
+              style="border-radius: 50%"
+            >
+              <img
+                src="./src/assets/img/education-quiz.svg"
+                alt=""
+                class="w-30 h-30"
+              />
+              <div
+                class="absolute bar"
+                style="top: 0%; right: 0%; opacity: 0; visibility: hidden"
+              >
+                <img
+                  src="./src/assets/img/verified.svg"
+                  alt=""
+                  class="w-20 h-20"
+                />
+              </div>
+            </div>
+            <div class="space-y-5 flex justify-center items-cente flex-col">
+              <h3 class="text-16 text-center text-stromgreay font-bold">
+                Quiz
+              </h3>
+              <p class="text-14 text-center text-stromgreay">
+                Run a quiz competion.Objective and Subjective answers supported.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/assets/js/index.js"></script>
+  <script src="./src/assets/js/jquery-3.4.1.min.js"></script>
+  <script src="./src/assets/js/main.js"></script>
+</html>

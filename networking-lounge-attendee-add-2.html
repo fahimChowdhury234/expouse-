@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Networking Lounge Attendee Add 1</title>
+  </head>
+
+  <body>
+    <div class="w-500 h-screen">
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-20">
+          <div class="flex items-center space-x-20">
+            <img
+              src="./src/assets/img/left-arrow.svg"
+              alt=""
+              class="w-18 h-18"
+            />
+            <h3 class="text-18 font-semibold text-capcod">
+              Add Attendee Tables
+            </h3>
+          </div>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="px-20 py-20">
+          <div
+            class="w-full rounded-5 flex items-center space-x-10 px-10 py-10"
+            style="background-color: #f4f5f7"
+          >
+            <button
+              class="
+                text-14
+                uppercase
+                rounded-5
+                py-7
+                px-10
+                w-6/12
+                bg-brand
+                text-white
+              "
+            >
+              SINGLE ADD
+            </button>
+            <button class="text-14 text-stromgreay rounded-5 px-10 py-7 w-6/12">
+              BULK UPLOAD
+            </button>
+          </div>
+        </div>
+        <div class="px-20 pb-50">
+          <div class="py-20">
+            <label for="# " class="block text-12 text-stromgreay mb-8">
+              Lounge Table Name
+            </label>
+            <input
+              type="text"
+              name="text"
+              class="
+                text-12 text-stromgreay
+                py-10
+                px-10
+                rounded-5
+                border-1 border-opacity-40 border-stromgreay
+                w-full
+              "
+              placeholder="Enter Lounge Table Name
+
+"
+              id=""
+            />
+          </div>
+          <div class="pb-10 space-y-5">
+            <label for="# " class="block text-12 text-stromgreay mb-8">
+              Topic
+            </label>
+            <input
+              type="text"
+              name="text"
+              class="
+                text-12 text-stromgreay
+                py-10
+                px-10
+                rounded-5
+                border-1 border-opacity-40 border-stromgreay
+                w-full
+              "
+              placeholder="Enter Topic
+
+"
+              id=""
+            />
+          </div>
+
+          <div class="py-10 space-y-5">
+            <label for="" class="block text-12 text-stromgreay">Capacity</label>
+            <div class="flex space-x-20 items-center">
+              <div class="flex items-center space-x-10">
+                <input
+                  type="radio"
+                  name="radio"
+                  id=""
+                  class="cursor-pointer w-15 h-15"
+                />
+                <span class="text-14 text-stromgreay font-semibold">2</span>
+              </div>
+              <div class="flex items-center space-x-10">
+                <input
+                  type="radio"
+                  name="radio"
+                  id=""
+                  class="cursor-pointer w-15 h-15"
+                />
+                <span class="text-14 text-stromgreay font-semibold">4</span>
+              </div>
+              <div class="flex items-center space-x-10">
+                <input
+                  type="radio"
+                  name="radio"
+                  id=""
+                  class="cursor-pointer w-15 h-15"
+                />
+                <span class="text-14 text-stromgreay font-semibold">10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-20 border-t-1 border-stromgreay border-opacity-40">
+        <button
+          class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+        >
+          <span class="mb-0 block"> save </span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

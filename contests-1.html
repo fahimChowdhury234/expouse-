@@ -1,0 +1,3251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contests 1</title>
+  </head>
+
+  <body class="relative" style="overflow-x: hidden">
+    <!-- hidden slider backdrop  -->
+    <div
+      onclick="closeHiddenbar()"
+      class="top-0 bottom-0 fixed trasition left-0 right-0 h-screen hidden"
+      style="z-index: 99999"
+      id="backdropid"
+    ></div>
+    <!-- hidden slider end  -->
+    <!-- hidden slider code -->
+    <div
+      class="top-0 w-500 h-screen overflow-y-scroll trasition bg-white fixed"
+      style="z-index: 9999999; right: -50rem"
+      id="hiddensidebar"
+    >
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-bold text-stromgreay">Entry Contest</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mb-10">
+            Contest Details
+          </h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Contest Name</label
+            >
+            <input
+              type="text"
+              name="text"
+              placeholder="Contest Name"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                px-10
+                py-10
+                text-13
+              "
+            />
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Contest Description</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Contest Description"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                h-100
+                px-10
+                py-10
+                text-13
+              "
+            ></textarea>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Description File</label
+            >
+            <div
+              style="background: #f4f5f7"
+              class="
+                h-60
+                flex
+                items-center
+                justify-center
+                border-1 border-dashed border-stromgreay border-opacity-40
+                rounded-6
+                space-x-10
+              "
+            >
+              <div>
+                <img
+                  src="./src/assets/img/drop-drag.svg"
+                  alt=""
+                  class="w-18 h-18"
+                />
+              </div>
+              <div class="text-14 text-stromgreay">browse file</div>
+            </div>
+          </div>
+          <div class="py-8 flex space-x-20">
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Start Date</label
+              >
+              <input
+                type="date"
+                class="
+                  w-full
+                  rounded-6
+                  border-1 border-stromgreay border-opacity-40
+                  h-40
+                  px-10
+                  py-10
+                  text-13
+                "
+              />
+            </div>
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                End Date</label
+              >
+              <input
+                type="date"
+                class="
+                  w-full
+                  rounded-6
+                  border-1 border-stromgreay border-opacity-40
+                  h-40
+                  px-10
+                  py-10
+                  text-13
+                "
+              />
+            </div>
+          </div>
+
+          <div class="py-8 mt-10">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Banner</label
+            >
+            <div
+              class="
+                flex
+                rounded-6
+                justify-center
+                items-center
+                flex-col
+                h-200
+                border-dotted border-stromgreay border-1 border-opacity-40
+              "
+              style="background: #f4f5f7"
+            >
+              <img
+                src="./src/assets/img/imageplaceholder.svg"
+                alt="placeholder"
+              />
+              <p
+                class="
+                  text-14
+                  mt-10
+                  text-stromgreay
+                  opacity-60
+                  text-center
+                  font-bold
+                "
+              >
+                choose Image to Upload
+              </p>
+              <p class="text-12 text-stromgreay opacity-70 text-center">
+                1200x800 px
+              </p>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Banner Caption</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Banner Caption"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                h-70
+                px-10
+                py-10
+                text-13
+              "
+            ></textarea>
+          </div>
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mt-30 mb-10">
+            Post Details
+          </h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Character Limit</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  MINIMUM
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  MINIMUM
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Points for Entry</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  MINIMUM
+                </div>
+              </div>
+              <div class="w-6/12"></div>
+            </div>
+          </div>
+          <div class="py-8 text-stromgreay">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Supported Attachment</label
+            >
+            <div class="flex">
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Photos</div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto ml-20">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Videos</div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto ml-20">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Selfie</div>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Who will the winer be chosen</label
+            >
+            <div class="radiobutton flex">
+              <div class="flex items-center mr-10">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Admin</p>
+              </div>
+
+              <div class="flex items-center">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Most Likes</p>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <div class="flex space-x-40">
+              <div class="w-6/12">
+                <label for="#" class="block mb-7 text-12 text-stromgreay">
+                  Number of winners</label
+                >
+                <div class="flex justify-between overflow-hidden rounded-6">
+                  <input
+                    type="text"
+                    name="text"
+                    placeholder="Contest Name"
+                    id="#"
+                    class="
+                      w-full
+                      rounded-6
+                      border-1 border-stromgreay border-opacity-40
+                      px-10
+                      py-10
+                      text-13
+                    "
+                  />
+                </div>
+              </div>
+              <div class="w-6/12">
+                <label for="#" class="block mb-7 text-12 text-stromgreay">
+                  Winning points</label
+                >
+                <div
+                  class="
+                    flex
+                    justify-between
+                    overflow-hidden
+                    border-1 border-stromgreay border-opacity-40
+                    rounded-6
+                  "
+                >
+                  <div>
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-10 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="
+                      text-12 text-stromgreay
+                      flex
+                      items-center
+                      px-14
+                      py-5
+                      rounded-6
+                      cursor-pointer
+                    "
+                    style="background-color: #f4f5f7"
+                  >
+                    Points
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold pt-30 mb-10">Settings</h3>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">
+                Make any one attachment mandatory
+              </p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Allow multiple Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Moderate Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Attendees see other Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">
+                Attendees see other comments
+              </p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="p-20">
+          <button
+            class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+          >
+            <span class="mb-0 block"> Save </span>
+          </button>
+        </div>
+      </div>
+      <div class="mt-50">
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-bold text-stromgreay">Entry Contest</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mb-10">
+            Contest Details
+          </h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Contest Name</label
+            >
+            <input
+              type="text"
+              name="text"
+              placeholder="Contest Name"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                px-10
+                py-10
+                text-13
+              "
+            />
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Contest Description</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Contest Description"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                h-100
+                px-10
+                py-10
+                text-13
+              "
+            ></textarea>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Description File</label
+            >
+            <div
+              style="background: #f4f5f7"
+              class="
+                h-60
+                flex
+                items-center
+                justify-center
+                border-1 border-dashed border-stromgreay border-opacity-40
+                rounded-6
+                space-x-10
+              "
+            >
+              <div>
+                <img
+                  src="./src/assets/img/drop-drag.svg"
+                  alt=""
+                  class="w-18 h-18"
+                />
+              </div>
+              <div class="text-14 text-stromgreay">browse file</div>
+            </div>
+          </div>
+          <div class="py-8 flex space-x-20">
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Start Date</label
+              >
+              <input
+                type="date"
+                class="
+                  w-full
+                  rounded-6
+                  border-1 border-stromgreay border-opacity-40
+                  h-40
+                  px-10
+                  py-10
+                  text-13
+                "
+              />
+            </div>
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                End Date</label
+              >
+              <input
+                type="date"
+                class="
+                  w-full
+                  rounded-6
+                  border-1 border-stromgreay border-opacity-40
+                  h-40
+                  px-10
+                  py-10
+                  text-13
+                "
+              />
+            </div>
+          </div>
+
+          <div class="py-8 mt-10">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Banner</label
+            >
+            <div
+              class="
+                flex
+                rounded-6
+                justify-center
+                items-center
+                flex-col
+                h-200
+                border-dotted border-stromgreay border-1 border-opacity-40
+              "
+              style="background: #f4f5f7"
+            >
+              <img
+                src="./src/assets/img/imageplaceholder.svg"
+                alt="placeholder"
+              />
+              <p
+                class="
+                  text-14
+                  mt-10
+                  text-stromgreay
+                  opacity-60
+                  text-center
+                  font-bold
+                "
+              >
+                choose Image to Upload
+              </p>
+              <p class="text-12 text-stromgreay opacity-70 text-center">
+                1200x800 px
+              </p>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Banner Caption</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Banner Caption"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                h-70
+                px-10
+                py-10
+                text-13
+              "
+            ></textarea>
+          </div>
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mt-30 mb-10">
+            Post Details
+          </h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Character Limit</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  MINIMUM
+                </div>
+              </div>
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  MINIMUM
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Points for Response</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  MINIMUM
+                </div>
+              </div>
+              <div class="w-6/12"></div>
+            </div>
+          </div>
+          <div class="py-8 text-stromgreay">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Supported Attachment</label
+            >
+            <div class="flex">
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Photos</div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto ml-20">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Videos</div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto ml-20">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Selfie</div>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Who will the winer be chosen</label
+            >
+            <div class="radiobutton flex">
+              <div class="flex items-center mr-10">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Admin</p>
+              </div>
+
+              <div class="flex items-center">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Most Likes</p>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <div class="flex space-x-40">
+              <div class="w-6/12">
+                <label for="#" class="block mb-7 text-12 text-stromgreay">
+                  Number of winners</label
+                >
+                <div class="flex justify-between overflow-hidden rounded-6">
+                  <input
+                    type="text"
+                    name="text"
+                    placeholder="Contest Name"
+                    id="#"
+                    class="
+                      w-full
+                      rounded-6
+                      border-1 border-stromgreay border-opacity-40
+                      px-10
+                      py-10
+                      text-13
+                    "
+                  />
+                </div>
+              </div>
+              <div class="w-6/12">
+                <label for="#" class="block mb-7 text-12 text-stromgreay">
+                  Winning points</label
+                >
+                <div
+                  class="
+                    flex
+                    justify-between
+                    overflow-hidden
+                    border-1 border-stromgreay border-opacity-40
+                    rounded-6
+                  "
+                >
+                  <div>
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-10 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="
+                      text-12 text-stromgreay
+                      flex
+                      items-center
+                      px-14
+                      py-5
+                      rounded-6
+                      cursor-pointer
+                    "
+                    style="background-color: #f4f5f7"
+                  >
+                    Points
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold pt-30 mb-10">Settings</h3>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">
+                Make any one attachment mandatory
+              </p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Allow multiple Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Moderate Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Attendees see other Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">
+                Attendees see other comments
+              </p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="p-20">
+          <button
+            class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+          >
+            <span class="mb-0 block"> Save </span>
+          </button>
+        </div>
+      </div>
+      <div class="mt-50">
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-bold text-stromgreay">Entry Contest</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mb-10">
+            Contest Details
+          </h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Contest Name</label
+            >
+            <input
+              type="text"
+              name="text"
+              placeholder="Contest Name"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                px-10
+                py-10
+                text-13
+              "
+            />
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Contest Description</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Contest Description"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                h-100
+                px-10
+                py-10
+                text-13
+              "
+            ></textarea>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Description File</label
+            >
+            <div
+              style="background: #f4f5f7"
+              class="
+                h-60
+                flex
+                items-center
+                justify-center
+                border-1 border-dashed border-stromgreay border-opacity-40
+                rounded-6
+                space-x-10
+              "
+            >
+              <div>
+                <img
+                  src="./src/assets/img/drop-drag.svg"
+                  alt=""
+                  class="w-18 h-18"
+                />
+              </div>
+              <div class="text-14 text-stromgreay">browse file</div>
+            </div>
+          </div>
+          <div class="py-8 flex space-x-20">
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Contest Start
+              </label>
+              <input
+                type="date"
+                class="
+                  w-full
+                  rounded-6
+                  border-1 border-stromgreay border-opacity-40
+                  h-40
+                  px-10
+                  py-10
+                  text-13
+                "
+              />
+            </div>
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Contest End
+              </label>
+              <input
+                type="date"
+                class="
+                  w-full
+                  rounded-6
+                  border-1 border-stromgreay border-opacity-40
+                  h-40
+                  px-10
+                  py-10
+                  text-13
+                "
+              />
+            </div>
+          </div>
+
+          <div class="py-8 mt-10">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Banner</label
+            >
+            <div
+              class="
+                flex
+                rounded-6
+                justify-center
+                items-center
+                flex-col
+                h-200
+                border-dotted border-stromgreay border-1 border-opacity-40
+              "
+              style="background: #f4f5f7"
+            >
+              <img
+                src="./src/assets/img/imageplaceholder.svg"
+                alt="placeholder"
+              />
+              <p
+                class="
+                  text-14
+                  mt-10
+                  text-stromgreay
+                  opacity-60
+                  text-center
+                  font-bold
+                "
+              >
+                choose Image to Upload
+              </p>
+              <p class="text-12 text-stromgreay opacity-70 text-center">
+                1200x800 px
+              </p>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Banner Caption</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Banner Caption"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                h-70
+                px-10
+                py-10
+                text-13
+              "
+            ></textarea>
+          </div>
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mt-30 mb-10">
+            Post Details
+          </h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Character Limit</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  CHARACTER
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Points for Response</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  POINTS
+                </div>
+              </div>
+              <div class="w-6/12"></div>
+            </div>
+          </div>
+          <div class="py-8 text-stromgreay">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Supported Attachment</label
+            >
+            <div class="flex">
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Photos</div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto ml-20">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Videos</div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto ml-20">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Selfie</div>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Who will the winer be chosen</label
+            >
+            <div class="radiobutton flex">
+              <div class="flex items-center mr-10">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Admin</p>
+              </div>
+
+              <div class="flex items-center">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Most Likes</p>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <div class="flex space-x-40">
+              <div class="w-6/12">
+                <label for="#" class="block mb-7 text-12 text-stromgreay">
+                  Number of winners</label
+                >
+                <div class="flex justify-between overflow-hidden rounded-6">
+                  <input
+                    type="text"
+                    name="text"
+                    placeholder=""
+                    id="#"
+                    class="
+                      w-full
+                      rounded-6
+                      border-1 border-stromgreay border-opacity-40
+                      px-10
+                      py-10
+                      text-13
+                    "
+                  />
+                </div>
+              </div>
+              <div class="w-6/12">
+                <label for="#" class="block mb-7 text-12 text-stromgreay">
+                  Winning points</label
+                >
+                <div
+                  class="
+                    flex
+                    justify-between
+                    overflow-hidden
+                    border-1 border-stromgreay border-opacity-40
+                    rounded-6
+                  "
+                >
+                  <div>
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-10 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="
+                      text-12 text-stromgreay
+                      flex
+                      items-center
+                      px-14
+                      py-5
+                      rounded-6
+                      cursor-pointer
+                    "
+                    style="background-color: #f4f5f7"
+                  >
+                    POINTS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex py-20">
+            <div class="flex items-center">
+              <div class="h-20 w-20 relative m-auto">
+                <input
+                  value="20"
+                  type="checkbox"
+                  class="absolute opacity-0 checboxinput"
+                />
+                <span
+                  class="checkmark-gray absolute top-0 bottom-0 left-0 right-0"
+                ></span>
+              </div>
+              <div class="ml-10 text-14 text-stromgreay">
+                Equal points distribution
+              </div>
+            </div>
+          </div>
+
+          <div class="py-10">
+            <div class="py-5">
+              <span class="text-12 text-stromgreay"> Points Distribution </span>
+            </div>
+            <div class="space-x-30">
+              <div
+                class="
+                  inline-block
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <tr>
+                  <div
+                    class="
+                      border-b-1
+                      flex
+                      justify-center
+                      rounded-6
+                      items-center
+                      border-opacity-40 border-stromgreay
+                      h-35
+                      text-14
+                      w-60
+                    "
+                    style="background-color: #f4f5f7"
+                  >
+                    1
+                  </div>
+                  <td class="">
+                    <input
+                      value="20"
+                      type="number"
+                      class="h-35 text-14 rounded-6 w-60 numberinput px-3"
+                    />
+                  </td>
+                </tr>
+              </div>
+              <div
+                class="
+                  inline-block
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <tr>
+                  <div
+                    class="
+                      border-b-1
+                      flex
+                      justify-center
+                      rounded-6
+                      items-center
+                      border-opacity-40 border-stromgreay
+                      h-35
+                      text-14
+                      w-60
+                    "
+                    style="background-color: #f4f5f7"
+                  >
+                    2
+                  </div>
+                  <td class="">
+                    <input
+                      value="20"
+                      type="number"
+                      class="h-35 text-14 rounded-6 w-60 numberinput px-3"
+                    />
+                  </td>
+                </tr>
+              </div>
+              <div
+                class="
+                  inline-block
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <tr>
+                  <div
+                    class="
+                      border-b-1
+                      flex
+                      justify-center
+                      rounded-6
+                      items-center
+                      border-opacity-40 border-stromgreay
+                      h-35
+                      text-14
+                      w-60
+                    "
+                    style="background-color: #f4f5f7"
+                  >
+                    3
+                  </div>
+                  <td class="">
+                    <input
+                      value="20"
+                      type="number"
+                      class="h-35 text-14 rounded-6 w-60 numberinput px-3"
+                    />
+                  </td>
+                </tr>
+              </div>
+              <div
+                class="
+                  inline-block
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <tr>
+                  <div
+                    class="
+                      border-b-1
+                      flex
+                      justify-center
+                      rounded-6
+                      items-center
+                      border-opacity-40 border-stromgreay
+                      h-35
+                      text-14
+                      w-60
+                    "
+                    style="background-color: #f4f5f7"
+                  >
+                    4
+                  </div>
+                  <td class="">
+                    <input
+                      value="20"
+                      type="number"
+                      class="h-35 text-14 rounded-6 w-60 numberinput px-3"
+                    />
+                  </td>
+                </tr>
+              </div>
+              <div
+                class="
+                  inline-block
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <tr>
+                  <div
+                    class="
+                      border-b-1
+                      flex
+                      justify-center
+                      rounded-6
+                      items-center
+                      border-opacity-40 border-stromgreay
+                      h-35
+                      text-14
+                      w-60
+                    "
+                    style="background-color: #f4f5f7"
+                  >
+                    5
+                  </div>
+                  <td class="">
+                    <input
+                      value="20"
+                      type="number"
+                      class="h-35 text-14 rounded-6 w-60 numberinput px-3"
+                    />
+                  </td>
+                </tr>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold pt-30 mb-10">Settings</h3>
+
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Allow multiple Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Moderate Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">
+                Attendees can see other's entries
+              </p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="p-20">
+          <button
+            class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+          >
+            <span class="mb-0 block"> Save </span>
+          </button>
+        </div>
+      </div>
+      <div class="mt-50">
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-bold text-stromgreay">Entry Contest</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mb-10">
+            Contest Details
+          </h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Contest Name</label
+            >
+            <input
+              type="text"
+              name="text"
+              placeholder="Contest Name"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                px-10
+                py-10
+                text-13
+              "
+            />
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Contest Description</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Contest Description"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                h-100
+                px-10
+                py-10
+                text-13
+              "
+            ></textarea>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Description File</label
+            >
+            <div
+              style="background: #f4f5f7"
+              class="
+                h-60
+                flex
+                items-center
+                justify-center
+                border-1 border-dashed border-stromgreay border-opacity-40
+                rounded-6
+                space-x-10
+              "
+            >
+              <div>
+                <img
+                  src="./src/assets/img/drop-drag.svg"
+                  alt=""
+                  class="w-18 h-18"
+                />
+              </div>
+              <div class="text-14 text-stromgreay">browse file</div>
+            </div>
+          </div>
+          <div class="py-8 flex space-x-20">
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Contest Start
+              </label>
+              <input
+                type="date"
+                class="
+                  w-full
+                  rounded-6
+                  border-1 border-stromgreay border-opacity-40
+                  h-40
+                  px-10
+                  py-10
+                  text-13
+                "
+              />
+            </div>
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Contest End
+              </label>
+              <input
+                type="date"
+                class="
+                  w-full
+                  rounded-6
+                  border-1 border-stromgreay border-opacity-40
+                  h-40
+                  px-10
+                  py-10
+                  text-13
+                "
+              />
+            </div>
+          </div>
+
+          <div class="py-8 mt-10">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Banner</label
+            >
+            <div
+              class="
+                flex
+                rounded-6
+                justify-center
+                items-center
+                flex-col
+                h-200
+                border-dotted border-stromgreay border-1 border-opacity-40
+              "
+              style="background: #f4f5f7"
+            >
+              <img
+                src="./src/assets/img/imageplaceholder.svg"
+                alt="placeholder"
+              />
+              <p
+                class="
+                  text-14
+                  mt-10
+                  text-stromgreay
+                  opacity-60
+                  text-center
+                  font-bold
+                "
+              >
+                choose Image to Upload
+              </p>
+              <p class="text-12 text-stromgreay opacity-70 text-center">
+                1200x800 px
+              </p>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Banner Caption</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Banner Caption"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                h-70
+                px-10
+                py-10
+                text-13
+              "
+            ></textarea>
+          </div>
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mt-30 mb-10">
+            Post Details
+          </h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Character Limit</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  CHARACTER
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Points for Response</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  POINTS
+                </div>
+              </div>
+              <div class="w-6/12"></div>
+            </div>
+          </div>
+          <div class="py-8 text-stromgreay">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Supported Attachment</label
+            >
+            <div class="flex">
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Photos</div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto ml-20">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Videos</div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto ml-20">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Selfie</div>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Who will the winer be chosen</label
+            >
+            <div class="radiobutton flex">
+              <div class="flex items-center mr-10">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Admin</p>
+              </div>
+
+              <div class="flex items-center">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Most Likes</p>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <div class="flex space-x-40">
+              <div class="w-6/12">
+                <label for="#" class="block mb-7 text-12 text-stromgreay">
+                  Number of winners</label
+                >
+                <div class="flex justify-between overflow-hidden rounded-6">
+                  <input
+                    type="text"
+                    name="text"
+                    placeholder=""
+                    id="#"
+                    class="
+                      w-full
+                      rounded-6
+                      border-1 border-stromgreay border-opacity-40
+                      px-10
+                      py-10
+                      text-13
+                    "
+                  />
+                </div>
+              </div>
+              <div class="w-6/12">
+                <label for="#" class="block mb-7 text-12 text-stromgreay">
+                  Winning points</label
+                >
+                <div
+                  class="
+                    flex
+                    justify-between
+                    overflow-hidden
+                    border-1 border-stromgreay border-opacity-40
+                    rounded-6
+                  "
+                >
+                  <div>
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-10 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="
+                      text-12 text-stromgreay
+                      flex
+                      items-center
+                      px-14
+                      py-5
+                      rounded-6
+                      cursor-pointer
+                    "
+                    style="background-color: #f4f5f7"
+                  >
+                    POINTS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex py-20">
+            <div class="flex items-center">
+              <div class="h-20 w-20 relative m-auto">
+                <input
+                  value="20"
+                  type="checkbox"
+                  class="absolute opacity-0 checboxinput"
+                />
+                <span
+                  class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                ></span>
+              </div>
+              <div class="ml-10 text-14 text-stromgreay">
+                Equal points distribution
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold pt-30 mb-10">Settings</h3>
+
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Allow multiple Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Moderate Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">
+                Attendees can see other's entries
+              </p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="p-20">
+          <button
+            class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+          >
+            <span class="mb-0 block"> Save </span>
+          </button>
+        </div>
+      </div>
+      <div class="mt-50">
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-bold text-stromgreay">Quiz Contest</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mb-10">
+            Contest Details
+          </h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Contest Name</label
+            >
+            <input
+              type="text"
+              name="text"
+              placeholder="Contest Name"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                px-10
+                py-10
+                text-13
+              "
+            />
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Contest Description</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Contest Description"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                h-100
+                px-10
+                py-10
+                text-13
+              "
+            ></textarea>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Description File</label
+            >
+            <div
+              style="background: #f4f5f7"
+              class="
+                h-60
+                flex
+                items-center
+                justify-center
+                border-1 border-dashed border-stromgreay border-opacity-40
+                rounded-6
+                space-x-10
+              "
+            >
+              <div>
+                <img
+                  src="./src/assets/img/drop-drag.svg"
+                  alt=""
+                  class="w-18 h-18"
+                />
+              </div>
+              <div class="text-14 text-stromgreay">browse file</div>
+            </div>
+          </div>
+          <div class="py-8 flex space-x-20">
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Contest Start
+              </label>
+              <input
+                type="date"
+                class="
+                  w-full
+                  rounded-6
+                  border-1 border-stromgreay border-opacity-40
+                  h-40
+                  px-10
+                  py-10
+                  text-13
+                "
+              />
+            </div>
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Contest End
+              </label>
+              <input
+                type="date"
+                class="
+                  w-full
+                  rounded-6
+                  border-1 border-stromgreay border-opacity-40
+                  h-40
+                  px-10
+                  py-10
+                  text-13
+                "
+              />
+            </div>
+          </div>
+
+          <div class="py-8 mt-10">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Banner</label
+            >
+            <div
+              class="
+                flex
+                rounded-6
+                justify-center
+                items-center
+                flex-col
+                h-200
+                border-dotted border-stromgreay border-1 border-opacity-40
+              "
+              style="background: #f4f5f7"
+            >
+              <img
+                src="./src/assets/img/imageplaceholder.svg"
+                alt="placeholder"
+              />
+              <p
+                class="
+                  text-14
+                  mt-10
+                  text-stromgreay
+                  opacity-60
+                  text-center
+                  font-bold
+                "
+              >
+                choose Image to Upload
+              </p>
+              <p class="text-12 text-stromgreay opacity-70 text-center">
+                1200x800 px
+              </p>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Banner Caption</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Banner Caption"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                h-70
+                px-10
+                py-10
+                text-13
+              "
+            ></textarea>
+          </div>
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold mt-30 mb-10">
+            Post Details
+          </h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Character Limit</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  CHARACTER
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Points for Response</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="
+                  flex
+                  w-6/12
+                  justify-between
+                  overflow-hidden
+                  border-1 border-stromgreay border-opacity-40
+                  rounded-6
+                "
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="
+                    text-12 text-stromgreay
+                    flex
+                    items-center
+                    px-8
+                    py-5
+                    rounded-6
+                    cursor-pointer
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  POINTS
+                </div>
+              </div>
+              <div class="w-6/12"></div>
+            </div>
+          </div>
+          <div class="py-8 text-stromgreay">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Supported Attachment</label
+            >
+            <div class="flex">
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Photos</div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto ml-20">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Videos</div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="h-20 w-20 relative m-auto ml-20">
+                  <input
+                    value="20"
+                    type="checkbox"
+                    class="absolute opacity-0 checboxinput"
+                  />
+                  <span
+                    class="checkmark absolute top-0 bottom-0 left-0 right-0"
+                  ></span>
+                </div>
+                <div class="ml-10 text-14">Selfie</div>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Who will the winer be chosen</label
+            >
+            <div class="radiobutton flex">
+              <div class="flex items-center mr-10">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Admin</p>
+              </div>
+
+              <div class="flex items-center">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Most Likes</p>
+              </div>
+            </div>
+          </div>
+          <div class="py-8">
+            <div class="flex space-x-40">
+              <div class="w-6/12">
+                <label for="#" class="block mb-7 text-12 text-stromgreay">
+                  Number of winners</label
+                >
+                <div class="flex justify-between overflow-hidden rounded-6">
+                  <input
+                    type="text"
+                    name="text"
+                    placeholder=""
+                    id="#"
+                    class="
+                      w-full
+                      rounded-6
+                      border-1 border-stromgreay border-opacity-40
+                      px-10
+                      py-10
+                      text-13
+                    "
+                  />
+                </div>
+              </div>
+              <div class="w-6/12">
+                <label for="#" class="block mb-7 text-12 text-stromgreay">
+                  Winning points</label
+                >
+                <div
+                  class="
+                    flex
+                    justify-between
+                    overflow-hidden
+                    border-1 border-stromgreay border-opacity-40
+                    rounded-6
+                  "
+                >
+                  <div>
+                    <input
+                      type="text"
+                      name="text"
+                      id=""
+                      class="py-10 text-14 text-capcod w-100 px-5"
+                    />
+                  </div>
+                  <div
+                    class="
+                      text-12 text-stromgreay
+                      flex
+                      items-center
+                      px-14
+                      py-5
+                      rounded-6
+                      cursor-pointer
+                    "
+                    style="background-color: #f4f5f7"
+                  >
+                    POINTS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-20 border-b-1 border-stromgreay border-opacity-40 pb-20">
+          <h3 class="text-16 text-black font-semibold pt-30 mb-10">Settings</h3>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">
+                Make any one attachment mandatory
+              </p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Allow multiple Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Moderate Entries</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">
+                Attendees can see other's entries
+              </p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">
+                Attendees can comment on entries
+              </p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="p-20">
+          <button
+            class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+          >
+            <span class="mb-0 block"> Save </span>
+          </button>
+        </div>
+      </div>
+      <div class="mt-50">
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-bold text-stromgreay">Quiz Contest</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="py-12 px-20 space-y-20">
+          <div
+            class="
+              border-1 border-brand border-opacity-40
+              py-15
+              px-15
+              rounded-6
+              space-y-5
+              font-semibold
+            "
+            style="
+              box-shadow: -3px 4px 10px -8px rgba(0, 0, 0, 0.85);
+              background-color: #f4f5f7;
+            "
+          >
+            <div>
+              <h2 class="text-16 text-black font-bold">Entry Contest</h2>
+            </div>
+            <div>
+              <span class="text-12 text-stromgreay"
+                >Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod
+                tempor ncididunt ut labore Lorem ipsum dolor sit amet</span
+              >
+            </div>
+          </div>
+          <div
+            class="py-12 px-15 rounded-6 space-y-5 font-semibold"
+            style="
+              box-shadow: -3px 4px 10px -8px rgba(0, 0, 0, 0.85);
+              background-color: #f4f5f7;
+            "
+          >
+            <div>
+              <h2 class="text-16 text-black font-bold">Response Contest</h2>
+            </div>
+            <div>
+              <span class="text-12 text-stromgreay"
+                >Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod
+                tempor ncididunt ut labore Lorem ipsum dolor sit amet</span
+              >
+            </div>
+          </div>
+          <div
+            class="py-12 px-15 rounded-6 space-y-5 font-semibold"
+            style="
+              box-shadow: -3px 4px 10px -8px rgba(0, 0, 0, 0.85);
+              background-color: #f4f5f7;
+            "
+          >
+            <div>
+              <h2 class="text-16 text-black font-bold">Quiz Contest</h2>
+            </div>
+            <div>
+              <span class="text-12 text-stromgreay"
+                >Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod
+                tempor ncididunt ut labore Lorem ipsum dolor sit amet</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="p-20">
+              <button class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-30">
+                  <span class="mb-0 block"> Save </span>
+              </button>
+          </div> -->
+    </div>
+    <!-- hidden slider code end -->
+    <div class="flex" id="blur">
+      <!-- small sidebar start -->
+      <div class="flex">
+        <div
+          class="w-50 flex flex-col items-center"
+          style="background-color: #353446"
+        >
+          <div class="py-10 cursor-pointer">
+            <img
+              src="./src/assets/img/Group (1).svg"
+              class="w-24 h-27"
+              alt=""
+            />
+          </div>
+          <a href="./event-list-1.html">
+            <div class="py-10 cursor-pointer">
+              <img
+                src="./src/assets/img/Group.svg"
+                class="w-31 h-31"
+                alt=""
+              /></div
+          ></a>
+        </div>
+        <!-- main sidebar -->
+        <div
+          id="mainsidebar"
+          class="
+            sidebar
+            mainsidebar-width
+            bg-capcod
+            text-14
+            min-h-screen
+            text-stromgreay
+            trasition
+          "
+          style="background-color: #43435b"
+        >
+          <div class="flex justify-between items-center px-15 py-10">
+            <div class="text-24 text-greaywhite">
+              <div class="logotext displaynone">
+                <img class="w-110" src="./src/assets/img/logo.png" alt="logo" />
+              </div>
+              <div
+                class="logo"
+                style="display: none; width: 25px; height: 25px"
+              >
+                <img
+                  class="w-110"
+                  src="./src/assets/img/Group (1).svg"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mt-50 font-semibold px-10">
+            <div class="text-center">
+              <a href="./basic-info-online-3.html">
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    py-9
+                    px-7
+                    cursor-pointer
+                  "
+                  id="sidedropdown"
+                >
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/home.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Detiles</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 displaynone"
+                  /></div
+              ></a>
+              <a href="./login-setup.html">
+                <div
+                  class="flex items-center py-5 rounded-6 px-7 cursor-pointer"
+                >
+                  <img
+                    src="./src/assets/img/setting.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >Event Setting</span
+                  >
+                </div>
+              </a>
+              <a href="./expouse-ui/src/index.html">
+                <div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/app-builder.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >App Builder</span
+                  >
+                </div>
+              </a>
+              <div
+                class="py-9 px-7 cursor-pointer sidedropdown"
+                id="sidedropdown"
+                open="false"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/event.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Engegment</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 trasition displaynone"
+                  />
+                </div>
+                <div
+                  class="dropdownitem trasition displaynone"
+                  style="max-height: 0px; overflow: hidden"
+                >
+                  <a href="./notification-3.html">
+                    <p class="font-bold">Notification</p>
+                  </a>
+                  <a href="./agenda-live.html"> <p>Agenda Live</p> </a>
+                  <a href="./live-polling-1.html">
+                    <p>Live Polling</p>
+                  </a>
+                  <a href="./activity-feed-1.html">
+                    <p>Activity Feed</p>
+                  </a>
+                  <a href="./contests-1.html">
+                    <p>Contests</p>
+                  </a>
+                  <a href="./survey-0.html">
+                    <p>Surveys</p>
+                  </a>
+                  <a href="./rooms-1.html">
+                    <p>Breakout Rooms</p>
+                  </a>
+                </div>
+              </div>
+              <a href="./app_webApp-user.html">
+                <div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/users.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >APP/WebApp users</span
+                  >
+                </div>
+              </a>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/legal.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Legal Setting</span
+                >
+              </div>
+              <div
+                class="py-9 px-7 cursor-pointer sidedropdown"
+                id="sidedropdown"
+                open="false"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="./src/assets/img/marketing-w.svg"
+                      alt=""
+                      class="w-18 h-19"
+                    />
+                    <span class="ml-8 displaynone" style="line-height: 26.24px"
+                      >Event Marketing</span
+                    >
+                  </div>
+
+                  <img
+                    src="./src/assets/img/angle.svg"
+                    alt=""
+                    class="w-5 h-10 mr-10 trasition displaynone"
+                  />
+                </div>
+                <div
+                  class="dropdownitem trasition displaynone"
+                  style="max-height: 0px; overflow: hidden"
+                >
+                  <a href="./campain.html">
+                    <p class="font-bold">Email</p>
+                  </a>
+                  <a href=""> <p class="font-bold">SMS</p> </a>
+                </div>
+              </div>
+              <div class="flex items-center py-9 px-7 cursor-pointer">
+                <img
+                  src="./src/assets/img/event features.svg"
+                  alt=""
+                  class="w-18 h-19"
+                />
+                <span class="ml-8 displaynone" style="line-height: 26.24px"
+                  >Event features</span
+                >
+              </div>
+              <a href="./analytics-website.html"
+                ><div class="flex items-center py-9 px-7 cursor-pointer">
+                  <img
+                    src="./src/assets/img/analytics.svg"
+                    alt=""
+                    class="w-18 h-19"
+                  />
+                  <span class="ml-8 displaynone" style="line-height: 26.24px"
+                    >Analytics</span
+                  >
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- small sidebar end -->
+      <div class="w-full bg-greaywhite">
+        <!-- top navigation bar -->
+        <nav class="h-66 bg-white flex justify-between items-center px-20">
+          <div id="navimg" data-open="false" class="cursor-pointer">
+            <img src="./src/assets/img/nav-btn.svg" alt="" class="w-22 h14" />
+          </div>
+          <div class="flex items-center">
+            <div class="flex justify-between items-center pr-40">
+              <div class="p-5 py-8 mr-10 bg-brand rounded-2 cursor-pointer">
+                <img src="./src/assets/img/eyes.svg" alt="" class="w-21 h-13" />
+              </div>
+              <div
+                class="
+                  p-5
+                  flex
+                  items-center
+                  mr-10
+                  bg-brand
+                  rounded-2
+                  cursor-pointer
+                "
+              >
+                <img
+                  src="./src/assets/img/arrow-mark.svg"
+                  alt=""
+                  class="w-15 h-15"
+                />
+                <span class="text-13 text-white">Publish</span>
+              </div>
+              <div class="p-5 bg-brand rounded-2 cursor-pointer">
+                <img
+                  src="./src/assets/img/fullscreen.svg"
+                  alt=""
+                  class="w-19 h-19"
+                />
+              </div>
+            </div>
+            <img
+              class="h-35 w-35 rounded-full cursor-pointer"
+              src="https://www.w3schools.com/howto/img_avatar.png"
+              alt="admin"
+            />
+            <p class="text-13 font-medium text-stromgreay mx-10 cursor-pointer">
+              Tusher
+            </p>
+            <img
+              src="./src/assets/img/arrow.svg"
+              alt="arrow"
+              class="h-10 w-10 cursor-pointer"
+            />
+          </div>
+        </nav>
+        <!-- top navigation bar end-->
+        <div class="p-30">
+          <!-- Second sidebar start -->
+
+          <!-- Second sidebar end -->
+          <div class="py-30 px-25">
+            <div class="">
+              <h2 class="text-20 font-bold" style="color: #43425d">Contests</h2>
+            </div>
+            <div class="flex justify-between items-center py-20">
+              <div class="inline-block">
+                <div
+                  class="
+                    flex
+                    justify-between
+                    items-center
+                    space-x-15
+                    bg-white
+                    px-5
+                    h-40
+                    rounded-6
+                  "
+                >
+                  <div>
+                    <div class="">
+                      <button
+                        class="
+                          h-28
+                          px-8
+                          bg-brand
+                          rounded-6
+                          cursor-pointer
+                          text-12 text-white
+                          font-bold
+                          outline-none
+                        "
+                      >
+                        ONGOING
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="">
+                      <button
+                        class="
+                          px-8
+                          h-28
+                          bg-white
+                          space-x-5
+                          rounded-6
+                          outline-none
+                          text-12
+                          font-bold
+                          text-capcod
+                          outline-none
+                        "
+                      >
+                        UPCOMING
+                      </button>
+                    </div>
+                  </div>
+                  <div class="">
+                    <button
+                      class="
+                        px-8
+                        h-28
+                        bg-white
+                        space-x-5
+                        rounded-6
+                        outline-none
+                        text-12
+                        font-bold
+                        text-capcod
+                        outline-none
+                      "
+                    >
+                      ENED
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center space-x-10">
+                <div
+                  class="
+                    bg-white
+                    px-15
+                    h-40
+                    w-300
+                    flex
+                    items-center
+                    space-x-15
+                    rounded-6
+                  "
+                >
+                  <button class="outline-none">
+                    <img
+                      src="./src/assets/img/search-icon.svg"
+                      alt=""
+                      class="w-15 h-15"
+                    />
+                  </button>
+                  <input
+                    class="w-full rounded text-14 font-bold text-stromgreay"
+                    type="text"
+                    placeholder="Search"
+                  />
+                </div>
+                <div class="">
+                  <button
+                    onclick="openHiddenbar()"
+                    class="
+                      w-100
+                      h-40
+                      bg-brand
+                      flex
+                      justify-center
+                      items-center
+                      space-x-5
+                      rounded-6
+                      outline-none
+                    "
+                  >
+                    <div>
+                      <img
+                        src="./src/assets/img/plus.svg"
+                        alt=""
+                        class="w-12 h-12"
+                      />
+                    </div>
+                    <div class="tex-12 font-bold text-white">CONTEST</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="py-30">
+              <div class="w-4/12 bg-white px-15 py-20">
+                <div class="">
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="text-12 text-stromgreay font-bold"
+                        >14 Nov - 16 Nov 2020
+                      </span>
+                    </div>
+                    <div
+                      class="
+                        w-24
+                        h-24
+                        cursor-pointer
+                        flex
+                        justify-center
+                        items-center
+                      "
+                    >
+                      <img src="./src/assets/img/dote.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3">
+                  <h2 class="text-14 font-bold text-capcod">
+                    The Future of Visual Design <br />
+                    storytelling with Data Visualization
+                  </h2>
+                </div>
+                <div>
+                  <div class="py-5">
+                    <div class="flex">
+                      <div class="flex items-center">
+                        <div>
+                          <button
+                            class="w-90 h-20 text-10 rounded-3"
+                            style="background: #dde2fa; color: #5b73e8"
+                          >
+                            ENTRY CONTEST
+                          </button>
+                        </div>
+                      </div>
+                      <div class="flex items-center">
+                        <div>
+                          <button
+                            class="
+                              w-90
+                              h-20
+                              bg-white
+                              text-12 text-capcod
+                              rounded-3
+                            "
+                          >
+                            Start in 2 Days
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-10">
+                  <div class="rounded-6">
+                    <img
+                      src="./src/assets/img/post1.jpg"
+                      alt=""
+                      class="rounded-6"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Notification Start -->
+            <div class="py-25">
+              <div
+                class="
+                  py-25
+                  flex
+                  justify-center
+                  items-center
+                  space-y-8
+                  flex-col
+                  bg-white
+                  rounded-6
+                "
+              >
+                <div>
+                  <img
+                    src="./src/assets/img/trophy.svg"
+                    alt=""
+                    class="w-40 h-48 cursor-pointer"
+                  />
+                </div>
+                <div>
+                  <h2 class="text-18 font-bold text-capcod">No Contests</h2>
+                </div>
+                <div>
+                  <p class="text-12 text-stromgreay">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/assets/js/index.js"></script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Image Gallery Iamge Upload 3</title>
+  </head>
+
+  <body style="height: 100vh">
+    <div class="w-full h-full flex justify-center items-center">
+      <div class="flex justify-center items-center rounded-6">
+        <div
+          class="rounded-6"
+          style="
+            box-shadow: 0px 0px 4px 3px rgba(167, 166, 166, 0.24);
+            width: 700px;
+          "
+        >
+          <div class="px-20 pt-20">
+            <div class="flex justify-end">
+              <div
+                class="w-24 h-24 rounded-full bg-white flex justify-center items-center cursor-pointer"
+                style="box-shadow: -3px 4px 10px -8px rgba(0, 0, 0, 0.85)"
+              >
+                <img
+                  src="./src/assets/img/cancel-icon.svg"
+                  alt=""
+                  class="w-10 h-10"
+                />
+              </div>
+            </div>
+            <div class="pt-10 pb-20 space-y-5">
+              <h2 class="text-16 text-capcod font-bold">
+                Select Images for Gallery
+              </h2>
+              <p class="text-14 text-stromgreay">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+          </div>
+          <div class="px-20 pt-10 pb-20">
+            <div class="flex">
+              <button
+                class="px-20 py-7 bg-brand text-12 text-white uppercase font-bold"
+                style="border-radius: 6px 0px 0px 6px"
+              >
+                UPLOAD
+              </button>
+              <button
+                class="px-20 py-7 bg-greaywhite text-12 text-stromgreay uppercase"
+                style="border-radius: 0px 6px 6px 0px"
+              >
+                GALLERY
+              </button>
+            </div>
+          </div>
+          <div class="flex w-full justify-center py-50">
+            <div
+              class="flex rounded-6 justify-center w-390 items-center flex-col h-200 border-dotted border-stromgreay border-1 border-opacity-40 relative overflow-hidden perents cursor-pointer"
+              style="background: #f4f5f7"
+            >
+              <img
+                src="./src/assets/img/post1.jpg"
+                alt="placeholder"
+                class="rounded-6"
+              />
+              <div class="absolute hover flex space-y-10 flex-col">
+                <button
+                  class="uppercase bg-brand text-12 text-white rounded-4 uppercase h-20 px-7 outline-none"
+                >
+                  CHANGE
+                </button>
+                <button
+                  class="uppercase text-12 text-white rounded-4 uppercase h-20 px-7 outline-none"
+                  style="background-color: #f46a6a"
+                >
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="py-20 px-30" style="background-color: #f4f5f7">
+            <div class="flex justify-end items-center space-x-10">
+              <div>
+                <button
+                  class="w-116 h-35 text-14 font-semibold text-capcod rounded-6"
+                >
+                  Cancel
+                </button>
+              </div>
+              <div>
+                <button
+                  class="w-116 h-35 text-14 font-semibold uppercase bg-brand text-white rounded-6"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

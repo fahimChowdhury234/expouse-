@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Speakers Add Img Hover</title>
+  </head>
+
+  <body>
+    <div class="w-500">
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-semibold text-capcod">Add Speakers</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+
+        <div class="flex space-x-20 px-20 py-20">
+          <div
+            class="relative flex rounded-6 justify-center items-center flex-col h-200 w-5/12 border-dotted border-stromgreay border-1 border-opacity-40 perents overflow-hidden cursor-pointer"
+            style="background: #f4f5f7"
+          >
+            <img
+              src="./src/assets/img/g.jpg"
+              alt="placeholder"
+              class="h-full rounded-6"
+            />
+            <div class="absolute hover flex space-y-10 flex-col">
+              <button
+                class="bg-brand text-12 text-white rounded-4 uppercase h-20 px-7 outline-none"
+              >
+                CHANGE
+              </button>
+              <button
+                class="text-12 text-white rounded-4 uppercase h-20 px-7 outline-none"
+                style="background-color: #f46a6a"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+          <div class="w-7/12 flex flex-col justify-between">
+            <div class="py-8">
+              <label for="#" class="block mb-7 text-12 text-stromgreay"
+                >Name</label
+              >
+              <input
+                type="text"
+                name="text"
+                placeholder="Enter Name"
+                id="#"
+                class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+              />
+            </div>
+            <div class="py-8">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Email"
+                id="#"
+                class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="px-20 pb-20">
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Designation
+            </label>
+            <input
+              type="text"
+              name="text"
+              placeholder="Enter Designation
+"
+              id="#"
+              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+            />
+          </div>
+        </div>
+        <div class="space-y-5 w-full px-20">
+          <div>
+            <label for="#" class="text-12 text-stromgreay"> Category </label>
+          </div>
+          <div
+            class="w-full h-42 px-10 flex justify-center items-center rounded-6 border-1 border-stromgreay border-opacity-40"
+          >
+            <select class="w-full outline-none text-14 text-stromgreay">
+              <option class="">Select</option>
+              <option class="">Design</option>
+              <option class="">Event</option>
+            </select>
+          </div>
+        </div>
+        <div class="py-8 px-20">
+          <label for="#" class="block mb-7 text-12 text-stromgreay">
+            Presentation Title
+          </label>
+          <input
+            type="text"
+            name="text"
+            placeholder="Enter Presentation Title
+
+"
+            id="#"
+            class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+          />
+        </div>
+
+        <div class="py-20 px-20">
+          <label for="#" class="block mb-7 text-12 text-stromgreay">
+            Presentation File
+          </label>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-10">
+              <div>
+                <img
+                  src="./src/assets/img/card-gray-color.svg"
+                  alt=""
+                  class="w-25 h-25"
+                />
+              </div>
+              <div>
+                <span class="text-12 text-stromgreay block">Demo.pdf </span>
+                <span class="text-10 text-stromgreay block">954 kb</span>
+              </div>
+            </div>
+            <div
+              class="px-8 py-8 rounded-full cursor-pointer bg-white"
+              style="box-shadow: 0px 1px 6px 0px rgba(190, 173, 173, 0.288)"
+            >
+              <img
+                src="./src/assets/img/cancel-icon.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="py-20 px-20 space-y-10">
+          <label for="#" class="block text-12 text-stromgreay">
+            Social Links</label
+          >
+          <div
+            class="flex justify-between items-center border-1 border-stromgreay border-opacity-40 rounded-6"
+          >
+            <input
+              type="text"
+              name="text"
+              id=""
+              placeholder="Facebook URL"
+              class="px-10 py-0 text-13"
+            />
+            <div class="px-6 py-6 bg-greaywhite rounded-6 cursor-pointer">
+              <img
+                src="./src/assets/img/facebook-logo.svg"
+                alt=""
+                class="w-30 h-30"
+              />
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center border-1 border-stromgreay border-opacity-40 rounded-6"
+          >
+            <input
+              type="text"
+              name="text"
+              id=""
+              placeholder="Linkedin URL"
+              class="px-10 py-0 text-13"
+            />
+            <div class="px-6 py-6 bg-greaywhite rounded-6 cursor-pointer">
+              <img
+                src="./src/assets/img/linkedin.svg"
+                alt=""
+                class="w-30 h-30"
+              />
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center border-1 border-stromgreay border-opacity-40 rounded-6"
+          >
+            <input
+              type="text"
+              name="text"
+              id=""
+              placeholder="Twitter  URL"
+              class="px-10 py-0 text-13"
+            />
+            <div class="px-6 py-6 bg-greaywhite rounded-6 cursor-pointer">
+              <img
+                src="./src/assets/img/twitter.svg"
+                alt=""
+                class="w-30 h-30"
+              />
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center border-1 border-stromgreay border-opacity-40 rounded-6"
+          >
+            <input
+              type="text"
+              name="text"
+              id=""
+              placeholder="Instagram  URL"
+              class="px-10 py-0 text-13"
+            />
+            <div class="px-6 py-6 bg-greaywhite rounded-6 cursor-pointer">
+              <img
+                src="./src/assets/img/instagram.svg"
+                alt=""
+                class="w-30 h-30"
+              />
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center border-1 border-stromgreay border-opacity-40 rounded-6"
+          >
+            <input
+              type="text"
+              name="text"
+              id=""
+              placeholder="Whatsapp  URL"
+              class="px-10 py-0 text-13"
+            />
+            <div class="px-6 py-6 bg-greaywhite rounded-6 cursor-pointer">
+              <img
+                src="./src/assets/img/whatsapp.svg"
+                alt=""
+                class="w-30 h-30"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="py-20 px-20">
+          <label for="#" class="block mb-7 text-12 text-stromgreay">
+            Description</label
+          >
+          <textarea
+            type="text"
+            name="text"
+            placeholder="Enter Description"
+            id="#"
+            class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-100 px-10 py-10 text-13"
+          ></textarea>
+        </div>
+        <div class="px-20 pt-10 pb-20">
+          <label for="" class="block mb-7 text-12 text-stromgreay"
+            >Custom Tags
+          </label>
+          <div
+            class="border-1 py-6 px-5 border-stromgreay border-opacity-40 rounded-6"
+          >
+            <div class="inline-block">
+              <div
+                class="flex items-center px-8 py-4 rounded-4 space-x-6"
+                style="background-color: #5b72e825"
+              >
+                <div>
+                  <span class="text-12 text-brand">DESIGN </span>
+                </div>
+                <div>
+                  <img
+                    src="./src/assets/img/close-icon-w.svg"
+                    alt=""
+                    class="w-15 h-15 cursor-pointer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex px-20 py-10">
+          <div class="flex items-center">
+            <div class="h-20 w-20 relative m-auto">
+              <input
+                value="20"
+                type="checkbox"
+                class="absolute opacity-0 checboxinput"
+              />
+              <span
+                class="checkmark absolute top-0 bottom-0 left-0 right-0"
+              ></span>
+            </div>
+            <div class="ml-10 text-14 text-stromgreay">
+              Attendees can rate this exhibitor
+            </div>
+          </div>
+        </div>
+        <div class="flex px-20 pt-10 pb-30">
+          <div class="flex items-center">
+            <div class="h-20 w-20 relative m-auto">
+              <input
+                value="20"
+                type="checkbox"
+                class="absolute opacity-0 checboxinput"
+              />
+              <span
+                class="checkmark absolute top-0 bottom-0 left-0 right-0"
+              ></span>
+            </div>
+            <div class="ml-10 text-14 text-stromgreay">Featured exhibitor</div>
+          </div>
+        </div>
+
+        <div class="p-20 border-t-1 border-stromgreay border-opacity-40">
+          <button
+            class="text-14 text-white rounded-6 uppercase bg-brand h-30 px-20"
+          >
+            <span class="mb-0 block"> ADD </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

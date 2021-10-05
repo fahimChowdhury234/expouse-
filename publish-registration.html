@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Publish Registration</title>
+  </head>
+
+  <body style="background: #e5e5e5">
+    <div
+      onclick="closeHiddenbar()"
+      class="top-0 bottom-0 fixed trasition left-0 right-0 h-screen hidden"
+      style="z-index: 99999"
+      id="backdropid"
+    ></div>
+    <!-- hidden slider end  -->
+    <!-- hidden slider code -->
+    <!-- seo -->
+    <div
+      class="top-0 w-500 h-screen overflow-y-scroll trasition bg-white fixed"
+      style="z-index: 9999999; right: -50rem"
+      id="hiddensidebar2"
+    >
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-semibold text-capcod">SEO</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar2()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+      </div>
+      <div class="pb-10 pt-0 px-20">
+        <div class="space-y-5">
+          <label for="" class="text-12 text-stromgreay">Favicon</label>
+          <div
+            class="
+              w-100
+              h-100
+              border-1 border-stromgreay border-opacity-40 border-dashed
+              flex
+              justify-center
+              items-center
+              rounded-6
+            "
+            style="background-color: #f5f7f7"
+          >
+            <img src="./src/assets/img/imageplaceholder.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="px-20">
+        <div class="py-10">
+          <label for="#" class="block mb-7 text-12 text-stromgreay">Tite</label>
+          <input
+            type="text"
+            name="text"
+            placeholder="Enter Title"
+            id="#"
+            class="
+              w-full
+              rounded-6
+              border-1 border-stromgreay border-opacity-40
+              px-10
+              py-10
+              text-13
+            "
+          />
+        </div>
+        <div class="py-10">
+          <label for="#" class="block mb-7 text-12 text-stromgreay"
+            >Meta Keyword</label
+          >
+          <input
+            type="text"
+            name="text"
+            placeholder="Enter Meta Keyword"
+            id="#"
+            class="
+              w-full
+              rounded-6
+              border-1 border-stromgreay border-opacity-40
+              px-10
+              py-10
+              text-13
+            "
+          />
+        </div>
+      </div>
+      <div class="py-10 px-20 space-y-5">
+        <label for="#" class="text-12 text-stromgreay">Meta Description</label>
+
+        <textarea
+          type="text"
+          name="text"
+          placeholder="Meta Description"
+          id="#"
+          class="
+            w-full
+            rounded-6
+            border-1 border-stromgreay border-opacity-40
+            h-100
+            px-10
+            py-10
+            text-13
+          "
+        ></textarea>
+      </div>
+      <div class="pt-8 py-20 px-20 w-6/12">
+        <label for="#" class="block mb-7 text-12 text-stromgreay">
+          FB/Twitter Shere Banner</label
+        >
+        <div
+          class="
+            flex
+            rounded-6
+            justify-center
+            items-center
+            flex-col
+            h-200
+            border-dotted border-stromgreay border-1 border-opacity-40
+            cursor-pointer
+          "
+          style="background: #f4f5f7"
+          onclick="openPopupi()"
+        >
+          <img src="./src/assets/img/imageplaceholder.svg" alt="placeholder" />
+          <p
+            class="
+              text-14
+              mt-10
+              text-stromgreay
+              opacity-60
+              text-center
+              font-bold
+            "
+          >
+            choose Image to Upload
+          </p>
+          <p class="text-12 text-stromgreay opacity-70 text-center">
+            1200x1200 px
+          </p>
+          <p class="text-12 text-stromgreay opacity-70 text-center">
+            Maximum : 5 MB
+          </p>
+        </div>
+      </div>
+      <div class="p-20 border-t-1 border-stromgreay border-opacity-40">
+        <button
+          class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+        >
+          <span class="mb-0 block uppercase"> Save </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- domain -->
+    <div
+      class="top-0 w-500 h-screen overflow-y-scroll trasition bg-white fixed"
+      style="z-index: 9999999; right: -50rem"
+      id="hiddensidebar3"
+    >
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-semibold text-capcod">Domain</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar3()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+      </div>
+      <div class="py-20 px-20 space-y-10">
+        <h3 class="text-16 font-bold text-capcod">Domain Name</h3>
+
+        <div
+          class="py-15 rounded-6 flex justify-between items-center px-10"
+          style="background-color: #f5f7f7"
+        >
+          <div class="flex items-center space-x-5">
+            <input
+              type="text"
+              name="text"
+              id=""
+              class="
+                border-1 border-stromgreay border-opacity-40
+                bg-white
+                outline-none
+                py-6
+                rounded-4
+                text-13
+                px-5
+              "
+            />
+            <span class="text-13 text-capcod block">.abc.com/ticketing</span>
+            <img src="./src/assets/img/ticket.svg" alt="" class="w-15 h-15" />
+          </div>
+          <div>
+            <img
+              src="./src/assets/img/verified-blue.svg"
+              alt=""
+              class="w-15 h-15"
+            />
+          </div>
+        </div>
+        <span class="block text-12 text-stromgreay"
+          >Lorem, ipsum dolor sit amet consectetur adipisicing.</span
+        >
+      </div>
+      <div class="px-20 py-20 space-y-10">
+        <h3 class="text-16 font-bold text-capcod">Personal Domain Name</h3>
+
+        <div
+          class="py-20 px-10 rounded-6 flex justify-between items-center"
+          style="background-color: #f5f7f7"
+        >
+          <p class="text-13 text-stromgreay font-semibold">
+            Personal Domain /ticketing
+          </p>
+          <img
+            src="./src/assets/img/verified-greay.svg"
+            alt=""
+            class="w-15 h-15"
+          />
+        </div>
+      </div>
+      <div class="p-20 border-t-1 border-stromgreay border-opacity-40">
+        <button
+          class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+        >
+          <span class="mb-0 block uppercase"> Save </span>
+        </button>
+      </div>
+    </div>
+    <!--sender id's  -->
+    <div
+      class="top-0 w-500 h-screen overflow-y-scroll trasition bg-white fixed"
+      style="z-index: 9999999; right: -50rem"
+      id="hiddensidebar4"
+    >
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-semibold text-capcod">Sender ID'S</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar4()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+      </div>
+      <div class="pb-10 pt-0 px-20">
+        <h3 class="text-16 font-bold text-capcod">Email</h3>
+        <span class="text-12 text-stromgreay block"
+          >Lorem ipsum dolor, sit amet consectetur adipisicing.</span
+        >
+      </div>
+      <form action="#">
+        <div
+          class="pb-20 border-b-1 border-stromgreay border-opacity-40"
+          style="margin: 0 20px"
+        >
+          <div class="py-10">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >From</label
+            >
+            <input
+              type="text"
+              name="text"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                px-10
+                py-10
+                text-13
+              "
+            />
+          </div>
+          <div class="py-10">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">CC</label>
+            <input
+              type="text"
+              name="text"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                px-10
+                py-10
+                text-13
+              "
+            />
+          </div>
+          <div class="py-10">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >BCC</label
+            >
+            <input
+              type="text"
+              name="text"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                px-10
+                py-10
+                text-13
+              "
+            />
+          </div>
+          <div class="py-10">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Sender Name</label
+            >
+            <input
+              type="text"
+              name="text"
+              placeholder="Enter Sender Name"
+              id="#"
+              class="
+                w-full
+                rounded-6
+                border-1 border-stromgreay border-opacity-40
+                px-10
+                py-10
+                text-13
+              "
+            />
+          </div>
+        </div>
+      </form>
+
+      <div class="px-20">
+        <div class="pt-30 pb-10">
+          <h3 class="text-16 font-bold text-capcod">SMS</h3>
+          <span class="text-12 text-stromgreay block"
+            >Lorem ipsum dolor, sit amet consectetur adipisicing.</span
+          >
+        </div>
+        <div class="pt-10 pb-30">
+          <label for="#" class="block mb-7 text-12 text-stromgreay"
+            >SMS Name</label
+          >
+          <input
+            type="text"
+            name="text"
+            id="#"
+            class="
+              w-full
+              rounded-6
+              border-1 border-stromgreay border-opacity-40
+              px-10
+              py-10
+              text-13
+            "
+          />
+          <span class="text-12 text-stromgreay block mt-10"
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span
+          >
+        </div>
+      </div>
+      <div class="p-20 border-t-1 border-stromgreay border-opacity-40">
+        <button
+          class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+        >
+          <span class="mb-0 block uppercase"> Save </span>
+        </button>
+      </div>
+    </div>
+    <!-- tracking -->
+    <div
+      class="top-0 w-500 h-screen overflow-y-scroll trasition bg-white fixed"
+      style="z-index: 9999999; right: -50rem"
+      id="hiddensidebar5"
+    >
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-semibold text-capcod">Tracking Element</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar5()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+      </div>
+
+      <div class="py-20 px-20 space-y-5">
+        <label for="#" class="text-12 text-stromgreay"> Header</label>
+
+        <textarea
+          type="text"
+          name="text"
+          placeholder="Enter Header"
+          id="#"
+          class="
+            w-full
+            rounded-6
+            border-1 border-stromgreay border-opacity-40
+            h-100
+            px-10
+            py-10
+            text-13
+          "
+        ></textarea>
+      </div>
+      <div class="py-20 px-20 space-y-5">
+        <label for="#" class="text-12 text-stromgreay"> Footer</label>
+
+        <textarea
+          type="text"
+          name="text"
+          placeholder="Enter Footer"
+          id="#"
+          class="
+            w-full
+            rounded-6
+            border-1 border-stromgreay border-opacity-40
+            h-100
+            px-10
+            py-10
+            text-13
+          "
+        ></textarea>
+      </div>
+      <div class="py-20 px-20 space-y-5">
+        <label for="#" class="text-12 text-stromgreay"> Body</label>
+
+        <textarea
+          type="text"
+          name="text"
+          placeholder="Enter Body"
+          id="#"
+          class="
+            w-full
+            rounded-6
+            border-1 border-stromgreay border-opacity-40
+            h-100
+            px-10
+            py-10
+            text-13
+          "
+        ></textarea>
+      </div>
+      <div class="p-20 border-t-1 border-stromgreay border-opacity-40">
+        <button
+          class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+        >
+          <span class="mb-0 block uppercase"> Save </span>
+        </button>
+      </div>
+    </div>
+    <!-- landing page -->
+    <div
+      class="top-0 w-500 h-screen overflow-y-scroll trasition bg-white fixed"
+      style="z-index: 9999999; right: -50rem"
+      id="hiddensidebar"
+    >
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-semibold text-capcod">Landing Page</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+      </div>
+      <div class="px-20">
+        <div
+          class="
+            flex
+            justify-between
+            border-b-1 border-stromgreay border-opacity-40
+            py-20
+          "
+        >
+          <div class="space-y-5">
+            <h3 class="text-16 font-bold text-capcod">Tracking Landing Page</h3>
+            <span class="text-12 text-stromgreay block"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+            >
+          </div>
+          <div>
+            <label class="switch">
+              <input type="checkbox" class="togggleinput" />
+              <span class="togggleslider rounded-30"></span>
+            </label>
+          </div>
+        </div>
+        <div class="py-30">
+          <div class="pb-3 flex justify-between items-center">
+            <p class="text-14 text-capcod font-bold">Sections</p>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">Show Logos</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+          <div class="py-10 flex justify-between items-center">
+            <div>
+              <p class="text-12 text-stromgreay">About us</p>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" class="togggleinput" />
+                <span class="togggleslider rounded-30"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-20 border-t-1 border-stromgreay border-opacity-40">
+        <button
+          class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+        >
+          <span class="mb-0 block uppercase"> Save </span>
+        </button>
+      </div>
+    </div>
+    <!-- hidden file end -->
+    <div id="blur">
+      <div
+        class="w-full flex justify-between items-center bg-capcod px-20"
+        style="height: 58px"
+      >
+        <div class="w-110 cursor-pointer" id="navimg">
+          <img src="./src/assets/img/logo.png" alt="" />
+        </div>
+        <div class="flex items-center">
+          <img src="./src/assets/img/close-icon-2.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="p-30">
+        <div class="flex justify-between items-center">
+          <div>
+            <h2 class="text-capcod font-bold" style="font-size: 23px">
+              Publish your event features
+            </h2>
+          </div>
+          <div>
+            <button
+              class="
+                text-14 text-brand
+                font-semibold
+                border-1 border-brand
+                px-15
+                py-6
+                rounded-5
+                uppercase
+              "
+              style="background-color: #f4f5f7"
+            >
+              Cart: 4 features
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-between space-x-20 py-20">
+          <div class="" style="width: 30%">
+            <div class="bg-white py-20 px-20 rounded-6 space-y-20">
+              <a href="./publish-event-website-1.html">
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    space-x-10
+                    px-10
+                    py-10
+                    rounded-6
+                    cursor-pointer
+                  "
+                >
+                  <div class="flex items-center space-x-20 px-10 py-10">
+                    <div
+                      class="flex"
+                      style="align-items: flex-start; height: 42px"
+                    >
+                      <img
+                        src="./src/assets/img/event-website.svg"
+                        alt=""
+                        class="w-25 h-25"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-5">
+                      <h3 class="text-15 text-stromgreay font-bold">
+                        Event Website
+                      </h3>
+                      <span class="text-14 text-stromgreay">Single Page</span>
+                    </div>
+                  </div>
+                  <div class="flex" style="height: 42px; align-items: flex-end">
+                    <div class="flex items-center space-x-5">
+                      <img
+                        src="./src/assets/img/event-clock.svg"
+                        alt=""
+                        class="w-13 h-13"
+                      />
+                      <span class="text-12 font-semibold" style="color: #ffb623"
+                        >Payment Pending</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="./publish-event-app-1.html">
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    space-x-10
+                    px-10
+                    py-10
+                    rounded-6
+                    cursor-pointer
+                  "
+                >
+                  <div class="flex items-center space-x-20 px-10 py-10">
+                    <div
+                      class="flex"
+                      style="align-items: flex-start; height: 42px"
+                    >
+                      <img
+                        src="./src/assets/img/event-icon.svg"
+                        alt=""
+                        class="w-28 h-28"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-5">
+                      <h3 class="text-15 text-stromgreay font-bold">
+                        Event App
+                      </h3>
+                      <span class="text-14 text-stromgreay">Single Page</span>
+                    </div>
+                  </div>
+                  <div class="flex" style="height: 42px; align-items: flex-end">
+                    <div class="flex items-center space-x-5">
+                      <img
+                        src="./src/assets/img/danger.svg"
+                        alt=""
+                        class="w-13 h-13"
+                      />
+                      <span class="text-12 font-semibold" style="color: #ff6565"
+                        >Not Submited</span
+                      >
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="./publish-registration.html"
+                ><div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    space-x-10
+                    px-10
+                    py-10
+                    rounded-6
+                    cursor-pointer
+                    border-brand
+                  "
+                  style="border-left: 5px solid; background-color: #f4f5f7"
+                >
+                  <div class="flex items-center space-x-20 px-10 py-10">
+                    <div
+                      class="flex"
+                      style="align-items: flex-start; height: 42px"
+                    >
+                      <img
+                        src="./src/assets/img/event-registation.svg"
+                        alt=""
+                        class="w-25 h-25"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-5">
+                      <h3 class="text-15 text-stromgreay font-bold">
+                        Event Registration
+                      </h3>
+                      <span class="text-14 text-stromgreay">Single Page</span>
+                    </div>
+                  </div>
+                  <div class="flex" style="height: 42px; align-items: flex-end">
+                    <div class="flex items-center space-x-5">
+                      <img
+                        src="./src/assets/img/event-clock.svg"
+                        alt=""
+                        class="w-13 h-13"
+                      />
+                      <span class="text-12 font-semibold" style="color: #ffb623"
+                        >Payment Pending</span
+                      >
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="./publish-networking.html">
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    space-x-10
+                    px-10
+                    py-10
+                    cursor-pointer
+                    rounded-6
+                  "
+                >
+                  <div class="flex items-center space-x-20 px-10 py-10">
+                    <div
+                      class="flex"
+                      style="align-items: flex-start; height: 42px"
+                    >
+                      <img
+                        src="./src/assets/img/networking.svg"
+                        alt=""
+                        class="w-25 h-25"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-5">
+                      <h3 class="text-15 text-stromgreay font-bold">
+                        Networking
+                      </h3>
+                      <span class="text-14 text-stromgreay">Single Page</span>
+                    </div>
+                  </div>
+                  <div class="flex" style="height: 42px; align-items: flex-end">
+                    <div class="flex items-center space-x-5">
+                      <img
+                        src="./src/assets/img/event-clock.svg"
+                        alt=""
+                        class="w-13 h-13"
+                      />
+                      <span class="text-12 font-semibold" style="color: #ffb623"
+                        >Payment Pending</span
+                      >
+                    </div>
+                  </div>
+                </div></a
+              >
+              <a href="./publish-check-in-out.html">
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    space-x-10
+                    px-10
+                    py-10
+                    cursor-pointer
+                    rounded-6
+                  "
+                >
+                  <div class="flex items-center space-x-20 px-10 py-10">
+                    <div
+                      class="flex"
+                      style="align-items: flex-start; height: 42px"
+                    >
+                      <img
+                        src="./src/assets/img/onsite check-in.svg"
+                        alt=""
+                        class="w-25 h-25"
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-5">
+                      <h3 class="text-15 text-stromgreay font-bold">
+                        Onsite Check-in
+                      </h3>
+                      <span class="text-14 text-stromgreay">Single Page</span>
+                    </div>
+                  </div>
+                  <div class="flex" style="height: 42px; align-items: flex-end">
+                    <div class="flex items-center space-x-5">
+                      <img
+                        src="./src/assets/img/event-clock.svg"
+                        alt=""
+                        class="w-13 h-13"
+                      />
+                      <span class="text-12 font-semibold" style="color: #ffb623"
+                        >Payment Pending</span
+                      >
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="py-20 bg-white rounded-6" style="width: 70%">
+            <div class="bg-white p-20 rounded-5">
+              <div
+                class="
+                  flex
+                  justify-between
+                  items-center
+                  text-stromgreay
+                  pb-25
+                  border-b-1 border-stromgreay border-opacity-40
+                "
+              >
+                <div>
+                  <h2 class="text-18 font-bold mb-8">Event Registration</h2>
+                  <p class="text-12">
+                    These are the fields associated with a User Profile.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="py-20 px-20">
+              <div class="flex justify-between items-center">
+                <div class="w-full">
+                  <div class="flex items-center justify-between flex-wrap">
+                    <div
+                      class="
+                        flex
+                        justify-center
+                        items-center
+                        flex-col
+                        px-10
+                        py-10
+                        rounded-6
+                        cursor-pointer
+                      "
+                      onclick="openHiddenbar2() "
+                      style="
+                        width: 19%;
+                        height: 135px;
+                        box-shadow: 0px 0px 5px 1px #aaaaaa;
+                      "
+                    >
+                      <div class="py-10">
+                        <img
+                          src="./src/assets/img/graph.svg"
+                          alt=""
+                          class="w-28 h-28"
+                        />
+                      </div>
+                      <span class="text-13 font-bold text-stromgreay">SEO</span>
+                    </div>
+                    <div
+                      class="
+                        flex
+                        justify-center
+                        items-center
+                        flex-col
+                        px-10
+                        py-10
+                        rounded-6
+                        cursor-pointer
+                      "
+                      onclick="openHiddenbar3()"
+                      style="
+                        width: 19%;
+                        height: 135px;
+                        box-shadow: 0px 0px 5px 1px #aaaaaa;
+                      "
+                    >
+                      <div class="py-10">
+                        <img
+                          src="./src/assets/img/globe.svg"
+                          alt=""
+                          class="w-28 h-28"
+                        />
+                      </div>
+                      <span class="text-13 font-bold text-stromgreay"
+                        >Domain</span
+                      >
+                    </div>
+                    <div
+                      class="
+                        flex
+                        justify-center
+                        items-center
+                        flex-col
+                        px-10
+                        py-10
+                        rounded-6
+                        cursor-pointer
+                      "
+                      onclick="openHiddenbar4()"
+                      style="
+                        width: 19%;
+                        height: 135px;
+                        box-shadow: 0px 0px 5px 1px #aaaaaa;
+                      "
+                    >
+                      <div class="py-10">
+                        <img
+                          src="./src/assets/img/list.svg"
+                          alt=""
+                          class="w-28 h-28"
+                        />
+                      </div>
+                      <span class="text-12 font-bold text-stromgreay"
+                        >Sender Id's</span
+                      >
+                    </div>
+                    <div
+                      class="
+                        flex
+                        justify-center
+                        items-center
+                        flex-col
+                        px-10
+                        py-10
+                        rounded-6
+                        cursor-pointer
+                      "
+                      onclick="openHiddenbar5()"
+                      style="
+                        width: 19%;
+                        height: 135px;
+                        box-shadow: 0px 0px 5px 1px #aaaaaa;
+                      "
+                    >
+                      <div class="py-10">
+                        <img
+                          src="./src/assets/img/list.svg"
+                          alt=""
+                          class="w-28 h-28"
+                        />
+                      </div>
+                      <span class="text-12 font-bold text-stromgreay"
+                        >Tracking Element</span
+                      >
+                    </div>
+                    <div
+                      class="
+                        flex
+                        justify-center
+                        items-center
+                        flex-col
+                        px-10
+                        py-10
+                        rounded-6
+                        cursor-pointer
+                      "
+                      onclick="openHiddenbar()"
+                      style="
+                        width: 19%;
+                        height: 135px;
+                        box-shadow: 0px 0px 5px 1px #aaaaaa;
+                      "
+                    >
+                      <div class="py-10">
+                        <img
+                          src="./src/assets/img/list.svg"
+                          alt=""
+                          class="w-28 h-28"
+                        />
+                      </div>
+                      <span class="text-12 font-bold text-stromgreay"
+                        >Landing Page</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-20 px-20">
+              <div>
+                <h2 class="text-18 font-bold mb-8">Pay and Publish</h2>
+              </div>
+              <div class="flex justify-center items-cente py-20">
+                <div
+                  class="
+                    w-11/12
+                    px-20
+                    py-20
+                    rounded-6
+                    flex
+                    justify-between
+                    items-center
+                  "
+                  style="background-color: #f4f5f7"
+                >
+                  <div class="space-y-5">
+                    <h2 class="text-16 text-stromgreay font-bold">
+                      www.yourweb.com
+                    </h2>
+                    <p class="text-12 text-stromgreay">
+                      By Publishing,I agree to 3% + $1 transaction.platform fees
+                      vai the current platform.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 class="text-16 text-stromgreay font-bold">$ 4500.00</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                text-stromgreay
+                flex
+                justify-end
+                py-25
+                bg-white
+                border-t-1 border-stromgreay border-opacity-40
+                pr-30
+              "
+            >
+              <button
+                style="outline: none; text-transform: uppercase"
+                class="
+                  rounded-6
+                  text-white
+                  px-29
+                  py-7
+                  bg-brand
+                  text-14
+                  font-semibold
+                "
+              >
+                Publish Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/assets/js/index.js"></script>
+</html>

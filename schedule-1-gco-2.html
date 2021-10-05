@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <title>Schedule-1-gco-2</title>
+</head>
+
+<body class="relative" style="overflow-x: hidden">
+    <!-- hidden slider backdrop  -->
+    <div onclick="closeHiddenbar()" class="top-0 bottom-0 fixed trasition left-0 right-0 h-screen hidden"
+        style="z-index: 99999" id="backdropid"></div>
+    <!-- hidden slider end  -->
+    <!-- hidden slider code -->
+
+    <!-- hidden slider code end-->
+
+    <div class="flex" id="blur">
+        <!-- small sidebar start -->
+        <div class="flex">
+            <div class="w-50 flex flex-col items-center" style="background-color: #353446">
+                <div class="py-10 cursor-pointer">
+                    <img src="./src/assets/img/Group (1).svg" class="w-24 h-27" alt="" />
+                </div>
+                <div class="py-10 cursor-pointer">
+                    <img src="./src/assets/img/Group.svg" class="w-31 h-31" alt="" />
+                </div>
+            </div>
+            <!-- main sidebar -->
+            <div id="mainsidebar" class="sidebar w-230 bg-capcod text-14 min-h-screen text-stromgreay trasition"
+                style="background-color: #43435b">
+                <div class="flex justify-between items-center px-15 py-10">
+                    <div class="text-24 text-greaywhite displaynone">
+                        <img class="w-110" src="./src/assets/img/logo.png" alt="logo" />
+                    </div>
+                </div>
+                <div class="mt-50 font-semibold px-10">
+                    <div class="text-center">
+                        <div class="flex items-center justify-between py-9 px-7 cursor-pointer" id="sidedropdown">
+                            <div class="flex items-center">
+                                <img src="./src/assets/img/home.svg" alt="" class="w-18 h-19" />
+                                <span class="ml-8 displaynone" style="line-height: 26.24px">Event Detiles</span>
+                            </div>
+
+                            <img src="./src/assets/img/angle.svg" alt="" class="w-5 h-10 mr-10 displaynone" />
+                        </div>
+                        <div class="flex items-center py-5 border-1 rounded-6 px-7 cursor-pointer">
+                            <img src="./src/assets/img/setting.svg" alt="" class="w-18 h-19" />
+                            <span class="ml-8 displaynone" style="line-height: 26.24px">Event Setting</span>
+                        </div>
+                        <div class="flex items-center py-9 px-7 cursor-pointer">
+                            <img src="./src/assets/img/app-builder.svg" alt="" class="w-18 h-19" />
+                            <span class="ml-8 displaynone" style="line-height: 26.24px">App Builder</span>
+                        </div>
+                        <div class="py-9 px-7 cursor-pointer" id="sidedropdown" open="false">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img src="./src/assets/img/event.svg" alt="" class="w-18 h-19" />
+                                    <span class="ml-8 displaynone" style="line-height: 26.24px">Event Engegment</span>
+                                </div>
+
+                                <img src="./src/assets/img/angle.svg" alt=""
+                                    class="w-5 h-10 mr-10 trasition displaynone" />
+                            </div>
+                            <div class="dropdownitem trasition displaynone" style="max-height: 0px; overflow: hidden">
+                                <p>Notification</p>
+                                <p>Agenda Live</p>
+                                <p>Live Polling</p>
+                                <p>Activity Feed</p>
+                                <p>Contests</p>
+                                <p>Surveys</p>
+                                <p>Breakout Rooms</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-9 px-7 cursor-pointer">
+                            <img src="./src/assets/img/users.svg" alt="" class="w-18 h-19" />
+                            <span class="ml-8 displaynone" style="line-height: 26.24px">APP/WebApp users</span>
+                        </div>
+                        <div class="flex items-center py-9 px-7 cursor-pointer">
+                            <img src="./src/assets/img/legal.svg" alt="" class="w-18 h-19" />
+                            <span class="ml-8 displaynone" style="line-height: 26.24px">Legal Setting</span>
+                        </div>
+                        <div class="flex items-center py-9 px-7 cursor-pointer">
+                            <img src="./src/assets/img/event features.svg" alt="" class="w-18 h-19" />
+                            <span class="ml-8 displaynone" style="line-height: 26.24px">Event features</span>
+                        </div>
+                        <div class="flex items-center py-9 px-7 cursor-pointer">
+                            <img src="./src/assets/img/analytics.svg" alt="" class="w-18 h-19" />
+                            <span class="ml-8 displaynone" style="line-height: 26.24px">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- small sidebar end -->
+        <div class="w-full bg-greaywhite">
+            <!-- top navigation bar -->
+            <nav class="h-66 bg-white flex justify-between items-center px-20">
+                <div id="navimg" data-open="false" class="cursor-pointer">
+                    <img src="./src/assets/img/nav-btn.svg" alt="" class="w-22 h14" />
+                </div>
+                <div class="flex items-center">
+                    <div class="flex justify-between items-center pr-40">
+                        <div class="p-5 py-8 mr-10 bg-brand rounded-2 cursor-pointer">
+                            <img src="./src/assets/img/eyes.svg" alt="" class="w-21 h-13" />
+                        </div>
+                        <div class="p-5 flex items-center mr-10 bg-brand rounded-2 cursor-pointer">
+                            <img src="./src/assets/img/arrow-mark.svg" alt="" class="w-15 h-15" />
+                            <span class="text-13 text-white">Publish</span>
+                        </div>
+                        <div class="p-5 bg-brand rounded-2 cursor-pointer">
+                            <img src="./src/assets/img/fullscreen.svg" alt="" class="w-19 h-19" />
+                        </div>
+                    </div>
+                    <img class="h-35 w-35 rounded-full cursor-pointer"
+                        src="https://www.w3schools.com/howto/img_avatar.png" alt="admin" />
+                    <p class="text-13 font-medium text-stromgreay mx-10 cursor-pointer">
+                        Tusher
+                    </p>
+                    <img src="./src/assets/img/arrow.svg" alt="arrow" class="h-10 w-10 cursor-pointer" />
+                </div>
+            </nav>
+            <!-- top navigation bar end-->
+
+
+            <div class="w-full px-30 py-20">
+                <div>
+                    <h3 class="text-18 text-capcod font-bold">Schedule</h3>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="py-20">
+                        <div class="bg-white  px-15 h-40 w-300 flex items-center space-x-15 rounded-6 ">
+                            <button class="outline-none">
+                                <img src="./src/assets/img/search-icon.svg" alt="" class="w-15 h-15" />
+                            </button>
+                            <input class="w-full rounded text-14 font-bold text-stromgreay" type="text"
+                                placeholder="Search" />
+                        </div>
+                    </div>
+                    <div class="flex space-x-30">
+                        <div class="">
+                            <button onclick=""
+                                class="px-10 h-40 bg-white text-12 font-bold text-brand uppercase  rounded-6 outline-none">
+
+
+                                Add Day
+                            </button>
+                        </div>
+                        <div class="">
+                            <button onclick=""
+                                class="px-10 h-40 bg-brand flex justify-center items-center space-x-5  rounded-6 outline-none">
+                                <div>
+                                    <img src="./src/assets/img/plus.svg" alt="" class="w-12 h-12" />
+                                </div>
+                                <div class="text-12 font-bold text-white uppercase">
+                                    SCHEDULE
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-10 bg-white rounded-6">
+                    <div class="px-20 py-20">
+                        <div class="inline-block bg-greaywhite p-10 rounded-6">
+                            <div class="flex items-center space-x-20">
+                                <div class="bg-white py-10 px-15 rounded-6 cursor-pointer">
+                                    <img src="./src/assets/img/left-angle.svg" alt="">
+                                </div>
+                                <div>
+                                    <button
+                                        class="px-15 h-40 bg-white text-12  text-brand uppercase  rounded-6 outline-none rounded-6">
+                                        14 NOV 2020
+                                    </button>
+                                </div>
+                                <div>
+                                    <button
+                                        class="px-15 h-40 text-12  text-stromgreay uppercase  rounded-6 outline-none rounded-6">
+                                        14 NOV 2020
+                                    </button>
+                                </div>
+                                <div>
+                                    <button
+                                        class="px-15 h-40  text-12  text-stromgreay uppercase  rounded-6 outline-none rounded-6">
+                                        14 NOV 2020
+                                    </button>
+                                </div>
+                                <div class="bg-white py-10 px-15 rounded-6 cursor-pointer">
+                                    <img src="./src/assets/img/right-angle.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-20">
+                            <div class="flex items-center border-stromgreay border-1 border-opacity-40 rounded-6">
+                                 <div class="bg-greaywhite w-1/12 flex justify-center items-center   py-2" style="height:164px;border-radius: 6px 0px 0px 6px; border-right: 1px solid rgba(128, 128, 128, 0.404);">
+                          <span class="text-12 font-semibold text-stromgreay">10 AM</span>
+                                    </div>
+                                 <div class="flex justify-between items-center  overflow-hidden w-full">
+                                   
+                                  <div class="flex w-full space-x-10 px-20">
+                                        <div class=" border-1 border-brand w-4/12 px-15 py-10 rounded-6"
+                                        style="background-color: #f7f7f7;">
+                                        <div class="flex justify-end items-center">
+                                            <div
+                                                class="bg-white cursor-pointer w-25 py-9 flex justify-center items-center rounded-6">
+                                                <img src="./src/assets/img/dote-blue.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="pb-10">
+                                            <div>
+                                                <span class="text-12 text-stromgreay">12:00 - 02:00
+                                                </span>
+                                            </div>
+                                            <h3 class="text-14 text-capcod font-bold">
+                                                Session : You’re welcome, gender barriers will not
+                                            </h3>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <div class="border-1 border-stromgreay w-4/12 px-15 py-10 rounded-6"
+                                        style="background-color: #f7f7f7;">
+                                        <div class="flex justify-end items-center">
+                                            <div
+                                                class="bg-white cursor-pointer w-25 py-9 flex justify-center items-center rounded-6">
+                                                <img src="./src/assets/img/dote.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="pb-10">
+                                            <div>
+                                                <span class="text-12 text-stromgreay">12:00 - 02:00
+                                                </span>
+                                            </div>
+                                            <h3 class="text-14 text-capcod font-bold">
+                                                Session : You’re welcome, gender barriers will not
+                                            </h3>
+                                        </div>
+                                     
+                                    </div>
+                                  </div>
+                                   
+                                </div> 
+                                <div class="flex justify-end w-1/12" ">
+                                     <div class="px-10 py-10  bg-greaywhite rounded-6 cursor-pointer" style="margin-right: 10px !important;">
+                                  <img src="./src/assets/img/pluse-blue.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="flex items-center border-stromgreay border-1 border-opacity-40 rounded-6">
+                                 <div class="bg-greaywhite w-1/12 flex justify-center items-center   py-2" style="height:164px;border-radius: 6px 0px 0px 6px; border-right: 1px solid rgba(128, 128, 128, 0.404);">
+                          <span class="text-12 font-semibold text-stromgreay">11 AM</span>
+                                    </div>
+                                 <div class="flex justify-between items-center  overflow-hidden w-full">
+                                   
+                                  <div class="flex w-full space-x-10 px-20">
+                                       
+
+                                    <div class="border-1 border-stromgreay w-4/12 px-15 py-10 rounded-6"
+                                        style="background-color: #f7f7f7;">
+                                        <div class="flex justify-end items-center">
+                                            <div
+                                                class="bg-white cursor-pointer w-25 py-9 flex justify-center items-center rounded-6">
+                                                <img src="./src/assets/img/dote.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="pb-10">
+                                            <div>
+                                                <span class="text-12 text-stromgreay">12:00 - 02:00
+                                                </span>
+                                            </div>
+                                            <h3 class="text-14 text-capcod font-bold">
+                                                Session : You’re welcome, gender barriers will not
+                                            </h3>
+                                        </div>
+                                     
+                                    </div>
+                                  </div>
+                                   
+                                </div> 
+                                <div class="flex justify-end w-1/12" ">
+                                     <div class="px-10 py-10  bg-greaywhite rounded-6 cursor-pointer" style="margin-right: 10px !important;">
+                                  <img src="./src/assets/img/pluse-blue.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center border-stromgreay border-1 border-opacity-40 rounded-6">
+                                 <div class="bg-greaywhite w-1/12 flex justify-center items-center   py-2" style="height:164px;border-radius: 6px 0px 0px 6px; border-right: 1px solid rgba(128, 128, 128, 0.404);">
+                          <span class="text-12 font-semibold text-stromgreay">12 AM</span>
+                                    </div>
+                                 <div class="flex justify-between items-center  overflow-hidden w-full">
+                                   
+                                  <div class="flex w-full space-x-10 px-20">
+                                       
+
+                                  
+                                  </div>
+                                   
+                                </div> 
+                                <div class="flex justify-end w-1/12" ">
+                                     <div class="px-10 py-10  bg-greaywhite rounded-6 cursor-pointer" style="margin-right: 10px !important;">
+                                  <img src="./src/assets/img/pluse-blue.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center border-stromgreay border-1 border-opacity-40 rounded-6">
+                                 <div class="bg-greaywhite w-1/12 flex justify-center items-center   py-2" style="height:164px;border-radius: 6px 0px 0px 6px; border-right: 1px solid rgba(128, 128, 128, 0.404);">
+                          <span class="text-12 font-semibold text-stromgreay">10 AM</span>
+                                    </div>
+                                 <div class="flex justify-between items-center  overflow-hidden w-full">
+                                   
+                                  <div class="flex w-full space-x-10 px-20">
+                                       
+
+                                  
+                                  </div>
+                                   
+                                </div> 
+                                <div class="flex justify-end w-1/12" ">
+                                     <div class="px-10 py-10  bg-greaywhite rounded-6 cursor-pointer" style="margin-right: 10px !important;">
+                                  <img src="./src/assets/img/pluse-blue.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center border-stromgreay border-1 border-opacity-40 rounded-6">
+                                 <div class="bg-greaywhite w-1/12 flex justify-center items-center   py-2" style="height:164px;border-radius: 6px 0px 0px 6px; border-right: 1px solid rgba(128, 128, 128, 0.404);">
+                          <span class="text-12 font-semibold text-stromgreay">12 AM</span>
+                                    </div>
+                                 <div class="flex justify-between items-center  overflow-hidden w-full">
+                                   
+                                  <div class="flex w-full space-x-10 px-20">
+                                       
+
+                                  
+                                  </div>
+                                   
+                                </div> 
+                                <div class="flex justify-end w-1/12" ">
+                                     <div class="px-10 py-10  bg-greaywhite rounded-6 cursor-pointer" style="margin-right: 10px !important;">
+                                  <img src="./src/assets/img/pluse-blue.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="./src/assets/js/index.js"></script>
+
+</html>

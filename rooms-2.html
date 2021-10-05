@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./src/assets/css/style.css" />
+    <link rel="stylesheet" href="./src/assets/css/custom.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rooms 2</title>
+  </head>
+  <body>
+    <div class="w-500">
+      <div>
+        <div class="flex justify-between items-center p-20 bg-greaywhite mb-30">
+          <h3 class="text-18 font-bold text-stromgreay">Add Room</h3>
+          <img
+            src="./src/assets/img/x-mark.svg"
+            onclick="closeHiddenbar()"
+            alt="cross"
+            class="w-20 h-20 cursor-pointer"
+          />
+        </div>
+        <div class="px-20  pb-20">
+          <h3 class="text-16 text-black font-semibold mb-10">Room Details</h3>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Room Name</label
+            >
+            <input
+              type="text"
+              name="text"
+              placeholder="Enter Room Name"
+              id="#"
+              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 px-10 py-10 text-13"
+            />
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay"
+              >Room Description
+</label
+            >
+            <textarea
+              type="text"
+              name="text"
+              placeholder="Enter Room Description"
+              id="#"
+              class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-100 px-10 py-10 text-13"
+            ></textarea>
+          </div>
+          <div class="py-8">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Room Purpose
+            </label>
+            <div class="radiobutton flex">
+              <div class="flex items-center mr-10">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Single Session</p>
+              </div>
+
+              <div class="flex items-center">
+                <label class="mr-7">
+                  <input
+                    class="radioinput"
+                    type="radio"
+                    checked="checked"
+                    name="radio"
+                  />
+                  <span class="radiocheck"></span>
+                </label>
+                <p class="text-14">Multiple Sessions</p>
+              </div>
+            </div>
+          </div>
+          <div class="py-8 flex space-x-20">
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Survey Start
+</label
+              >
+              <input
+                type="date"
+                class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13"
+              />
+            </div>
+            <div class="w-6/12">
+              <label for="#" class="block mb-7 text-12 text-stromgreay">
+                Survey End
+</label
+              >
+              <input
+                type="date"
+                class="w-full rounded-6 border-1 border-stromgreay border-opacity-40 h-40 px-10 py-10 text-13"
+              />
+            </div>
+          </div>
+          <div class="space-y-5 py-10">
+            <div>
+              <label for="#" class="text-12 text-stromgreay">
+                Who can join The Room
+              </label>
+            </div>
+            <div
+              class="w-full h-42 px-10 flex justify-center items-center rounded-6 border-1 border-stromgreay border-opacity-40"
+            >
+              <select class="w-full outline-none text-14 text-stromgreay">
+                <option class="">Anyone</option>
+              </select>
+            </div>
+          </div>
+          <div class="space-y-5 py-10">
+            <div>
+              <label for="#" class="text-12 text-stromgreay">
+                Who can Share Audio/Video in the Room (max 12 people)
+              </label>
+            </div>
+            <div
+              class="w-full h-42 px-10 flex justify-center items-center rounded-6 border-1 border-stromgreay border-opacity-40"
+            >
+              <select class="w-full outline-none text-14 text-stromgreay">
+                <option class="">Anyone</option>
+              </select>
+            </div>
+          </div>
+          <div class="py-10">
+<label for="#" class="block mb-7 text-12 text-stromgreay">
+              Number of Videos
+</label
+            >
+
+            <div class="flex space-x-40">
+              <div
+                class="flex w-6/12 justify-between overflow-hidden border-1 border-stromgreay border-opacity-40 rounded-6"
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                <div
+                  class="text-12 text-stromgreay flex items-center px-8 py-5 rounded-6 cursor-pointer"
+                  style="background-color: #f4f5f7"
+                >
+               MINIMUM
+                </div>
+              </div>
+              <div
+                class="flex w-6/12 justify-between overflow-hidden border-1 border-stromgreay border-opacity-40 rounded-6"
+              >
+                <div>
+                  <input
+                    type="text"
+                    name="text"
+                    id=""
+                    class="py-8 text-14 text-capcod w-100 px-5"
+                  />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="pt-8 py-20 px-20 border-b-1 border-stromgreay border-opacity-40">
+            <label for="#" class="block mb-7 text-12 text-stromgreay">
+              Session Poster Image</label
+            >
+            <div
+              class="flex rounded-6 justify-center items-center flex-col w-7/12 h-200 border-dotted border-stromgreay border-1 border-opacity-40"
+              style="background: #f4f5f7"
+            >
+              <img
+                src="./src/assets/img/imageplaceholder.svg"
+                alt="placeholder"
+              />
+              <p
+                class="text-14 mt-10 text-stromgreay opacity-60 text-center font-bold"
+              >
+                choose Image to Upload
+              </p>
+              <p class="text-12 text-stromgreay opacity-70 text-center">
+                1200x800 px
+              </p>
+              <p class="text-12 text-stromgreay opacity-70 text-center">
+                Maximum : 5 MB
+
+              </p>
+            </div>
+          </div>
+          
+        </div>
+       
+        
+        <div class="p-20">
+          <button
+            class="text-14 text-white rounded-6 uppercase bg-brand h-35 px-20"
+          >
+            <span class="mb-0 block"> ADD </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
