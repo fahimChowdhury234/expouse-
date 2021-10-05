@@ -1,5 +1,5 @@
 # expouse-
 The admin panel dashboard
 
-<Project setup>
+#Project setup
 npm install
